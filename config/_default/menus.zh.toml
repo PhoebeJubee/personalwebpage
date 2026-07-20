@@ -1,0 +1,27 @@
+# -- 主菜单 --
+# 导航栏 tab 切换
+
+[[main]]
+  name = "游戏时光"
+  pageRef = "timeline"
+  weight = 10
+
+[[main]]
+  name = "游戏鉴赏"
+  pageRef = "gaming"
+  weight = 20
+
+[[main]]
+  name = "Vibe Coding"
+  pageRef = "projects"
+  weight = 30
+
+[[main]]
+  name = "文章专栏"
+  pageRef = "articles"
+  weight = 40
+
+[[main]]
+  name = "考公求职"
+  pageRef = "career"
+  weight = 50

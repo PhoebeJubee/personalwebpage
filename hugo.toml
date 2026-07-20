@@ -1,0 +1,24 @@
+baseURL = "https://yourusername.github.io/"
+defaultContentLanguage = "zh"
+theme = "blowfish"
+
+enableRobotsTXT = true
+enableEmoji = true
+summaryLength = 0
+
+[pagination]
+  pagerSize = 100
+
+[imaging]
+  anchor = 'Center'
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[sitemap]
+  changefreq = 'daily'
+  filename = 'sitemap.xml'
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

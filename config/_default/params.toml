@@ -1,0 +1,51 @@
+# -- 主题配置 --
+colorScheme = "blowfish"
+defaultAppearance = "light"
+autoSwitchAppearance = true
+
+enableSearch = true
+enableCodeCopy = false
+
+# Header 配置
+disableTextInHeader = false
+
+[header]
+  layout = "fixed-fill"
+
+# Footer 配置
+[footer]
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = true
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+# 首页配置 - 使用 profile 布局
+[homepage]
+  layout = "profile"
+  showRecent = false
+  showRecentItems = 5
+
+# 文章配置
+[article]
+  showDate = true
+  showDateUpdated = false
+  showAuthor = true
+  showBreadcrumbs = false
+  showReadingTime = true
+  showTableOfContents = false
+  showPagination = true
+
+# 作者信息 - 社交链接在这里配置
+[author]
+  name = "YOUR_NAME"
+  headline = "自媒体创作者 | 游戏爱好者 | Vibe Coder"
+  bio = "这里是我的个人空间"
+  
+  # 社交链接
+  links = [
+    { bilibili = "https://space.bilibili.com/YOUR_BILIBILI_UID" },
+    { zhihu = "https://www.zhihu.com/people/YOUR_ZHIHU_ID" },
+    { tiktok = "https://www.douyin.com/user/YOUR_DOUYIN_ID" },
+    { github = "https://github.com/YOUR_GITHUB_USERNAME" }
+  ]

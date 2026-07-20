@@ -1,0 +1,10 @@
+disabled = false
+languageCode = "zh"
+languageName = "中文"
+weight = 1
+title = "我的个人空间"
+
+[params]
+  [params.author]
+    name = "YOUR_NAME"
+    bio = "自媒体创作者 | 游戏爱好者 | Vibe Coder"
