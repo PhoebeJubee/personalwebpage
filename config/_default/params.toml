@@ -46,6 +46,6 @@ disableTextInHeader = false
   links = [
     { bilibili = "https://space.bilibili.com/YOUR_BILIBILI_UID" },
     { zhihu = "https://www.zhihu.com/people/YOUR_ZHIHU_ID" },
-    { tiktok = "https://www.douyin.com/user/YOUR_DOUYIN_ID" },
+    { douyin = "https://www.douyin.com/user/YOUR_DOUYIN_ID" },
     { github = "https://github.com/YOUR_GITHUB_USERNAME" }
   ]
