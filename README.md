@@ -49,27 +49,46 @@ hugo server -D
   ]
 ```
 
-### 4. 配置数据源
+### 4. 配置数据源（重要）
 
-#### Bangumi 游戏记录
-编辑 `content/timeline/_index.md`，修改：
-```javascript
-const BANGUMI_UID = '你的Bangumi UID';
+三个动态页（游戏时光 / 游戏鉴赏 / Vibe Coding）的数据**不再由前端直接调用平台 API**（浏览器会因 CORS 报 `Failed to fetch`），而是由**本地脚本抓取后生成静态 JSON**，前端读取本地 JSON 渲染。
+
+所有账号统一配置在 **`scripts/config.ini`**：
+
+```ini
+[bangumi]
+uid = 你的Bangumi用户名或UID
+
+[bilibili]
+uid = 你的B站UID
+
+[github]
+username = 你的GitHub用户名
+featured_repos =        ; 可选，逗号分隔；留空则自动取 star 最高的前 12 个非 fork 仓库
 ```
 
-#### Bilibili 视频
-编辑 `content/gaming/_index.md`，修改：
-```javascript
-const BILIBILI_UID = '你的Bilibili UID';
+> 修改账号只需改这一个文件，无需碰页面代码。
+
+### 5. 抓取数据并构建
+
+```bash
+# 一键抓取三个数据源，生成 static/data/{bangumi,bilibili,github}.json
+python3 scripts/fetch_all.py
+# 或单独抓取：
+python3 scripts/fetch_bangumi.py
+python3 scripts/fetch_bilibili.py
+python3 scripts/fetch_github.py
+
+# 构建站点（JSON 会被自动拷贝到 public/data/）
+hugo
 ```
 
-#### GitHub 项目
-编辑 `content/projects/_index.md`，修改：
-```javascript
-const GITHUB_USERNAME = '你的GitHub用户名';
-// 可选：指定要展示的项目
-const FEATURED_REPOS = ['project1', 'project2'];
-```
+页面逻辑：
+- 游戏时光：读取 `/data/bangumi.json`，展示统计卡片 + 游戏卡片（评分/标签/封面，已修复 `updated_at` 时间戳与 `tags` 字段取值）
+- 游戏鉴赏：读取 `/data/bilibili.json`，展示视频卡片网格
+- Vibe Coding：读取 `/data/github.json`，展示开源项目卡片
+
+若尚未抓取数据，页面会提示"暂无记录"，**不会一直卡在加载中**。
 
 ### 5. 添加文章
 
@@ -129,11 +148,14 @@ git push -u origin main
 
 ## 日常维护
 
-- 添加游戏记录：更新 Bangumi 即可自动同步
-- 添加视频：更新 Bilibili 即可自动同步
-- 添加文章：在 `content/articles/` 下新建 Markdown 文件
-- 添加项目：更新 GitHub 即可自动同步
+- 添加游戏记录：在 Bangumi 更新后，重新运行 `python3 scripts/fetch_all.py && hugo`
+- 添加视频：在 B 站更新后，重新运行上面的命令
+- 添加文章：在 `content/articles/` 下新建 Markdown 文件（无需跑脚本）
+- 添加项目：在 GitHub 更新后，重新运行上面的命令；或用 `featured_repos` 指定展示项
 - 修改大图：替换 `static/images/` 中的图片
+- 修改账号：只改 `scripts/config.ini`，然后重新抓取
+
+> 提示：三个动态页的数据都是**构建时静态生成**的，所以每次数据变化都要"跑脚本 + 重新构建 + 重新部署"三者缺一不可。
 
 ## 技术栈
 
