@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 """抓取 B 站 UP 主投稿视频并输出为 static/data/bilibili.json。
 
-WBI 签名流程：
-  1. /x/frontend/finger/spi → buvid3 cookie
+WBI 签名 + Cookie 链流程：
+  1. /x/frontend/finger/spi → buvid3
   2. /x/web-interface/nav → img_key + sub_key
-  3. mixin_key 混淆 + wts 时间戳 → MD5 生成 w_rid
-  4. /x/space/wbi/arc/search 带签名请求数据
+  3. mixin_key 混淆 + wts → MD5 生成 w_rid
+  4. /x/space/wbi/arc/search 带签名 + 显式 Cookie 请求
+
+优先使用 curl_cffi 模拟 Chrome TLS 指纹（需 pip install curl_cffi），
+回退到标准 requests。
 """
 import configparser
 import hashlib
@@ -15,7 +18,12 @@ import sys
 import time
 import urllib.parse
 
-import requests
+try:
+    from curl_cffi import requests as http
+    IMPERSONATE = "chrome120"
+except ImportError:
+    import requests as http
+    IMPERSONATE = None
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_DIR = os.path.join(ROOT, "static", "data")
@@ -38,26 +46,25 @@ def load_uid():
     return cfg.get("bilibili", "uid", fallback="").strip()
 
 
-def _get(session):
-    """获取 buvid3 cookie 和 WBI 签名密钥。"""
-    # 1. buvid3
-    spi = session.get(f"{API_BASE}/x/frontend/finger/spi", timeout=15).json()
+def _http_get(url, **kwargs):
+    kwargs.setdefault("timeout", 15)
+    if IMPERSONATE:
+        kwargs.setdefault("impersonate", IMPERSONATE)
+    return http.get(url, **kwargs)
+
+
+def _get_wbi_keys():
+    spi = _http_get(f"{API_BASE}/x/frontend/finger/spi").json()
     buvid3 = spi.get("data", {}).get("b_3", "")
-    if buvid3:
-        session.cookies.set("buvid3", buvid3, domain=".bilibili.com")
 
-    # 2. WBI keys
-    nav = session.get(f"{API_BASE}/x/web-interface/nav", timeout=15).json()
+    nav = _http_get(f"{API_BASE}/x/web-interface/nav").json()
     wbi_img = nav.get("data", {}).get("wbi_img", {})
-    img_url = wbi_img.get("img_url", "")
-    sub_url = wbi_img.get("sub_url", "")
-    img_key = img_url.rsplit("/", 1)[-1].split(".")[0] if img_url else ""
-    sub_key = sub_url.rsplit("/", 1)[-1].split(".")[0] if sub_url else ""
-    return img_key, sub_key
+    img_key = wbi_img.get("img_url", "").rsplit("/", 1)[-1].split(".")[0]
+    sub_key = wbi_img.get("sub_url", "").rsplit("/", 1)[-1].split(".")[0]
 
-
-def _mixin_key(orig):
-    return "".join(orig[i] for i in MIXIN_KEY_ENC_TAB)[:32]
+    raw = img_key + sub_key
+    mixin_key = "".join(raw[i] for i in MIXIN_KEY_ENC_TAB)[:32]
+    return buvid3, mixin_key
 
 
 def _sign(params, mixin_key):
@@ -70,14 +77,16 @@ def _sign(params, mixin_key):
 
 
 def fetch_videos(mid, ps=12, max_retry=3):
-    session = requests.Session()
-    session.headers.update({
+    buvid3, mixin_key = _get_wbi_keys()
+
+    headers = {
         "User-Agent": UA,
         "Referer": f"https://space.bilibili.com/{mid}/video",
-    })
-
-    img_key, sub_key = _get(session)
-    mixin_key = _mixin_key(img_key + sub_key)
+        "Origin": "https://space.bilibili.com",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+        "Cookie": f"buvid3={buvid3}",
+    }
 
     videos = []
     pn = 1
@@ -93,11 +102,16 @@ def fetch_videos(mid, ps=12, max_retry=3):
 
         last_err = None
         for attempt in range(max_retry):
-            resp = session.get(
+            resp = _http_get(
                 f"{API_BASE}/x/space/wbi/arc/search?{query}",
-                timeout=30,
+                headers=headers,
             )
-            resp.raise_for_status()
+            ct = resp.headers.get("content-type", "")
+            if "json" not in ct:
+                last_err = f"HTTP {resp.status_code} (非 JSON 响应)"
+                if attempt < max_retry - 1:
+                    time.sleep(2 ** attempt)
+                continue
             data = resp.json()
             if data.get("code") == 0:
                 break
