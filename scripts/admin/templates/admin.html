@@ -16,6 +16,14 @@
   .item-row { transition: all 0.15s; }
   .item-row:hover { background: #f9fafb; }
   .item-row.is-hidden { opacity: 0.45; }
+  .device-toggle { display: inline-flex; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; }
+  .device-toggle button { padding: 6px 12px; font-size: 12px; border: none; background: white; cursor: pointer; transition: all 0.15s; color: #6b7280; }
+  .device-toggle button.active { background: #3b82f6; color: white; }
+  .device-toggle button:hover:not(.active) { background: #f3f4f6; }
+  .phone-frame { position: relative; width: 375px; margin: 0 auto; border: 8px solid #1f2937; border-radius: 32px; background: #1f2937; box-shadow: 0 8px 32px rgba(0,0,0,0.2); }
+  .phone-frame::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 120px; height: 6px; background: #374151; border-radius: 0 0 8px 8px; z-index: 10; }
+  .phone-frame iframe { width: 100%; border: none; border-radius: 24px; }
+  .phone-frame .phone-notch { height: 24px; background: #1f2937; border-radius: 24px 24px 0 0; }
 </style>
 </head>
 <body class="bg-gray-50 min-h-screen">
@@ -89,12 +97,20 @@
         <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-4">
           <div class="flex items-center justify-between mb-3">
             <h2 id="preview-title" class="text-lg font-semibold">页面预览</h2>
-            <button onclick="refreshIframe()" class="px-3 py-1 text-xs bg-gray-100 hover:bg-gray-200 rounded-lg transition">刷新</button>
+            <div class="flex items-center gap-3">
+              <div class="device-toggle">
+                <button id="btn-desktop" class="active" onclick="setDevice('desktop')">桌面端</button>
+                <button id="btn-mobile" onclick="setDevice('mobile')">手机端</button>
+              </div>
+              <button onclick="refreshIframe()" class="px-3 py-1 text-xs bg-gray-100 hover:bg-gray-200 rounded-lg transition">刷新</button>
+            </div>
           </div>
-          <div id="iframe-container" class="relative rounded-lg overflow-hidden border border-gray-100" style="height: 600px;">
-            <iframe id="preview-iframe" class="preview-frame" style="width:100%;height:100%;border:none;"></iframe>
-            <div id="iframe-loading" class="absolute inset-0 flex items-center justify-center bg-white/80 text-gray-400 text-sm">
-              加载中...
+          <div id="iframe-wrapper" class="rounded-lg overflow-hidden border border-gray-100" style="min-height: 600px;">
+            <div id="iframe-container" class="relative" style="height: 600px;">
+              <iframe id="preview-iframe" class="preview-frame" style="width:100%;height:100%;border:none;"></iframe>
+              <div id="iframe-loading" class="absolute inset-0 flex items-center justify-center bg-white/80 text-gray-400 text-sm">
+                加载中...
+              </div>
             </div>
           </div>
         </div>
@@ -118,6 +134,7 @@ let currentSource = 'bangumi';
 let currentPreview = 'bilibili';
 let statusTimer = null;
 let previewData = [];
+let currentDevice = 'desktop';
 
 async function api(method, path, body) {
   const opts = { method, headers: { 'Content-Type': 'application/json' } };
@@ -333,6 +350,33 @@ function refreshIframe() {
   const loading = document.getElementById('iframe-loading');
   loading.classList.remove('hidden');
   iframe.src = iframe.src;
+}
+
+function setDevice(device) {
+  currentDevice = device;
+  const wrapper = document.getElementById('iframe-wrapper');
+  const container = document.getElementById('iframe-container');
+  const iframe = document.getElementById('preview-iframe');
+  const btnDesktop = document.getElementById('btn-desktop');
+  const btnMobile = document.getElementById('btn-mobile');
+
+  btnDesktop.classList.toggle('active', device === 'desktop');
+  btnMobile.classList.toggle('active', device === 'mobile');
+
+  if (device === 'mobile') {
+    wrapper.className = 'phone-frame';
+    container.style.height = '667px';
+    container.style.background = '#f9fafb';
+    container.style.borderRadius = '24px';
+    container.style.overflow = 'hidden';
+  } else {
+    wrapper.className = 'rounded-lg overflow-hidden border border-gray-100';
+    container.style.height = '600px';
+    container.style.background = '';
+    container.style.borderRadius = '';
+    container.style.overflow = '';
+  }
+  refreshIframe();
 }
 
 function escHtml(s) {

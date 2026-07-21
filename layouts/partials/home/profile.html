@@ -1,8 +1,7 @@
 {{ $disableImageOptimization := .Site.Params.disableImageOptimization | default false }}
-<article
-  class="{{ if not .Site.Params.homepage.showRecent }}
-    h-full
-  {{ end }} flex flex-col items-center justify-center text-center">
+
+{{/* ===== 作者头像区 ===== */}}
+<article class="flex flex-col items-center justify-center text-center py-8">
   <header class="relative px-1 py-1 flex flex-col items-center mb-3">
     {{ with .Site.Params.Author.image }}
       {{ $authorImage := "" }}
@@ -23,105 +22,339 @@
           src="{{ $authorImage.RelPermalink }}">
       {{ end }}
     {{ end }}
-    <h1 class="text-4xl font-extrabold">
-      {{ .Site.Params.Author.name | default .Site.Title }}
-    </h1>
+    <h1 class="text-4xl font-extrabold">{{ .Site.Params.Author.name | default .Site.Title }}</h1>
     {{ with .Site.Params.Author.headline }}
-      <h2 class="text-xl text-neutral-500 dark:text-neutral-400">
-        {{ . | markdownify }}
-      </h2>
+      <h2 class="text-xl text-neutral-500 dark:text-neutral-400">{{ . | markdownify }}</h2>
     {{ end }}
-    <div class="mt-1 text-2xl">
-      {{ partialCached "author-links.html" . }}
-    </div>
+    <div class="mt-1 text-2xl">{{ partialCached "author-links.html" . }}</div>
   </header>
-
-  {{/* ===== 全网数据统计模块 ===== */}}
-  {{ if .Site.Params.stats }}
-    {{ $totalFollowers := 0 }}
-    {{ range $key, $val := .Site.Params.stats }}
-      {{ if $val.followers }}
-        {{ $totalFollowers = add $totalFollowers (int $val.followers) }}
-      {{ end }}
-    {{ end }}
-    {{ $githubStars := 0 }}
-    {{ with .Site.Params.stats.github }}
-      {{ $githubStars = int (.stars | default 0) }}
-    {{ end }}
-
-    <section class="w-full max-w-3xl mx-auto mt-8 mb-6">
-      <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; padding: 32px 24px; box-shadow: 0 8px 32px rgba(102,126,234,0.3);">
-        
-        {{/* 顶部总览 */}}
-        <div style="display: flex; justify-content: center; gap: 48px; margin-bottom: 28px; flex-wrap: wrap;">
-          <div style="text-align: center;">
-            <div style="font-size: 36px; font-weight: 800; color: white; line-height: 1;" id="total-followers">{{ $totalFollowers }}</div>
-            <div style="font-size: 14px; color: rgba(255,255,255,0.8); margin-top: 6px;">全网粉丝</div>
-          </div>
-          <div style="width: 1px; background: rgba(255,255,255,0.3); align-self: stretch;"></div>
-          <div style="text-align: center;">
-            <div style="font-size: 36px; font-weight: 800; color: white; line-height: 1;" id="total-stars">{{ $githubStars }}</div>
-            <div style="font-size: 14px; color: rgba(255,255,255,0.8); margin-top: 6px;">GitHub Stars</div>
-          </div>
-        </div>
-
-        {{/* 各平台明细 */}}
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px;">
-          {{ range $key, $val := .Site.Params.stats }}
-            <a href="{{ $val.url }}" target="_blank" rel="noopener" 
-               style="background: rgba(255,255,255,0.15); backdrop-filter: blur(8px); border-radius: 12px; padding: 14px 12px; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(255,255,255,0.1);"
-               onmouseover="this.style.background='rgba(255,255,255,0.25)';this.style.transform='translateY(-2px)'" 
-               onmouseout="this.style.background='rgba(255,255,255,0.15)';this.style.transform='translateY(0)'">
-              <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 8px; justify-content: center;">
-                <span style="font-size: 14px;">
-                  {{ partialCached "icon.html" (.icon | default $key) .icon }}
-                </span>
-                <span style="font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.9);">{{ $val.name }}</span>
-              </div>
-              {{ if $val.followers }}
-                <div style="font-size: 20px; font-weight: 700; color: white;">{{ $val.followers }}</div>
-                <div style="font-size: 11px; color: rgba(255,255,255,0.6);">粉丝</div>
-              {{ else if $val.stars }}
-                <div style="font-size: 20px; font-weight: 700; color: white;">{{ $val.stars }}</div>
-                <div style="font-size: 11px; color: rgba(255,255,255,0.6);">Stars ⭐</div>
-              {{ end }}
-            </a>
-          {{ end }}
-        </div>
-      </div>
-    </section>
-
-    {{/* 数字滚动动画 */}}
-    <script>
-    function animateCount(el, target) {
-      const duration = 1500;
-      const start = 0;
-      const startTime = performance.now();
-      function step(now) {
-        const elapsed = now - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        const eased = 1 - Math.pow(1 - progress, 3);
-        el.textContent = Math.round(start + (target - start) * eased).toLocaleString();
-        if (progress < 1) requestAnimationFrame(step);
-      }
-      requestAnimationFrame(step);
-    }
-    document.addEventListener('DOMContentLoaded', function() {
-      {{ range $key, $val := .Site.Params.stats }}
-        {{ if $val.followers }}
-        {{ else if $val.stars }}
-        {{ end }}
-      {{ end }}
-      const followersEl = document.getElementById('total-followers');
-      const starsEl = document.getElementById('total-stars');
-      if (followersEl) animateCount(followersEl, {{ $totalFollowers }});
-      if (starsEl) animateCount(starsEl, {{ $githubStars }});
-    });
-    </script>
-  {{ end }}
-
-  <section class="prose dark:prose-invert w-full">{{ .Content }}</section>
+  <section class="prose dark:prose-invert w-full max-w-3xl">{{ .Content }}</section>
 </article>
-<section>
-  {{ partial "recent-articles/main.html" . }}
+
+{{/* ===== 辅助函数：读取 JSON 数据 ===== */}}
+{{ $bilibiliData := slice }}
+{{ with resources.Get "data/bilibili.json" }}
+  {{ $bilibiliData = . | unmarshal }}
+{{ end }}
+{{ $githubData := slice }}
+{{ with resources.Get "data/github.json" }}
+  {{ $githubData = . | unmarshal }}
+{{ end }}
+{{ $bangumiData := slice }}
+{{ with resources.Get "data/bangumi.json" }}
+  {{ $bangumiData = . | unmarshal }}
+{{ end }}
+
+{{/* ===== 游戏鉴赏 ===== */}}
+<section class="home-section fade-section" id="section-gaming">
+  <div class="section-header">
+    <a href="{{ relURL "gaming/" }}" class="section-title-link">
+      <span class="section-icon">🎮</span>
+      <h2 class="text-2xl font-bold">游戏鉴赏</h2>
+      <span class="section-arrow">→</span>
+    </a>
+    <p class="text-neutral-500 dark:text-neutral-400 text-sm">从 Bilibili 同步的游戏视频合集</p>
+  </div>
+  <div class="section-content">
+    {{ $visible := where $bilibiliData "hidden" "!=" true }}
+    {{ if $visible }}
+      <div class="card-grid-4">
+        {{ range first 4 $visible }}
+          <a href="{{ .url }}" target="_blank" rel="noopener" class="video-card">
+            <div class="video-thumb">
+              <img src="{{ .pic }}@480w_270h_1c.webp" alt="{{ .title }}" loading="lazy">
+              <span class="video-duration">{{ .duration }}s</span>
+            </div>
+            <div class="video-info">
+              <div class="video-title">{{ .title }}</div>
+              <div class="video-meta">
+                <span>👁 {{ .play }}</span>
+                <span>💬 {{ .video_review }}</span>
+              </div>
+            </div>
+          </a>
+        {{ end }}
+      </div>
+      <div class="section-more">
+        <a href="{{ relURL "gaming/" }}" class="more-btn">查看更多视频 →</a>
+      </div>
+    {{ else }}
+      <p class="text-neutral-400 text-center py-8">暂无视频数据</p>
+    {{ end }}
+  </div>
 </section>
+
+{{/* ===== 分割线 ===== */}}
+<div class="section-divider fade-section">
+  <div class="divider-line"></div>
+  <div class="divider-dot"></div>
+  <div class="divider-line"></div>
+</div>
+
+{{/* ===== Vibe Coding ===== */}}
+<section class="home-section fade-section" id="section-projects">
+  <div class="section-header">
+    <a href="{{ relURL "projects/" }}" class="section-title-link">
+      <span class="section-icon">💻</span>
+      <h2 class="text-2xl font-bold">Vibe Coding</h2>
+      <span class="section-arrow">→</span>
+    </a>
+    <p class="text-neutral-500 dark:text-neutral-400 text-sm">我的 GitHub 开源项目展示</p>
+  </div>
+  <div class="section-content">
+    {{ $visible := where $githubData "hidden" "!=" true }}
+    {{ if $visible }}
+      <div class="card-grid-2">
+        {{ range first 4 $visible }}
+          <div class="project-card">
+            <div class="project-name">
+              <a href="{{ .html_url }}" target="_blank" rel="noopener">{{ .name }}</a>
+            </div>
+            <div class="project-desc">{{ .description | default "暂无描述" }}</div>
+            <div class="project-meta">
+              {{ if .language }}<span class="lang-badge">{{ .language }}</span>{{ end }}
+              <span>⭐ {{ .stargazers_count }}</span>
+              <span>🍴 {{ .forks_count }}</span>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+      <div class="section-more">
+        <a href="{{ relURL "projects/" }}" class="more-btn">查看更多项目 →</a>
+      </div>
+    {{ else }}
+      <p class="text-neutral-400 text-center py-8">暂无项目数据</p>
+    {{ end }}
+  </div>
+</section>
+
+{{/* ===== 分割线 ===== */}}
+<div class="section-divider fade-section">
+  <div class="divider-line"></div>
+  <div class="divider-dot"></div>
+  <div class="divider-line"></div>
+</div>
+
+{{/* ===== 游戏时光 ===== */}}
+<section class="home-section fade-section" id="section-timeline">
+  <div class="section-header">
+    <a href="{{ relURL "timeline/" }}" class="section-title-link">
+      <span class="section-icon">🏆</span>
+      <h2 class="text-2xl font-bold">游戏时光</h2>
+      <span class="section-arrow">→</span>
+    </a>
+    <p class="text-neutral-500 dark:text-neutral-400 text-sm">从 Bangumi 同步的游戏记录和评分</p>
+  </div>
+  <div class="section-content">
+    {{ $visible := where $bangumiData "hidden" "!=" true }}
+    {{ if $visible }}
+      <div class="card-grid-4">
+        {{ range first 4 $visible }}
+          <div class="game-card">
+            {{ if .cover }}
+              <img src="{{ .cover }}" alt="{{ .name_cn | default .name }}" class="game-cover" loading="lazy">
+            {{ end }}
+            <div class="game-info">
+              <div class="game-title">{{ .name_cn | default .name }}</div>
+              {{ if .date }}<div class="game-date">发售日: {{ .date }}</div>{{ end }}
+              {{ if gt .rate 0 }}
+                {{ $color := "bg-neutral-100 text-neutral-600" }}
+                {{ if ge .rate 8 }}{{ $color = "bg-green-100 text-green-700" }}{{ end }}
+                {{ if and (ge .rate 6) (lt .rate 8) }}{{ $color = "bg-yellow-100 text-yellow-700" }}{{ end }}
+                {{ if lt .rate 6 }}{{ $color = "bg-red-100 text-red-700" }}{{ end }}
+                <span class="game-score {{ $color }}">{{ .rate }}/10</span>
+              {{ end }}
+              {{ if .tags }}
+                <div class="game-tags">
+                  {{ range first 3 .tags }}
+                    <span class="game-tag">{{ . }}</span>
+                  {{ end }}
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+      <div class="section-more">
+        <a href="{{ relURL "timeline/" }}" class="more-btn">查看更多游戏 →</a>
+      </div>
+    {{ else }}
+      <p class="text-neutral-400 text-center py-8">暂无游戏记录</p>
+    {{ end }}
+  </div>
+</section>
+
+{{/* ===== 分割线 ===== */}}
+<div class="section-divider fade-section">
+  <div class="divider-line"></div>
+  <div class="divider-dot"></div>
+  <div class="divider-line"></div>
+</div>
+
+{{/* ===== 文章专栏 ===== */}}
+<section class="home-section fade-section" id="section-articles">
+  <div class="section-header">
+    <a href="{{ relURL "articles/" }}" class="section-title-link">
+      <span class="section-icon">📝</span>
+      <h2 class="text-2xl font-bold">文章专栏</h2>
+      <span class="section-arrow">→</span>
+    </a>
+    <p class="text-neutral-500 dark:text-neutral-400 text-sm">我的随笔与分享</p>
+  </div>
+  <div class="section-content">
+    {{ $articles := where .Site.RegularPages "Section" "articles" }}
+    {{ if $articles }}
+      <div class="article-list">
+        {{ range first 3 $articles }}
+          <a href="{{ .RelPermalink }}" class="article-item">
+            <div class="article-title">{{ .Title }}</div>
+            <div class="article-date">{{ .Date.Format "2006-01-02" }}</div>
+          </a>
+        {{ end }}
+      </div>
+      <div class="section-more">
+        <a href="{{ relURL "articles/" }}" class="more-btn">查看更多文章 →</a>
+      </div>
+    {{ else }}
+      <p class="text-neutral-400 text-center py-8">暂无文章</p>
+    {{ end }}
+  </div>
+</section>
+
+{{/* ===== 分割线 ===== */}}
+<div class="section-divider fade-section">
+  <div class="divider-line"></div>
+  <div class="divider-dot"></div>
+  <div class="divider-line"></div>
+</div>
+
+{{/* ===== 考公求职 ===== */}}
+<section class="home-section fade-section" id="section-career">
+  <div class="section-header">
+    <a href="{{ relURL "career/" }}" class="section-title-link">
+      <span class="section-icon">🎯</span>
+      <h2 class="text-2xl font-bold">考公求职</h2>
+      <span class="section-arrow">→</span>
+    </a>
+    <p class="text-neutral-500 dark:text-neutral-400 text-sm">职业规划与求职经历</p>
+  </div>
+  <div class="section-content">
+    <div class="career-brief">
+      <p>记录我的考公考编与求职历程，分享经验与心得。</p>
+    </div>
+    <div class="section-more">
+      <a href="{{ relURL "career/" }}" class="more-btn">了解更多 →</a>
+    </div>
+  </div>
+</section>
+
+{{/* ===== 滚动动画 + 样式 ===== */}}
+<style>
+  .home-section { max-width: 1024px; margin: 0 auto; padding: 32px 0; }
+  .section-header { margin-bottom: 24px; }
+  .section-title-link { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: inherit; transition: opacity 0.2s; }
+  .section-title-link:hover { opacity: 0.8; }
+  .section-icon { font-size: 28px; }
+  .section-arrow { font-size: 18px; color: #9ca3af; transition: transform 0.2s; }
+  .section-title-link:hover .section-arrow { transform: translateX(4px); }
+  .section-content { position: relative; }
+
+  /* 分割线 */
+  .section-divider { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 20px 0; max-width: 1024px; margin: 0 auto; }
+  .divider-line { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, #d1d5db, transparent); }
+  .dark .divider-line { background: linear-gradient(90deg, transparent, #4b5563, transparent); }
+  .divider-dot { width: 8px; height: 8px; border-radius: 50%; background: #9ca3af; transition: transform 0.3s; }
+  .section-divider:hover .divider-dot { transform: scale(1.5); background: #6366f1; }
+
+  /* 卡片网格 */
+  .card-grid-4 { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+  .card-grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+
+  /* 视频卡片 */
+  .video-card { display: block; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden; text-decoration: none; color: inherit; transition: all 0.3s; }
+  .dark .video-card { background: #1f2937; }
+  .video-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+  .video-thumb { position: relative; width: 100%; aspect-ratio: 16/9; background: #f3f4f6; overflow: hidden; }
+  .video-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+  .video-card:hover .video-thumb img { transform: scale(1.05); }
+  .video-duration { position: absolute; bottom: 6px; right: 6px; background: rgba(0,0,0,0.8); color: white; font-size: 11px; padding: 2px 6px; border-radius: 4px; }
+  .video-info { padding: 12px; }
+  .video-title { font-size: 14px; font-weight: 600; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 6px; }
+  .video-meta { font-size: 12px; color: #9ca3af; display: flex; gap: 12px; }
+
+  /* 项目卡片 */
+  .project-card { background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 20px; border-left: 4px solid #3b82f6; transition: all 0.3s; }
+  .dark .project-card { background: #1f2937; }
+  .project-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
+  .project-name { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+  .project-name a { color: inherit; text-decoration: none; }
+  .project-name a:hover { color: #3b82f6; }
+  .project-desc { font-size: 13px; color: #6b7280; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-bottom: 10px; }
+  .project-meta { font-size: 12px; color: #9ca3af; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .lang-badge { display: inline-flex; align-items: center; gap: 4px; }
+  .lang-badge::before { content: ''; width: 10px; height: 10px; border-radius: 50%; background: #3b82f6; display: inline-block; }
+
+  /* 游戏卡片 */
+  .game-card { background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden; transition: all 0.3s; }
+  .dark .game-card { background: #1f2937; }
+  .game-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
+  .game-cover { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
+  .game-info { padding: 12px; }
+  .game-title { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+  .game-date { font-size: 12px; color: #9ca3af; margin-bottom: 4px; }
+  .game-score { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-bottom: 6px; }
+  .game-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+  .game-tag { font-size: 11px; background: #eff6ff; color: #2563eb; padding: 2px 8px; border-radius: 10px; }
+  .dark .game-tag { background: #1e3a5f; color: #60a5fa; }
+
+  /* 文章列表 */
+  .article-list { display: flex; flex-direction: column; gap: 12px; }
+  .article-item { display: flex; justify-content: space-between; align-items: center; padding: 14px 16px; background: white; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); text-decoration: none; color: inherit; transition: all 0.2s; }
+  .dark .article-item { background: #1f2937; }
+  .article-item:hover { transform: translateX(4px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+  .article-title { font-weight: 600; font-size: 15px; }
+  .article-date { font-size: 13px; color: #9ca3af; }
+
+  /* 考公求职 */
+  .career-brief { padding: 20px; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); color: #6b7280; }
+  .dark .career-brief { background: #1f2937; color: #9ca3af; }
+
+  /* 查看更多 */
+  .section-more { text-align: center; margin-top: 20px; }
+  .more-btn { display: inline-block; font-size: 14px; color: #6366f1; font-weight: 500; padding: 8px 20px; border: 1px solid #e0e7ff; border-radius: 20px; text-decoration: none; transition: all 0.2s; }
+  .more-btn:hover { background: #6366f1; color: white; border-color: #6366f1; }
+  .dark .more-btn { border-color: #3730a3; color: #818cf8; }
+  .dark .more-btn:hover { background: #4f46e5; border-color: #4f46e5; color: white; }
+
+  /* 滚动动画 */
+  .fade-section { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+  .fade-section.visible { opacity: 1; transform: translateY(0); }
+
+  /* 响应式 */
+  @media (max-width: 640px) {
+    .card-grid-4 { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .card-grid-2 { grid-template-columns: 1fr; }
+    .home-section { padding: 20px 0; }
+    .video-title, .project-desc, .game-title { font-size: 13px; }
+  }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var sections = document.querySelectorAll('.fade-section');
+  if (!sections.length) return;
+
+  function checkVisible() {
+    var wh = window.innerHeight;
+    sections.forEach(function(el) {
+      var rect = el.getBoundingClientRect();
+      if (rect.top < wh * 0.88) {
+        el.classList.add('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', checkVisible, { passive: true });
+  checkVisible();
+});
+</script>
