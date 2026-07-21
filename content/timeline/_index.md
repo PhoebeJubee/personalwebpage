@@ -10,7 +10,7 @@ showReadingTime: false
 <script>
 // 数据由本地脚本 scripts/fetch_bangumi.py 抓取并生成 static/data/bangumi.json
 // 修改 Bangumi 账号请编辑 scripts/config.ini 的 [bangumi] uid，然后重新运行脚本
-const BANGUMI_DATA_URL = '/data/bangumi.json';
+const BANGUMI_DATA_URL = '../data/bangumi.json';
 
 function scoreColor(score) {
   if (score >= 8) return { bg: '#d4edda', fg: '#155724' };

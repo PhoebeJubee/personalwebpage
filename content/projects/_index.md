@@ -7,9 +7,9 @@ showReadingTime: false
 
 这里展示我的开源项目。
 
-<script src="/lib/marked.min.js"></script>
+<script src="../lib/marked.min.js"></script>
 <script>
-const GITHUB_DATA_URL = '/data/github.json';
+const GITHUB_DATA_URL = '../data/github.json';
 
 const LANGUAGE_COLORS = {
   JavaScript: '#f1e05a', TypeScript: '#3178c6', Python: '#3572A5',

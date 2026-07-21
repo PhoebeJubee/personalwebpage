@@ -8,7 +8,7 @@ showReadingTime: false
 这里展示我的游戏视频作品。
 
 <script>
-const BILIBILI_DATA_URL = '/data/bilibili.json';
+const BILIBILI_DATA_URL = '../data/bilibili.json';
 
 function formatNumber(num) {
   num = Number(num) || 0;
