@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """抓取 GitHub 用户仓库并输出为 static/data/github.json。
 
-若 config 中设置了 featured_repos 则只保留指定仓库，否则取 star 最高的前 12 个非 fork 仓库。
+按最近提交时间排序取前 10 个非 fork 仓库，同时读取每个仓库的 README。
+若 config 中设置了 featured_repos 则只保留指定仓库。
 """
+import base64
 import configparser
 import json
 import os
@@ -14,8 +16,12 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_DIR = os.path.join(ROOT, "static", "data")
 OUT_FILE = os.path.join(OUT_DIR, "github.json")
 
-API = "https://api.github.com/users/{username}/repos?sort=updated&per_page=100"
+API_REPOS = "https://api.github.com/users/{username}/repos?sort=pushed&per_page=30"
+API_README = "https://api.github.com/repos/{username}/{repo}/readme"
 HEADERS = {"User-Agent": "PersonalSite/1.0", "Accept": "application/vnd.github+json"}
+
+MAX_README_LEN = 3000
+MAX_REPOS = 10
 
 
 def load_cfg():
@@ -28,12 +34,30 @@ def load_cfg():
 
 
 def fetch_repos(username):
-    resp = requests.get(API.format(username=username), headers=HEADERS, timeout=30)
+    resp = requests.get(API_REPOS.format(username=username), headers=HEADERS, timeout=30)
     resp.raise_for_status()
     return resp.json()
 
 
-def normalize(r):
+def fetch_readme(username, repo):
+    try:
+        resp = requests.get(
+            API_README.format(username=username, repo=repo),
+            headers=HEADERS,
+            timeout=15,
+        )
+        if resp.status_code != 200:
+            return ""
+        data = resp.json()
+        content = base64.b64decode(data.get("content", "")).decode("utf-8", errors="replace")
+        if len(content) > MAX_README_LEN:
+            content = content[:MAX_README_LEN] + "\n\n...(README 已截断)"
+        return content
+    except Exception:
+        return ""
+
+
+def normalize(r, readme=""):
     return {
         "name": r.get("name", ""),
         "description": r.get("description") or "",
@@ -41,8 +65,21 @@ def normalize(r):
         "stargazers_count": r.get("stargazers_count", 0),
         "forks_count": r.get("forks_count", 0),
         "html_url": r.get("html_url", ""),
+        "pushed_at": r.get("pushed_at", ""),
         "topics": r.get("topics") or [],
+        "readme": readme,
     }
+
+
+def _load_existing_hidden():
+    if not os.path.exists(OUT_FILE):
+        return {}
+    try:
+        with open(OUT_FILE, "r", encoding="utf-8") as f:
+            old = json.load(f)
+        return {r["name"]: r.get("hidden", False) for r in old if r.get("name")}
+    except Exception:
+        return {}
 
 
 def main():
@@ -69,10 +106,19 @@ def main():
         wanted = {name.lower() for name in featured}
         repos = [r for r in repos if r.get("name", "").lower() in wanted]
     else:
-        repos.sort(key=lambda r: r.get("stargazers_count", 0), reverse=True)
-        repos = repos[:12]
+        repos = repos[:MAX_REPOS]
 
-    out = [normalize(r) for r in repos]
+    hidden_map = _load_existing_hidden()
+    out = []
+    for r in repos:
+        name = r.get("name", "")
+        print(f"  [github] 读取 {name} 的 README...")
+        readme = fetch_readme(username, name)
+        item = normalize(r, readme)
+        if name in hidden_map:
+            item["hidden"] = hidden_map[name]
+        out.append(item)
+
     os.makedirs(OUT_DIR, exist_ok=True)
     with open(OUT_FILE, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)

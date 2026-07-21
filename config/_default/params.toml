@@ -38,14 +38,42 @@ disableTextInHeader = false
 
 # 作者信息 - 社交链接在这里配置
 [author]
-  name = "YOUR_NAME"
+  name = "PhoebeJubee"
   headline = "自媒体创作者 | 游戏爱好者 | Vibe Coder"
   bio = "这里是我的个人空间"
   
   # 社交链接
   links = [
-    { bilibili = "https://space.bilibili.com/YOUR_BILIBILI_UID" },
-    { zhihu = "https://www.zhihu.com/people/YOUR_ZHIHU_ID" },
-    { douyin = "https://www.douyin.com/user/YOUR_DOUYIN_ID" },
-    { github = "https://github.com/YOUR_GITHUB_USERNAME" }
+    { bilibili = "https://space.bilibili.com/772186" },
+    { github = "https://github.com/PhoebeJubee" }
   ]
+
+# 数据统计 - 在这里手动更新你的粉丝数和Star数
+[stats]
+  [stats.bilibili]
+    name = "Bilibili"
+    followers = 0
+    icon = "tv"
+    color = "#00a1d6"
+    url = "https://space.bilibili.com/YOUR_BILIBILI_UID"
+
+  [stats.zhihu]
+    name = "知乎"
+    followers = 0
+    icon = "zhihu"
+    color = "#0066ff"
+    url = "https://www.zhihu.com/people/YOUR_ZHIHU_ID"
+
+  [stats.douyin]
+    name = "抖音"
+    followers = 0
+    icon = "tiktok"
+    color = "#111111"
+    url = "https://www.douyin.com/user/YOUR_DOUYIN_ID"
+
+  [stats.github]
+    name = "GitHub"
+    stars = 0
+    icon = "github"
+    color = "#24292e"
+    url = "https://github.com/YOUR_GITHUB_USERNAME"

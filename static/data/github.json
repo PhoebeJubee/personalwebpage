@@ -1,12 +1,25 @@
 [
   {
+    "name": "novel-workspaceX",
+    "description": "",
+    "language": "Vue",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "html_url": "https://github.com/PhoebeJubee/novel-workspaceX",
+    "pushed_at": "2026-07-21T03:18:47Z",
+    "topics": [],
+    "readme": "<!-- omit in toc -->\n# Novel Knowledge Base\n\n<div align=\"center\">\n\n![Logo](./docs/images/logo.svg)\n<!-- 如果没有 logo 图片，可以删除这一行或替换为项目截图 -->\n\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\n[![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org/)\n[![Vue](https://img.shields.io/badge/Vue-3-42b883?style=flat-square&logo=vuedotjs)](https://vuejs.org/)\n\n</div>\n\n> 🔮 **LLM/Agent 辅助的小说创作知识库**  \n> 专注于有大纲后的完善，而非凭空生成\n\n<!-- omit in toc -->\n## 📖 目录\n\n- [项目理念](#项目理念)\n- [核心特性](#核心特性)\n- [快速开始](#快速开始)\n- [功能演示](#功能演示)\n- [项目结构](#项目结构)\n- [配置说明](#配置说明)\n- [常见问题](#常见问题)\n- [贡献指南](#贡献指南)\n- [许可证](#许可证)\n\n---\n\n## 项目理念\n\n### 这是什么？\n\nNovel Knowledge Base 是一个面向**有创作经验的小说作者**的工具，旨在帮助你：\n\n1. **结构化管理**小说元素（人物、剧情、世界观、时间线、地图）\n2. **借助 LLM** 丰富和完善已有的创作大纲\n3. **集中管理**角色设定、场景描述、势力关系等资源\n\n### 这不是什么？\n\n| ✅ 适合场景 | ❌ 不适合场景 |\n|------------|--------------|\n| 已有大纲，完善细节 | 完全没有想法，让 AI 全写 |\n| 管理大量角色关系 | 简单的一句话创意 |\n| 保持世界观一致性 | 快速生成短篇 |\n| 梳理复杂时间线 | 替代你的创作工作 |\n\n> ⚠️ **核心理念**：如果你想\"给几个词就让 AI 写一篇小说\"，这不是你需要的工具。我们相信 AI 是创作的**辅助**，而非替代。\n\n---\n\n## 核心特性\n\n### 📁 知识库管理\n\n- 🧑 **人物卡片** — 基本信息、外貌、性格、背景、人物关系\n- 📜 **剧情大纲** — 章节管理、大纲编辑、剧情串联\n- 🌍 **世界观设定** — 地理、势力、规则、设定文档\n- ⏰ **时间线梳理** — 事件编年、因果关系\n- 🗺️ **地图与地点** — 场景管理、地理位置关联\n\n### 🤖 AI 辅助能力\n\n- 🔗 **多 API 支持** — OpenAI 兼容格式，支持主流 LLM 提供商\n- 💬 **角色对话模拟** — 与角色\"对话\"，探索人物反应\n- ✍️ **文风一致性检查** — 验证新内容是否符合已有风格\n- 🔍 **剧情逻辑验证** — 检测时间线冲突、人物行为合理性\n- 💡 **细节扩展** — 基于大纲自动生成场景描写、对话等\n\n### 📝 数据存储\n\n- 📄 **Markdown 格式** — 纯文本存储，便于版本控制\n- 🖼️ **图片上传** — 支持角色立绘、场景图、地图\n- 🔄 **数据迁移** — 简单文件结构，方便备份和迁移\n\n---\n\n## 快速开始\n\n### 环境要求\n\n- Node.js >= 18.0.0\n- npm 或 yarn\n\n### 安装步骤\n\n```bash\n# 1. 克隆项目\ngit clone https://github.com/YOUR_USERNAME/novel-knowledge-base.git\ncd novel-knowledge-base\n\n# 2. 安装后端依赖\nnpm install\n\n# 3. 安装前端依赖\ncd client && npm install && cd ..\n\n# 4. 配置 API\ncp config/api-config.json.example config/api-config.json\n# 编辑 config/api-config.json，填入你的 API Key\n\n# 5. 启动开发服务器\nnpm run dev\n```\n\n访问 `http://localhost:5173` 即可使用。\n\n### 使用 Docker（可选）\n\n```bash\n# 构建镜像\ndocker build -t novel-knowledge-base .\n\n# 运行容器\ndocker run -p 3000:3000 -p 5173:5173 \\\n  -v $(pwd)/config:/app/config \\\n  -v $(pwd)/data:/app/data \\\n  novel-knowledge-base\n```\n\n---\n\n## 功能演示\n\n### 创建角色卡片\n\n1. 进入「人物」模块\n2. 点击「新建角色」\n3. 填写基本信息（姓名、性别、年龄、身份）\n4. 编写详细描述（外貌、性格、背景、关系）\n5. 上传角色立绘（可选）\n\n### 与 AI 对话\n\n1. 选中一个角色\n2. 切换到「对话」模式\n3. 输入你想探索的场景或问题\n4. AI 以该角色的视角回复\n\n### 剧情逻辑检查\n\n1. 完成一段新章节\n2. 点击「逻辑检查」\n3. AI 会指出：\n   - 时间线冲突\n   - 人物行为不一致\n   - 世界观设定矛盾\n\n---\n\n## 项目结构\n\n```\nnovel-knowledge-base/\n├── client/                     # 前端 Vue 项目\n│   ├── src/\n│   │   ├── components/        # Vue 组件\n│   │   ├── views/             # 页面视图\n│   │   ├── stores/            # 状态管理\n│   │   └── App.vue            # 根组件\n│   ├── public/                # 静态资源\n│   └── package.json\n│\n├── server/                     # 后端 Express 服务\n│   ├── routes/                # API 路由\n│   ├── services/              # 业务逻辑\n│   └── index.js               # 服务入口\n│\n├── config/                     # 配置文件\n│   ├── api-config\n\n...(README 已截断)"
+  },
+  {
     "name": "BackTestX",
     "description": "",
     "language": "Python",
     "stargazers_count": 1,
     "forks_count": 0,
     "html_url": "https://github.com/PhoebeJubee/BackTestX",
-    "topics": []
+    "pushed_at": "2026-07-05T11:53:34Z",
+    "topics": [],
+    "readme": "<div align=\"center\">\n  <h1>📈 A股量化分析 · 定投回测 · 市场情绪系统</h1>\n  <p><strong>Quantitative Analysis · DCA Backtest · Sentiment Dashboard for China A-Share Market</strong></p>\n  <p>多策略对比 · Walk-Forward 网格搜索 · 智能定投 · 强化学习交易 · 板块情绪分析 · Streamlit Web App</p>\n  <p>\n    <img src=\"https://img.shields.io/badge/Python-3.10-blue\" alt=\"Python\">\n    <img src=\"https://img.shields.io/badge/Streamlit-1.57-red\" alt=\"Streamlit\">\n    <img src=\"https://img.shields.io/badge/AKShare-1.18-green\" alt=\"AKShare\">\n    <img src=\"https://img.shields.io/badge/License-MIT-yellow\" alt=\"License\">\n    <img src=\"https://img.shields.io/github/last-commit/your-username/stock_history_analysis\" alt=\"Last Commit\">\n  </p>\n</div>\n\n---\n\n## 🌟 简介 | Introduction\n\nA股定投回测系统是一个功能全面的 **定投策略回测 Web 应用**，支持：\n\n- **6 种定投频率**：每日 / 每周 / 每两周 / 每月 / 每季度 / 每年\n- **7 种智能定投策略**：均线偏离 / 估值定投 / 成本定投 / 价值平均 / 下跌加仓 / 网格交易 / 趋势定投\n- **事件驱动策略**：下跌加仓法（跌幅触发买入）\n- **一次性投入对比**：作为基准对照\n- **Walk-Forward 网格搜索**：自动寻找最优参数组合\n- **多策略同图叠加对比**：收益率、持仓市值、累计投入一览无余\n- **🤖 DQN 强化学习交易系统**：RL 交易智能体，支持实时信号、模型持久化、超参搜索\n- **🧠 分层强化学习 (PPO+DQN)**：上层 PPO 择时 + 下层 DQN 选股，多 ETF 组合管理，交易记录明细，多基准对比（等权持有/月定投/均线偏离定投/单ETF全仓）\n- **📋 代码管理中心**：统一代码注册表，缓存优先数据获取，RL 勾选使用\n- **📊 情绪数据看板**：东方财富股吧/新闻情感分析 + 板块综合情绪排行（5 因子加权），一键导出 PNG 报告\n- **🔄 后台任务管理**：RL 训练/HP 搜索异步队列，实时进度曲线，结果持久化，重训练\n\n> 数据来源：东方财富 (East Money) → AKShare 接口，支持个股 / ETF / LOF / 开放式基金 / 指数，自动缓存、自动降级、自动跨类型回退。\n\n>> **强化学习**：基于 DQN 的交易智能体，支持 3 种系统版本（basic/1.0/2.0），Walk-Forward 超参搜索，模型持久化，实时交易信号。\n\n---\n\n## ✨ 核心特性 | Features\n\n### 📊 定投回测\n| 特性 | 说明 |\n|------|------|\n| 多频率对比 | 最多 6 种频率同图对比，高亮最优收益率 |\n| 日均投入语义 | 输入\"日均投入\"，各频率自动按交易日乘数换算，投入可比 |\n| XIRR 年化 | 牛顿法求解内部收益率，精确计算不规则现金流年化收益 |\n| 总投资上限 | 达到上限自动停止，模拟真实资金约束 |\n| 市值 / 投入 / 收益率三图 | Plotly 交互式叠加图，hover 统一显示 |\n\n### 🧠 智能策略\n| 策略 | 核心逻辑 | 参考来源 |\n|------|----------|----------|\n| **均线偏离法** | 价格低于均线多投(≤2x)，高于均线少投(≥0.5x) | 支付宝/天天基金慧定投 |\n| **估值定投法** | PE/PB 百分位，低估加仓(≥max)，高估减仓(≤min) | 天天基金/各基金公司 |\n| **成本定投法** | 净值低于持仓成本多投，高于成本少投 | 各平台成本模式 |\n| **价值平均法** | 设定目标市值路径，不足补足，超出卖出 | Michael Edelson 经典 |\n| **下跌加仓法** | 日跌幅超过 X% 时触发买入 Y 元，事件驱动 | 常见量化策略 |\n| **网格交易法** | 预设价格网格，跌一格买入，涨一格卖出 | 量化交易/ETF |\n| **趋势定投法** | MA20/MA120 金叉多投(1.5x)，死叉少投(0.5x) | 华安基金/各银行 |\n\n### 🔬 网格搜索\n- **超参数遍历**：对 X（跌幅阈值）、Y（买入金额）进行全面网格扫描\n- **Walk-Forward 交叉验证**：将时间序列切为 N 折，每折依次作为验证集，防止过拟合\n- **全局最优 + 每折最优**：展示不同市场环境下的最优参数变化\n- **参数热力图**：RdYlGn 色阶直观展示参数敏感度\n- **结果持久化**：每次搜索自动保存（Parquet + JSON），支持历史结果加载回看\n\n### 🧮 智能定投实时测算\n| 特性 | 说明 |\n|------|------|\n| **7 种策略实时计算** | 均线偏离 / 估值定投 / 成本定投 / 价值平均 / 下跌加仓 / 网格交易 / 趋势定投 |\n| **从代码库选标** | SymbolRegistry 下拉选择，自动获取数据，无需手动输入代码 |\n| **金额参数** | 仅设最低/最高金额，基准自动取中点；价格=均线时投中点 |\n| **可调参数** | 均线周期 / 调整斜率 / PE 百分位阈值 / 网格层数 / 均线周期等 |\n| **结果对比** | 表格 + 排行卡片 + 每个策略的详情展开（信号、金额、指标、计算过程） |\n| **历史回测验证** | 逐周回测均线偏离法（无未来函数），双轴对比图（建议金额 vs 净值 + MA），偏离度辅助图，逐周明细表 |\n\n### 🤖 强化学习交易系统\n\n| 特性 | 说明 |\n|------|------|\n| **算法** | DQN (Deep Q-Network) 双网络架构，经验回放 |\n| **状态空间** | 18 维特征向量（价格、均线、布林带、ATR、ADX、CCI、KDJ、RSI、成交量、溢价率） |\n| **动作空间** | 离散 {-1, 0, 1} = {卖出, 持有, 买入}，全仓交易 |\n| **奖励函数** | 滚动窗口组合收益率（10 步），最后一笔使用总收益率 |\n| **交易成本** | \n\n...(README 已截断)"
   },
   {
     "name": "PatentPreOne",
@@ -15,16 +28,20 @@
     "stargazers_count": 1,
     "forks_count": 0,
     "html_url": "https://github.com/PhoebeJubee/PatentPreOne",
-    "topics": []
+    "pushed_at": "2026-06-18T01:48:55Z",
+    "topics": [],
+    "readme": "<div align=\"center\">\n  <h1>🧾 PatentPreOne</h1>\n  <p><strong>LLM-Powered Patent Preliminary Examination (预审) Assistant</strong></p>\n  <p>按《专利审查指南(2023)》逐条筛查 · 自动出具结构化报告 · 全 Gradio Web UI</p>\n  <p>\n    <img src=\"https://img.shields.io/badge/Python-3.10+-blue\" alt=\"Python\">\n    <img src=\"https://img.shields.io/badge/Gradio-6.x-red\" alt=\"Gradio\">\n    <img src=\"https://img.shields.io/badge/LLM-OpenAI%20Compatible-green\" alt=\"LLM\">\n    <img src=\"https://img.shields.io/badge/RAG-BGE--M3-orange\" alt=\"RAG\">\n    <img src=\"https://img.shields.io/badge/License-MIT-yellow\" alt=\"License\">\n  </p>\n</div>\n\n---\n\n## 🌟 简介 | Introduction\n\n**PatentPreOne** 是一个基于 LLM 的中国专利 **预审（Preliminary Examination）** 辅助系统。在正式向国知局提交专利申请之前，帮助代理机构快速筛查形式缺陷与明显实质性缺陷，提升申请质量、加速审查流程。\n\n> 预审 ≠ 实审：预审是正式提交前的快速筛查通道（由地方知识产权保护中心执行，1-30 个工作日），通过后可进入国知局快速审查通道；实审是提交后由国知局进行的正式法定审查程序，直接决定授权与否。PatentPreOne 服务于 **预审** 阶段。\n\n> 如果你在专利行业工作（预审员、代理人、申请人），或者对 LLM + 法律 AI 应用感兴趣，欢迎试用并提出宝贵意见！\n\n### 6 项预审检查项\n\n| # | 审查项 | 对应法条 | Agent 职责 |\n|---|--------|----------|-----------|\n| 1 | 🛡️ 保护客体 | 专利法第 2、5、25 条 | 判断是否属于技术方案，排除不授权主题 |\n| 2 | ⚙️ 实用性 | 专利法第 22 条第 4 款 | 判断是否能在产业上制造或使用 |\n| 3 | 📖 充分公开 | 专利法第 26 条第 3 款 | 判断说明书是否清楚、完整、能实现 |\n| 4 | ✏️ 清楚/支持 | 专利法第 26 条第 4 款 | 判断权利要求是否清楚、以说明书为依据 |\n| 5 | 🔍 新颖性 | 专利法第 22 条第 2 款 | 单独对比原则，逐权利要求比对 |\n| 6 | 💡 创造性 | 专利法第 22 条第 3 款 | 三步法分析，含对比文件组合评价 |\n\n### 预审 vs 实审\n\n| 对比维度 | 预审（PatentPreOne 适用场景） | 实审 |\n|---------|----------------------------|------|\n| **阶段** | 正式提交 **前** | 正式提交 **后**（3 年内请求） |\n| **执行机构** | 地方知识产权保护中心 | 国家知识产权局（CNIPA） |\n| **审查性质** | 前置快速筛查，非正式程序 | 正式法定审查程序 |\n| **审查内容** | 形式缺陷 + 明显实质性缺陷 + 初步三性判断 | 全面实质审查（新颖性/创造性/实用性等） |\n| **法律效力** | 不产生授权效力，通过后进入快速通道 | 直接决定授权或驳回 |\n| **审查周期** | 1-30 个工作日 | 发明 24-36 个月（快速通道 3-6 个月） |\n\n---\n\n## ✨ 核心特性 | Features\n\n### 🔬 审查能力\n\n| 特性 | 说明 |\n|------|------|\n| **全流程自动化** | 上传专利 → 自动解析 → 6 项顺序审查 → 生成结构化报告 |\n| **逐权利要求审查** | 新颖性、创造性按每项权利要求独立评价，给出 status + reason + confidence |\n| **RAG 增强** | 每个 Agent 自动检索审查指南相关条款，输出附带证据链 |\n| **自动跳过** | 新颖性全部不通过时自动跳过创造性，模拟真实审查流程 |\n| **可信度评分** | 每条结论附带 0-100% 置信度，基于证据充分程度 |\n\n### 🗂️ 多文件管理\n\n| 特性 | 说明 |\n|------|------|\n| **专利文件解析** | 支持 PDF / DOC / DOCX / TXT，自动提取标题、摘要、权利要求、说明书 |\n| **对比文件管理** | 上传多份对比文件，分别标记用途（新颖性单独对比 / 创造性三步法） |\n| **申请库管理** | 可创建专利申请记录并关联文件，支持按名称/申请人筛选 |\n| **审查历史** | 所有任务持久化，支持回看报告、重新审查 |\n\n### 🔌 模型与 API\n\n| 特性 | 说明 |\n|------|------|\n| **多 API 管理** | UI 中直接添加 / 编辑 / 删除 API 配置（base\\_url + api\\_key + model） |\n| **兼容任意 OpenAI 接口** | DeepSeek / GPT / Qwen / GLM / 本地 ollama 等 |\n| **流式输出** | 实时展示 LLM 推理过程，审查进度一目了然 |\n| **自动重试** | 低置信度时自动强制 JSON 模式重试，提高成功率 |\n\n### 📊 报告输出\n\n| 特性 | 说明 |\n|------|------|\n| **HTML 报告** | 彩色状态卡片（合规/违规/存疑/跳过），含法条依据、理由、修改建议 |\n| **Markdown 报告** | 适合复制、粘贴到其他文档系统 |\n| **风险雷达** | 6 项审查结果综合雷达图，含通过概率和风险分类 |\n| **逐权利要求详情** | 可展开表格，展示每项权利要求的独立评价和证据链 |\n\n---\n\n## 🏗️ 系统架构 | Architecture\n\n```\n用户 (Gradio UI)\n      │\n      ▼\n┌─────────────────┐     ┌──────────────────┐\n│  申请管理 Service │────▶│  审查管道 Pipeline │\n└─────────────────┘     └────────┬─────────┘\n                                 │\n          ┌──────────────\n\n...(README 已截断)"
   },
   {
     "name": "fund_monitor",
     "description": "一款用于监控投资基金每日限购额的web/Android应用。",
     "language": "Python",
-    "stargazers_count": 0,
+    "stargazers_count": 1,
     "forks_count": 0,
     "html_url": "https://github.com/PhoebeJubee/fund_monitor",
-    "topics": []
+    "pushed_at": "2026-05-06T08:01:05Z",
+    "topics": [],
+    "readme": "# 基金限购监控APP\n\n一款用于监控投资基金每日限购额的web/Android应用。\n\n## 功能特性\n\n- ✅ 监控基金日限购额\n- ✅ 实时查看申购状态\n- ✅ 基金代码搜索\n- ✅ 数据自动刷新\n- ✅ 本地数据持久化\n\n## 安装使用\n\n### 1. 安装依赖\n\n```bash\npip install -r requirements.txt\n```\n\n### 2. 运行调试\n\n```bash\npython main.py\n```\n\n### 3. 构建Android APK\n\n```bash\nflet build apk --platform android\n```\n\n## 项目结构\n\n```\nfund_monitor_app/\n├── main.py              # 应用入口\n├── lib/\n│   ├── fund_service.py    # 基金数据服务\n│   └── components.py    # UI组件\n├── requirements.txt    # 依赖\n└── README.md\n```\n\n## 技术栈\n\n- **UI框架**: Flet (Flutter for Python)\n- **数据源**: AkShare (东方财富/天天基金)\n- **目标平台**: Android/iOS/Web\n\n## 数据API说明\n\n数据来源于东方财富天天基金网:\n- 接口: fund_purchase_em()\n- 字段: 日累计限定金额, 申购状态, 赎回状态等\n\n> 注意: 限额数据仅为参考，实际以基金公司公告为准。\n"
   },
   {
     "name": "18645-",
@@ -33,7 +50,10 @@
     "stargazers_count": 0,
     "forks_count": 0,
     "html_url": "https://github.com/PhoebeJubee/18645-",
-    "topics": []
+    "pushed_at": "2019-03-26T00:47:21Z",
+    "topics": [],
+    "readme": "",
+    "hidden": true
   },
   {
     "name": "Hello-world",
@@ -42,6 +62,9 @@
     "stargazers_count": 0,
     "forks_count": 0,
     "html_url": "https://github.com/PhoebeJubee/Hello-world",
-    "topics": []
+    "pushed_at": "2016-07-17T12:32:38Z",
+    "topics": [],
+    "readme": "# Hello-world",
+    "hidden": true
   }
 ]

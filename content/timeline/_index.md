@@ -83,7 +83,12 @@ async function loadBangumiData() {
       container.innerHTML = '<p style="color: #666;">暂无游戏记录，请先运行 scripts/fetch_bangumi.py 抓取数据。</p>';
       return;
     }
-    container.innerHTML = renderStats(games) + games.map(renderGameCard).join('');
+    const visible = games.filter(g => !g.hidden);
+    if (visible.length === 0) {
+      container.innerHTML = '<p style="color: #666;">所有游戏记录已隐藏。</p>';
+      return;
+    }
+    container.innerHTML = renderStats(visible) + visible.map(renderGameCard).join('');
   } catch (error) {
     console.error('加载 Bangumi 数据失败:', error);
     container.innerHTML = `

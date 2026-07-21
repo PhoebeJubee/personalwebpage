@@ -62,6 +62,17 @@ def normalize(item):
     }
 
 
+def _load_existing_hidden():
+    if not os.path.exists(OUT_FILE):
+        return {}
+    try:
+        with open(OUT_FILE, "r", encoding="utf-8") as f:
+            old = json.load(f)
+        return {g["name"]: g.get("hidden", False) for g in old if g.get("name")}
+    except Exception:
+        return {}
+
+
 def main():
     uid = load_uid()
     if not uid or uid == "YOUR_BANGUMI_UID":
@@ -81,7 +92,11 @@ def main():
             json.dump([], f, ensure_ascii=False, indent=2)
         return
 
+    hidden_map = _load_existing_hidden()
     games = [normalize(it) for it in raw]
+    for g in games:
+        if g["name"] in hidden_map:
+            g["hidden"] = hidden_map[g["name"]]
     os.makedirs(OUT_DIR, exist_ok=True)
     with open(OUT_FILE, "w", encoding="utf-8") as f:
         json.dump(games, f, ensure_ascii=False, indent=2)

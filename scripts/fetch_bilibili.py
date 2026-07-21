@@ -143,6 +143,17 @@ def normalize(v):
     }
 
 
+def _load_existing_hidden():
+    if not os.path.exists(OUT_FILE):
+        return {}
+    try:
+        with open(OUT_FILE, "r", encoding="utf-8") as f:
+            old = json.load(f)
+        return {v["bvid"]: v.get("hidden", False) for v in old if v.get("bvid")}
+    except Exception:
+        return {}
+
+
 def main():
     uid = load_uid()
     if not uid or uid == "YOUR_BILIBILI_UID":
@@ -162,7 +173,11 @@ def main():
             json.dump([], f, ensure_ascii=False, indent=2)
         return
 
+    hidden_map = _load_existing_hidden()
     videos = [normalize(v) for v in raw]
+    for v in videos:
+        if v["bvid"] in hidden_map:
+            v["hidden"] = hidden_map[v["bvid"]]
     os.makedirs(OUT_DIR, exist_ok=True)
     with open(OUT_FILE, "w", encoding="utf-8") as f:
         json.dump(videos, f, ensure_ascii=False, indent=2)

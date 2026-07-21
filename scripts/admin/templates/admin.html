@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>个人网站管理面板</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  .tab-active { border-bottom: 2px solid #3b82f6; color: #3b82f6; font-weight: 600; }
+  .json-editor { font-family: 'Menlo', 'Monaco', 'Courier New', monospace; font-size: 13px; line-height: 1.5; tab-size: 2; }
+  .fade-in { animation: fadeIn 0.2s ease-in; }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  .pulse { animation: pulse 1.5s infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+  .preview-frame { width: 100%; border: 1px solid #e5e7eb; border-radius: 8px; background: white; }
+  .item-row { transition: all 0.15s; }
+  .item-row:hover { background: #f9fafb; }
+  .item-row.is-hidden { opacity: 0.45; }
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+<div class="max-w-6xl mx-auto px-4 py-6">
+  <div class="flex items-center justify-between mb-6">
+    <h1 class="text-2xl font-bold text-gray-800">个人网站管理面板</h1>
+    <div class="flex gap-2">
+      <button onclick="refreshStatus()" class="px-3 py-1.5 text-sm bg-gray-100 hover:bg-gray-200 rounded-lg transition">刷新状态</button>
+      <button onclick="fetchAll()" id="btn-fetch-all" class="px-3 py-1.5 text-sm bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition">全部抓取</button>
+    </div>
+  </div>
+
+  <div id="status-bar" class="hidden mb-4 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+    <div class="flex items-center gap-2">
+      <span class="pulse inline-block w-2 h-2 bg-blue-500 rounded-full"></span>
+      <span id="status-text" class="text-sm text-blue-700">抓取中...</span>
+    </div>
+    <pre id="status-log" class="mt-2 text-xs text-gray-600 max-h-40 overflow-y-auto whitespace-pre-wrap"></pre>
+  </div>
+
+  <div class="flex gap-1 border-b border-gray-200 mb-6">
+    <button onclick="switchTab('config')" id="tab-config" class="px-4 py-2 text-sm text-gray-600 hover:text-gray-800 transition">配置</button>
+    <button onclick="switchTab('data')" id="tab-data" class="px-4 py-2 text-sm text-gray-600 hover:text-gray-800 transition">数据</button>
+    <button onclick="switchTab('preview')" id="tab-preview" class="px-4 py-2 text-sm text-gray-600 hover:text-gray-800 transition">预览</button>
+  </div>
+
+  <!-- Config -->
+  <div id="panel-config" class="hidden fade-in">
+    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+      <h2 class="text-lg font-semibold mb-4">config.ini</h2>
+      <div id="config-form"></div>
+      <button onclick="saveConfig()" class="mt-4 px-4 py-2 bg-green-500 hover:bg-green-600 text-white text-sm rounded-lg transition">保存配置</button>
+    </div>
+  </div>
+
+  <!-- Data -->
+  <div id="panel-data" class="hidden fade-in">
+    <div class="flex gap-2 mb-4">
+      <button onclick="switchSource('bangumi')" id="src-bangumi" class="px-3 py-1.5 text-sm rounded-lg transition">Bangumi</button>
+      <button onclick="switchSource('bilibili')" id="src-bilibili" class="px-3 py-1.5 text-sm rounded-lg transition">Bilibili</button>
+      <button onclick="switchSource('github')" id="src-github" class="px-3 py-1.5 text-sm rounded-lg transition">GitHub</button>
+    </div>
+    <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+      <div class="flex items-center justify-between mb-3">
+        <div>
+          <h2 id="data-title" class="text-lg font-semibold">数据编辑</h2>
+          <p id="data-meta" class="text-xs text-gray-400 mt-1"></p>
+        </div>
+        <div class="flex gap-2">
+          <button onclick="fetchSource()" class="px-3 py-1.5 text-sm bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition">重新抓取</button>
+          <button onclick="saveData()" class="px-3 py-1.5 text-sm bg-green-500 hover:bg-green-600 text-white rounded-lg transition">保存</button>
+        </div>
+      </div>
+      <textarea id="json-editor" class="json-editor w-full h-96 border border-gray-200 rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-blue-200 resize-y"></textarea>
+      <p id="save-msg" class="text-sm text-green-600 mt-2 hidden">已保存</p>
+    </div>
+  </div>
+
+  <!-- Preview -->
+  <div id="panel-preview" class="hidden fade-in">
+    <div class="flex gap-2 mb-4">
+      <button onclick="switchPreview('bilibili')" id="prev-bilibili" class="px-3 py-1.5 text-sm rounded-lg transition">Bilibili</button>
+      <button onclick="switchPreview('github')" id="prev-github" class="px-3 py-1.5 text-sm rounded-lg transition">GitHub</button>
+      <button onclick="switchPreview('bangumi')" id="prev-bangumi" class="px-3 py-1.5 text-sm rounded-lg transition">Bangumi</button>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <!-- iframe preview -->
+      <div class="lg:col-span-2">
+        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-4">
+          <div class="flex items-center justify-between mb-3">
+            <h2 id="preview-title" class="text-lg font-semibold">页面预览</h2>
+            <button onclick="refreshIframe()" class="px-3 py-1 text-xs bg-gray-100 hover:bg-gray-200 rounded-lg transition">刷新</button>
+          </div>
+          <div id="iframe-container" class="relative rounded-lg overflow-hidden border border-gray-100" style="height: 600px;">
+            <iframe id="preview-iframe" class="preview-frame" style="width:100%;height:100%;border:none;"></iframe>
+            <div id="iframe-loading" class="absolute inset-0 flex items-center justify-center bg-white/80 text-gray-400 text-sm">
+              加载中...
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- item list with hide toggles -->
+      <div class="lg:col-span-1">
+        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-4" style="max-height: 680px; overflow-y: auto;">
+          <h3 class="text-sm font-semibold text-gray-500 mb-3">条目列表 <span id="item-count" class="font-normal text-gray-400"></span></h3>
+          <div id="item-list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const API = '';
+const HUGO_URL = '{{ hugo_url }}';
+let currentSource = 'bangumi';
+let currentPreview = 'bilibili';
+let statusTimer = null;
+let previewData = [];
+
+async function api(method, path, body) {
+  const opts = { method, headers: { 'Content-Type': 'application/json' } };
+  if (body !== undefined) opts.body = JSON.stringify(body);
+  const r = await fetch(API + path, opts);
+  return r.json();
+}
+
+async function refreshStatus() {
+  const status = await api('GET', '/api/status');
+  for (const [src, info] of Object.entries(status)) {
+    const el = document.getElementById(`src-${src}`);
+    if (el) {
+      const count = info.count || 0;
+      const hidden = info.hidden_count || 0;
+      const mtime = info.mtime || '未抓取';
+      const label = src === 'bangumi' ? 'Bangumi' : src === 'bilibili' ? 'Bilibili' : 'GitHub';
+      el.textContent = `${label} (${count}条${hidden > 0 ? ' · ' + hidden + '隐藏' : ''} · ${mtime})`;
+    }
+  }
+}
+
+function switchTab(tab) {
+  ['config', 'data', 'preview'].forEach(t => {
+    document.getElementById(`panel-${t}`).classList.toggle('hidden', t !== tab);
+    document.getElementById(`tab-${t}`).classList.toggle('tab-active', t === tab);
+  });
+  if (tab === 'config') loadConfig();
+  if (tab === 'data') loadData();
+  if (tab === 'preview') loadPreview();
+}
+
+function switchSource(src) {
+  currentSource = src;
+  loadData();
+}
+
+function switchPreview(src) {
+  currentPreview = src;
+  updatePreviewButtons();
+  loadPreview();
+}
+
+function updatePreviewButtons() {
+  ['bangumi','bilibili','github'].forEach(s => {
+    const pe = document.getElementById(`prev-${s}`);
+    if (pe) pe.classList.toggle('bg-blue-100', s === currentPreview);
+    const se = document.getElementById(`src-${s}`);
+    if (se) se.classList.toggle('bg-blue-100', s === currentSource);
+  });
+}
+
+async function loadConfig() {
+  const cfg = await api('GET', '/api/config');
+  const form = document.getElementById('config-form');
+  form.innerHTML = '';
+  for (const [section, items] of Object.entries(cfg)) {
+    const div = document.createElement('div');
+    div.className = 'mb-4';
+    div.innerHTML = `<h3 class="text-sm font-semibold text-gray-500 uppercase mb-2">[${section}]</h3>`;
+    for (const [key, val] of Object.entries(items)) {
+      if (key.startsWith('_')) continue;
+      div.innerHTML += `
+        <div class="flex items-center gap-3 mb-2">
+          <label class="text-sm text-gray-600 w-40 shrink-0">${key}</label>
+          <input data-section="${section}" data-key="${key}" value="${escHtml(val)}" class="flex-1 px-3 py-1.5 text-sm border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-200">
+        </div>`;
+    }
+    form.appendChild(div);
+  }
+}
+
+async function saveConfig() {
+  const inputs = document.querySelectorAll('#config-form input[data-section]');
+  const cfg = {};
+  inputs.forEach(inp => {
+    const s = inp.dataset.section, k = inp.dataset.key;
+    if (!cfg[s]) cfg[s] = {};
+    cfg[s][k] = inp.value;
+  });
+  await api('PUT', '/api/config', cfg);
+  alert('配置已保存');
+}
+
+async function loadData() {
+  const data = await api('GET', `/api/data/${currentSource}`);
+  const editor = document.getElementById('json-editor');
+  editor.value = JSON.stringify(data, null, 2);
+  const count = Array.isArray(data) ? data.length : 0;
+  document.getElementById('data-title').textContent = `${currentSource} 数据`;
+  document.getElementById('data-meta').textContent = `${count} 条记录`;
+  document.getElementById('save-msg').classList.add('hidden');
+  updatePreviewButtons();
+}
+
+async function saveData() {
+  try {
+    const data = JSON.parse(document.getElementById('json-editor').value);
+    await api('PUT', `/api/data/${currentSource}`, data);
+    document.getElementById('save-msg').classList.remove('hidden');
+    refreshStatus();
+  } catch (e) {
+    alert('JSON 格式错误: ' + e.message);
+  }
+}
+
+async function fetchSource() {
+  await api('POST', `/api/fetch/${currentSource}`);
+  pollStatus();
+}
+
+async function fetchAll() {
+  await api('POST', '/api/fetch/all');
+  pollStatus();
+}
+
+function pollStatus() {
+  document.getElementById('status-bar').classList.remove('hidden');
+  if (statusTimer) clearInterval(statusTimer);
+  statusTimer = setInterval(async () => {
+    const s = await api('GET', '/api/fetch/status');
+    document.getElementById('status-log').textContent = s.log.join('\n');
+    document.getElementById('status-text').textContent = s.running
+      ? `正在抓取 ${s.current}...`
+      : '抓取完成';
+    if (!s.running) {
+      clearInterval(statusTimer);
+      statusTimer = null;
+      refreshStatus();
+      if (currentSource && !document.getElementById('panel-data').classList.contains('hidden')) {
+        loadData();
+      }
+    }
+  }, 1000);
+}
+
+// ── Preview (iframe + item list) ────────────────────────────────
+
+function getSourceLabel(src) {
+  return src === 'bangumi' ? 'Bangumi' : src === 'bilibili' ? 'Bilibili' : 'GitHub';
+}
+
+function getItemTitle(item) {
+  if (item.title) return item.title;
+  if (item.name_cn || item.name) return item.name_cn || item.name;
+  if (item.name) return item.name;
+  return '(无标题)';
+}
+
+async function loadPreview() {
+  const data = await api('GET', `/api/data/${currentPreview}`);
+  previewData = Array.isArray(data) ? data : [];
+
+  const slug = PAGE_MAP[currentPreview];
+  const iframe = document.getElementById('preview-iframe');
+  iframe.src = `${HUGO_URL}/${slug}/`;
+  document.getElementById('preview-title').textContent = `${getSourceLabel(currentPreview)} 预览`;
+
+  iframe.onload = () => {
+    document.getElementById('iframe-loading').classList.add('hidden');
+  };
+
+  renderItemList();
+}
+
+const PAGE_MAP = { bangumi: 'timeline', bilibili: 'gaming', github: 'projects' };
+
+function renderItemList() {
+  const container = document.getElementById('item-list');
+  const countEl = document.getElementById('item-count');
+  const visible = previewData.filter(d => !d.hidden);
+  const hidden = previewData.filter(d => d.hidden);
+  countEl.textContent = `(${visible.length} 显示 / ${hidden.length} 隐藏)`;
+
+  if (previewData.length === 0) {
+    container.innerHTML = '<p class="text-gray-400 text-sm">暂无数据</p>';
+    return;
+  }
+
+  container.innerHTML = previewData.map((item, idx) => {
+    const isHidden = !!item.hidden;
+    const title = getItemTitle(item);
+    return `
+      <div class="item-row flex items-center gap-2 py-2 px-2 rounded-lg border-b border-gray-50 ${isHidden ? 'is-hidden' : ''}">
+        <button onclick="toggleHidden(${idx})" class="shrink-0 w-7 h-7 flex items-center justify-center rounded-full transition ${isHidden ? 'bg-red-50 text-red-400 hover:bg-red-100' : 'bg-green-50 text-green-500 hover:bg-green-100'}" title="${isHidden ? '显示' : '隐藏'}">
+          ${isHidden
+            ? '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>'
+            : '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>'
+          }
+        </button>
+        <div class="flex-1 min-w-0">
+          <div class="text-sm truncate ${isHidden ? 'text-gray-400' : 'text-gray-700'}">${escHtml(title)}</div>
+        </div>
+        ${isHidden ? '<span class="text-xs text-red-400 shrink-0">已隐藏</span>' : ''}
+      </div>
+    `;
+  }).join('');
+}
+
+async function toggleHidden(idx) {
+  const item = previewData[idx];
+  if (!item) return;
+  const wasHidden = !!item.hidden;
+  await api('POST', `/api/toggle-hidden/${currentPreview}`, { index: idx });
+  previewData[idx].hidden = !wasHidden;
+  renderItemList();
+  refreshIframe();
+  refreshStatus();
+}
+
+function refreshIframe() {
+  const iframe = document.getElementById('preview-iframe');
+  const loading = document.getElementById('iframe-loading');
+  loading.classList.remove('hidden');
+  iframe.src = iframe.src;
+}
+
+function escHtml(s) {
+  return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+refreshStatus();
+switchTab('data');
+</script>
+</body>
+</html>

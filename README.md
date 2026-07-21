@@ -64,12 +64,29 @@ uid = 你的B站UID
 
 [github]
 username = 你的GitHub用户名
-featured_repos =        ; 可选，逗号分隔；留空则自动取 star 最高的前 12 个非 fork 仓库
+featured_repos =        ; 可选，逗号分隔；留空则自动取最近提交的前 10 个非 fork 仓库
 ```
 
 > 修改账号只需改这一个文件，无需碰页面代码。
 
-### 5. 抓取数据并构建
+### 5. 管理面板（推荐）
+
+项目自带一个本地 Web 管理面板，可以可视化管理配置、查看/编辑数据、一键抓取：
+
+```bash
+# 双击根目录下的 start_admin.sh，或在终端运行：
+bash start_admin.sh
+# 浏览器会自动打开 http://127.0.0.1:5000
+```
+
+管理面板功能：
+- **配置页**：在线编辑 `config.ini`（Bangumi/Bilibili/GitHub 账号）
+- **数据页**：查看/编辑三个 JSON 数据源，支持一键重新抓取
+- **预览页**：模拟各页面的渲染效果，所见即所得
+
+需要安装 Flask：`pip install flask`
+
+### 6. 手动抓取（备选）
 
 ```bash
 # 一键抓取三个数据源，生成 static/data/{bangumi,bilibili,github}.json
@@ -84,13 +101,13 @@ hugo
 ```
 
 页面逻辑：
-- 游戏时光：读取 `/data/bangumi.json`，展示统计卡片 + 游戏卡片（评分/标签/封面，已修复 `updated_at` 时间戳与 `tags` 字段取值）
+- 游戏时光：读取 `/data/bangumi.json`，展示统计卡片 + 游戏卡片（评分/标签/封面）
 - 游戏鉴赏：读取 `/data/bilibili.json`，展示视频卡片网格
-- Vibe Coding：读取 `/data/github.json`，展示开源项目卡片
+- Vibe Coding：读取 `/data/github.json`，展示项目卡片 + README 详情（点击"查看详情"展开）
 
 若尚未抓取数据，页面会提示"暂无记录"，**不会一直卡在加载中**。
 
-### 5. 添加文章
+### 7. 添加文章
 
 在 `content/articles/` 目录下创建 Markdown 文件：
 
@@ -148,12 +165,22 @@ git push -u origin main
 
 ## 日常维护
 
+### 推荐方式：管理面板
+
+```bash
+bash start_admin.sh
+```
+
+打开管理面板后，点击"全部抓取"即可一键更新所有数据，然后在面板内预览效果。
+
+### 手动方式
+
 - 添加游戏记录：在 Bangumi 更新后，重新运行 `python3 scripts/fetch_all.py && hugo`
 - 添加视频：在 B 站更新后，重新运行上面的命令
 - 添加文章：在 `content/articles/` 下新建 Markdown 文件（无需跑脚本）
 - 添加项目：在 GitHub 更新后，重新运行上面的命令；或用 `featured_repos` 指定展示项
 - 修改大图：替换 `static/images/` 中的图片
-- 修改账号：只改 `scripts/config.ini`，然后重新抓取
+- 修改账号：只改 `scripts/config.ini`（或通过管理面板在线修改），然后重新抓取
 
 > 提示：三个动态页的数据都是**构建时静态生成**的，所以每次数据变化都要"跑脚本 + 重新构建 + 重新部署"三者缺一不可。
 
@@ -161,6 +188,7 @@ git push -u origin main
 
 - [Hugo](https://gohugo.io/) - 静态站点生成器
 - [Blowfish](https://blowfish.page/) - Hugo 主题 (Tailwind CSS)
+- [Flask](https://flask.palletsprojects.com/) - 管理面板后端
 - Bangumi API - 游戏数据
-- Bilibili API - 视频数据
-- GitHub API - 开源项目数据
+- Bilibili API (WBI 签名 + curl_cffi) - 视频数据
+- GitHub API - 开源项目数据 + README

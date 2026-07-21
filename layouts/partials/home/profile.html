@@ -1,0 +1,127 @@
+{{ $disableImageOptimization := .Site.Params.disableImageOptimization | default false }}
+<article
+  class="{{ if not .Site.Params.homepage.showRecent }}
+    h-full
+  {{ end }} flex flex-col items-center justify-center text-center">
+  <header class="relative px-1 py-1 flex flex-col items-center mb-3">
+    {{ with .Site.Params.Author.image }}
+      {{ $authorImage := "" }}
+      {{ if or (strings.HasPrefix . "http:") (strings.HasPrefix . "https:") }}
+        {{ $authorImage = resources.GetRemote . }}
+      {{ else }}
+        {{ $authorImage = resources.Get . }}
+      {{ end }}
+      {{ if $authorImage }}
+        {{ if not $disableImageOptimization }}
+          {{ $authorImage = $authorImage.Fill (print "288x288 q" ( $.Site.Params.Author.imagequality | default "96" )) }}
+        {{ end }}
+        <img
+          class="mb-2 rounded-full h-36 w-36"
+          width="144"
+          height="144"
+          alt="{{ $.Site.Params.Author.name | default " Author" }}"
+          src="{{ $authorImage.RelPermalink }}">
+      {{ end }}
+    {{ end }}
+    <h1 class="text-4xl font-extrabold">
+      {{ .Site.Params.Author.name | default .Site.Title }}
+    </h1>
+    {{ with .Site.Params.Author.headline }}
+      <h2 class="text-xl text-neutral-500 dark:text-neutral-400">
+        {{ . | markdownify }}
+      </h2>
+    {{ end }}
+    <div class="mt-1 text-2xl">
+      {{ partialCached "author-links.html" . }}
+    </div>
+  </header>
+
+  {{/* ===== 全网数据统计模块 ===== */}}
+  {{ if .Site.Params.stats }}
+    {{ $totalFollowers := 0 }}
+    {{ range $key, $val := .Site.Params.stats }}
+      {{ if $val.followers }}
+        {{ $totalFollowers = add $totalFollowers (int $val.followers) }}
+      {{ end }}
+    {{ end }}
+    {{ $githubStars := 0 }}
+    {{ with .Site.Params.stats.github }}
+      {{ $githubStars = int (.stars | default 0) }}
+    {{ end }}
+
+    <section class="w-full max-w-3xl mx-auto mt-8 mb-6">
+      <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; padding: 32px 24px; box-shadow: 0 8px 32px rgba(102,126,234,0.3);">
+        
+        {{/* 顶部总览 */}}
+        <div style="display: flex; justify-content: center; gap: 48px; margin-bottom: 28px; flex-wrap: wrap;">
+          <div style="text-align: center;">
+            <div style="font-size: 36px; font-weight: 800; color: white; line-height: 1;" id="total-followers">{{ $totalFollowers }}</div>
+            <div style="font-size: 14px; color: rgba(255,255,255,0.8); margin-top: 6px;">全网粉丝</div>
+          </div>
+          <div style="width: 1px; background: rgba(255,255,255,0.3); align-self: stretch;"></div>
+          <div style="text-align: center;">
+            <div style="font-size: 36px; font-weight: 800; color: white; line-height: 1;" id="total-stars">{{ $githubStars }}</div>
+            <div style="font-size: 14px; color: rgba(255,255,255,0.8); margin-top: 6px;">GitHub Stars</div>
+          </div>
+        </div>
+
+        {{/* 各平台明细 */}}
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 12px;">
+          {{ range $key, $val := .Site.Params.stats }}
+            <a href="{{ $val.url }}" target="_blank" rel="noopener" 
+               style="background: rgba(255,255,255,0.15); backdrop-filter: blur(8px); border-radius: 12px; padding: 14px 12px; text-decoration: none; transition: all 0.3s; border: 1px solid rgba(255,255,255,0.1);"
+               onmouseover="this.style.background='rgba(255,255,255,0.25)';this.style.transform='translateY(-2px)'" 
+               onmouseout="this.style.background='rgba(255,255,255,0.15)';this.style.transform='translateY(0)'">
+              <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 8px; justify-content: center;">
+                <span style="font-size: 14px;">
+                  {{ partialCached "icon.html" (.icon | default $key) .icon }}
+                </span>
+                <span style="font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.9);">{{ $val.name }}</span>
+              </div>
+              {{ if $val.followers }}
+                <div style="font-size: 20px; font-weight: 700; color: white;">{{ $val.followers }}</div>
+                <div style="font-size: 11px; color: rgba(255,255,255,0.6);">粉丝</div>
+              {{ else if $val.stars }}
+                <div style="font-size: 20px; font-weight: 700; color: white;">{{ $val.stars }}</div>
+                <div style="font-size: 11px; color: rgba(255,255,255,0.6);">Stars ⭐</div>
+              {{ end }}
+            </a>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+
+    {{/* 数字滚动动画 */}}
+    <script>
+    function animateCount(el, target) {
+      const duration = 1500;
+      const start = 0;
+      const startTime = performance.now();
+      function step(now) {
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(start + (target - start) * eased).toLocaleString();
+        if (progress < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      {{ range $key, $val := .Site.Params.stats }}
+        {{ if $val.followers }}
+        {{ else if $val.stars }}
+        {{ end }}
+      {{ end }}
+      const followersEl = document.getElementById('total-followers');
+      const starsEl = document.getElementById('total-stars');
+      if (followersEl) animateCount(followersEl, {{ $totalFollowers }});
+      if (starsEl) animateCount(starsEl, {{ $githubStars }});
+    });
+    </script>
+  {{ end }}
+
+  <section class="prose dark:prose-invert w-full">{{ .Content }}</section>
+</article>
+<section>
+  {{ partial "recent-articles/main.html" . }}
+</section>
