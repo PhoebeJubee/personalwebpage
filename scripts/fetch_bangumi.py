@@ -20,10 +20,33 @@ API = "https://api.bgm.tv/v0/users/{uid}/collections?subject_type=4&limit=50&off
 HEADERS = {"User-Agent": "PersonalSite/1.0 (https://github.com)"}
 
 
-def load_uid():
+def _load_cfg():
     cfg = configparser.ConfigParser()
     cfg.read(os.path.join(ROOT, "scripts", "config.ini"))
-    return cfg.get("bangumi", "uid", fallback="").strip()
+    return cfg
+
+
+def load_uid():
+    return _load_cfg().get("bangumi", "uid", fallback="").strip()
+
+
+def _load_proxies():
+    cfg = _load_cfg()
+    url = cfg.get("proxy", "url", fallback="").strip()
+    if url:
+        return {"http": url, "https": url}
+    return None
+
+
+def _get_with_fallback(url, **kwargs):
+    proxies = kwargs.pop("proxies", None) or _load_proxies()
+    try:
+        return requests.get(url, **kwargs)
+    except requests.ConnectionError:
+        if proxies:
+            print(f"  [proxy] 直连失败，使用代理重试: {url[:80]}")
+            return requests.get(url, proxies=proxies, **kwargs)
+        raise
 
 
 def fetch_all(uid):
@@ -32,7 +55,7 @@ def fetch_all(uid):
     limit = 50
     while True:
         url = API.format(uid=uid, offset=offset)
-        resp = requests.get(url, headers=HEADERS, timeout=30)
+        resp = _get_with_fallback(url, headers=HEADERS, timeout=30)
         resp.raise_for_status()
         data = resp.json()
         page = data.get("data") or []

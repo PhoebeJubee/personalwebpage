@@ -40,17 +40,37 @@ MIXIN_KEY_ENC_TAB = [
 ]
 
 
-def load_uid():
+def _load_cfg():
     cfg = configparser.ConfigParser()
     cfg.read(os.path.join(ROOT, "scripts", "config.ini"))
-    return cfg.get("bilibili", "uid", fallback="").strip()
+    return cfg
+
+
+def _load_proxies():
+    cfg = _load_cfg()
+    url = cfg.get("proxy", "url", fallback="").strip()
+    if url:
+        return {"http": url, "https": url}
+    return None
+
+
+def load_uid():
+    return _load_cfg().get("bilibili", "uid", fallback="").strip()
 
 
 def _http_get(url, **kwargs):
     kwargs.setdefault("timeout", 15)
     if IMPERSONATE:
         kwargs.setdefault("impersonate", IMPERSONATE)
-    return http.get(url, **kwargs)
+    try:
+        return http.get(url, **kwargs)
+    except Exception:
+        proxies = _load_proxies()
+        if proxies:
+            print(f"  [proxy] 直连失败，使用代理重试: {url[:80]}")
+            kwargs["proxies"] = proxies
+            return http.get(url, **kwargs)
+        raise
 
 
 def _get_wbi_keys():
