@@ -73,6 +73,8 @@ def normalize(item):
     subject = item.get("subject") or {}
     images = subject.get("images") or {}
     cover = images.get("large") or images.get("medium") or images.get("small") or ""
+    raw_tags = subject.get("tags") or []
+    tags = [t["name"] for t in sorted(raw_tags, key=lambda x: x.get("count", 0), reverse=True)[:5]]
     return {
         "name": subject.get("name", ""),
         "name_cn": subject.get("name_cn", "") or subject.get("name", ""),
@@ -81,7 +83,7 @@ def normalize(item):
         "rate": item.get("rate", 0) or 0,
         "type": item.get("type", 0),
         "updated_at": item.get("updated_at", ""),
-        "tags": item.get("tags") or [],
+        "tags": tags,
     }
 
 

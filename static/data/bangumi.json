@@ -7,7 +7,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2026-06-27T22:29:44+08:00",
-    "tags": []
+    "tags": [
+      "InnocentGrey",
+      "Galgame",
+      "杉菜水姫",
+      "悬疑",
+      "猎奇"
+    ],
+    "hidden": false
   },
   {
     "name": "ファイアーエムブレム 万紫千紅",
@@ -17,7 +24,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2026-06-21T17:15:57+08:00",
-    "tags": []
+    "tags": [
+      "NS2",
+      "SRPG",
+      "火焰纹章",
+      "2026",
+      "JRPG"
+    ],
+    "hidden": false
   },
   {
     "name": "乌合之众",
@@ -27,7 +41,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2026-06-21T17:13:59+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "国产",
+      "AVG",
+      "游戏",
+      "悬疑"
+    ],
+    "hidden": false
   },
   {
     "name": "The Sekimeiya: Spun Glass",
@@ -37,7 +58,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2026-06-21T16:52:34+08:00",
-    "tags": []
+    "tags": [
+      "悬疑",
+      "推理",
+      "AVG",
+      "Galgame",
+      "时间旅行"
+    ],
+    "hidden": false
   },
   {
     "name": "魔法少女ノ魔女裁判",
@@ -47,7 +75,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2026-06-21T15:37:03+08:00",
-    "tags": []
+    "tags": [
+      "百合",
+      "推理",
+      "Galgame",
+      "悬疑",
+      "魔法少女"
+    ],
+    "hidden": false
   },
   {
     "name": "Suzerain",
@@ -57,7 +92,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2026-04-12T11:12:53+08:00",
-    "tags": []
+    "tags": [
+      "AVG",
+      "政治",
+      "PC",
+      "模拟",
+      "STEAM"
+    ],
+    "hidden": false
   },
   {
     "name": "シルバー事件",
@@ -67,7 +109,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2026-03-09T12:30:10+08:00",
-    "tags": []
+    "tags": [
+      "AVG",
+      "须田刚一",
+      "PC",
+      "电波",
+      "1999"
+    ],
+    "hidden": false
   },
   {
     "name": "パラノマサイト FILE38 伊勢人魚物語",
@@ -77,7 +126,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2026-02-24T21:34:35+08:00",
-    "tags": []
+    "tags": [
+      "悬疑",
+      "AVG",
+      "推理",
+      "SquareEnix",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "二分光景——COSER解体事件",
@@ -87,7 +143,14 @@
     "rate": 0,
     "type": 3,
     "updated_at": "2025-11-02T18:43:08+08:00",
-    "tags": []
+    "tags": [
+      "国产",
+      "狂气",
+      "PC",
+      "2025",
+      "同人"
+    ],
+    "hidden": false
   },
   {
     "name": "ルートダブル -Before Crime * After Days-",
@@ -97,7 +160,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2025-10-07T22:07:20+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "中泽工",
+      "悬疑",
+      "全年龄",
+      "AVG"
+    ],
+    "hidden": false
   },
   {
     "name": "最终幻想14：水晶世界",
@@ -107,7 +177,14 @@
     "rate": 0,
     "type": 2,
     "updated_at": "2025-10-03T16:49:07+08:00",
-    "tags": []
+    "tags": [
+      "MMORPG",
+      "手游",
+      "Android",
+      "iOS",
+      "2025"
+    ],
+    "hidden": false
   },
   {
     "name": "終天教団",
@@ -117,7 +194,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2025-10-03T13:45:28+08:00",
-    "tags": []
+    "tags": [
+      "小高和刚",
+      "中泽工",
+      "悬疑",
+      "AVG",
+      "ADV"
+    ],
+    "hidden": false
   },
   {
     "name": "スーパーダンガンロンパ２×２",
@@ -127,7 +211,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2025-09-13T07:17:59+08:00",
-    "tags": []
+    "tags": [
+      "AVG",
+      "推理",
+      "悬疑",
+      "PC",
+      "ADV"
+    ],
+    "hidden": false
   },
   {
     "name": "Depth Loop",
@@ -137,7 +228,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2025-09-09T17:41:26+08:00",
-    "tags": []
+    "tags": [
+      "悬疑",
+      "Galgame",
+      "ADV",
+      "PC",
+      "AVG"
+    ],
+    "hidden": false
   },
   {
     "name": "开元遗事",
@@ -147,7 +245,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2025-06-16T19:50:07+08:00",
-    "tags": []
+    "tags": [
+      "橙光",
+      "AVG",
+      "国产",
+      "PC",
+      "ADV"
+    ],
+    "hidden": false
   },
   {
     "name": "伊達鍵は眠らない - From AI：ソムニウムファイル",
@@ -157,7 +262,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2025-06-16T18:08:56+08:00",
-    "tags": []
+    "tags": [
+      "SpikeChunsoft",
+      "ADV",
+      "悬疑",
+      "PC",
+      "打越钢太郎"
+    ],
+    "hidden": false
   },
   {
     "name": "再见断刀",
@@ -167,7 +279,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2025-06-15T12:21:26+08:00",
-    "tags": []
+    "tags": [
+      "国产",
+      "AVG",
+      "推理",
+      "武侠",
+      "悬疑"
+    ],
+    "hidden": false
   },
   {
     "name": "无罪之庭",
@@ -178,8 +297,13 @@
     "type": 2,
     "updated_at": "2025-06-04T20:09:03+08:00",
     "tags": [
-      "BGM+1"
-    ]
+      "推理",
+      "国产",
+      "AVG",
+      "悬疑",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "Inverted Angel",
@@ -189,7 +313,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2025-05-31T22:00:48+08:00",
-    "tags": []
+    "tags": [
+      "AVG",
+      "推理",
+      "游戏",
+      "PC",
+      "STEAM"
+    ],
+    "hidden": false
   },
   {
     "name": "山岸姫瑠ミニシナリオ",
@@ -199,7 +330,14 @@
     "rate": 0,
     "type": 2,
     "updated_at": "2025-05-31T18:41:28+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "Qruppo",
+      "FD",
+      "倉骨治人",
+      "扩展包"
+    ],
+    "hidden": false
   },
   {
     "name": "ヘンタイ・プリズン",
@@ -209,7 +347,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2025-05-31T14:54:59+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "Qruppo",
+      "监狱",
+      "搞笑",
+      "倉骨治人"
+    ],
+    "hidden": false
   },
   {
     "name": "HUNDRED LINE -最終防衛学園-",
@@ -220,10 +365,13 @@
     "type": 2,
     "updated_at": "2025-05-10T23:42:00+08:00",
     "tags": [
-      "战棋",
-      "ADV",
+      "小高和刚",
+      "打越钢太郎",
+      "PC",
+      "悬疑",
       "AVG"
-    ]
+    ],
+    "hidden": false
   },
   {
     "name": "슈퍼 단간론파 어나더 2 ~ 희망의 달과 절망의 태양 ~",
@@ -233,7 +381,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2025-04-03T23:44:34+08:00",
-    "tags": []
+    "tags": [
+      "弹丸论破",
+      "同人游戏",
+      "推理",
+      "悬疑",
+      "AVG"
+    ],
+    "hidden": false
   },
   {
     "name": "단간론파 어나더 ~ 또하나의 절망학원 ~",
@@ -243,7 +398,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2025-03-22T18:08:24+08:00",
-    "tags": []
+    "tags": [
+      "弹丸论破",
+      "悬疑",
+      "推理",
+      "AVG",
+      "同人游戏"
+    ],
+    "hidden": false
   },
   {
     "name": "近畿霊務局",
@@ -253,7 +415,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2024-11-23T21:46:19+08:00",
-    "tags": []
+    "tags": [
+      "独立游戏",
+      "射击",
+      "PC",
+      "剧情",
+      "TPS"
+    ],
+    "hidden": false
   },
   {
     "name": "祀月夭花～四月八日～",
@@ -263,7 +432,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2024-11-16T22:23:32+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "同人",
+      "AVG",
+      "悬疑",
+      "百合"
+    ],
+    "hidden": false
   },
   {
     "name": "纸嫁衣7卿不负",
@@ -273,7 +449,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2024-09-23T22:04:51+08:00",
-    "tags": []
+    "tags": [
+      "解谜",
+      "Android",
+      "纸嫁衣",
+      "中式",
+      "恐怖"
+    ],
+    "hidden": false
   },
   {
     "name": "罗刹之宴",
@@ -283,7 +466,14 @@
     "rate": 0,
     "type": 3,
     "updated_at": "2024-09-22T21:11:35+08:00",
-    "tags": []
+    "tags": [
+      "AVG",
+      "悬疑",
+      "易次元",
+      "古风",
+      "游戏"
+    ],
+    "hidden": false
   },
   {
     "name": "Tiny Bunny",
@@ -293,7 +483,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2024-09-21T15:47:40+08:00",
-    "tags": []
+    "tags": [
+      "视觉小说",
+      "ADV",
+      "STEAM",
+      "独立游戏",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "吃香",
@@ -303,7 +500,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2024-09-21T15:44:02+08:00",
-    "tags": []
+    "tags": [
+      "悬疑",
+      "PC",
+      "中国",
+      "AVG",
+      "致郁"
+    ],
+    "hidden": false
   },
   {
     "name": "かまいたちの夜2 監獄島のわらべ唄",
@@ -313,7 +517,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2024-09-20T00:17:58+08:00",
-    "tags": []
+    "tags": [
+      "推理",
+      "我孫子武丸",
+      "chunsoft",
+      "悬疑",
+      "恐怖"
+    ],
+    "hidden": false
   },
   {
     "name": "MISSING PARTS the TANTEI STORIES",
@@ -323,7 +534,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2024-06-16T22:41:20+08:00",
-    "tags": []
+    "tags": [
+      "PSP",
+      "推理",
+      "AVG",
+      "悬疑",
+      "Galgame"
+    ],
+    "hidden": false
   },
   {
     "name": "鸣潮",
@@ -333,7 +551,14 @@
     "rate": 0,
     "type": 2,
     "updated_at": "2024-05-26T08:03:47+08:00",
-    "tags": []
+    "tags": [
+      "库洛游戏",
+      "开放世界",
+      "手游",
+      "国产",
+      "ARPG"
+    ],
+    "hidden": false
   },
   {
     "name": "交界线",
@@ -343,7 +568,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2023-10-22T20:25:40+08:00",
-    "tags": []
+    "tags": [
+      "RPG",
+      "悬疑",
+      "国产",
+      "推理",
+      "STEAM"
+    ],
+    "hidden": false
   },
   {
     "name": "アルトデウス: ビヨンドクロノス",
@@ -353,7 +585,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2023-10-04T18:05:28+08:00",
-    "tags": []
+    "tags": [
+      "VR",
+      "百合",
+      "ADV",
+      "Galgame",
+      "MyDearest"
+    ],
+    "hidden": false
   },
   {
     "name": "パラノマサイト FILE23 本所七不思議",
@@ -363,7 +602,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2023-09-29T20:50:15+08:00",
-    "tags": []
+    "tags": [
+      "悬疑",
+      "AVG",
+      "恐怖",
+      "SquareEnix",
+      "灵异"
+    ],
+    "hidden": false
   },
   {
     "name": "The Cat Lady",
@@ -373,7 +619,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2023-09-23T22:18:53+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "AVG",
+      "解谜",
+      "STEAM",
+      "恐怖"
+    ],
+    "hidden": false
   },
   {
     "name": "三伏",
@@ -383,7 +636,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2023-09-23T21:54:19+08:00",
-    "tags": []
+    "tags": [
+      "国产",
+      "悬疑",
+      "AVG",
+      "PC",
+      "解谜"
+    ],
+    "hidden": false
   },
   {
     "name": "Pentiment",
@@ -393,7 +653,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2023-07-18T15:35:12+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "黑曜石",
+      "AVG",
+      "历史",
+      "CRPG"
+    ],
+    "hidden": false
   },
   {
     "name": "NOeSIS Ⅱ-人间无常",
@@ -403,7 +670,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2023-07-15T07:40:57+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "悬疑",
+      "同人",
+      "国产",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "超探偵事件簿 レインコード",
@@ -413,7 +687,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2023-07-14T20:59:43+08:00",
-    "tags": []
+    "tags": [
+      "小高和刚",
+      "推理",
+      "NS",
+      "ADV",
+      "悬疑"
+    ],
+    "hidden": false
   },
   {
     "name": "意识流 / Stream of Consciousness",
@@ -423,7 +704,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2023-05-23T22:44:33+08:00",
-    "tags": []
+    "tags": [
+      "国产",
+      "同人",
+      "AVG",
+      "哲学",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "战双帕弥什",
@@ -433,7 +721,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2023-04-30T14:57:40+08:00",
-    "tags": []
+    "tags": [
+      "手游",
+      "国产",
+      "ACT",
+      "库洛游戏",
+      "科幻"
+    ],
+    "hidden": false
   },
   {
     "name": "太閤立志伝V",
@@ -443,7 +738,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2023-03-11T09:14:51+08:00",
-    "tags": []
+    "tags": [
+      "SLG",
+      "KOEI",
+      "战国",
+      "PC",
+      "光荣"
+    ],
+    "hidden": false
   },
   {
     "name": "BLACK SHEEP TOWN",
@@ -453,7 +755,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2023-03-10T13:10:55+08:00",
-    "tags": []
+    "tags": [
+      "瀬戸口廉也",
+      "Galgame",
+      "群像",
+      "全年龄",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "我有一座冒险屋",
@@ -463,7 +772,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2023-03-01T14:44:21+08:00",
-    "tags": []
+    "tags": [
+      "中国",
+      "AVG",
+      "Obs",
+      "游戏",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "ペルソナ5 ザ・ロイヤル",
@@ -474,8 +790,13 @@
     "type": 2,
     "updated_at": "2023-01-07T22:53:16+08:00",
     "tags": [
-      "BGM+1"
-    ]
+      "JRPG",
+      "ATLUS",
+      "女神异闻录",
+      "RPG",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "serial experiments lain",
@@ -485,7 +806,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2022-10-22T22:19:57+08:00",
-    "tags": []
+    "tags": [
+      "PS",
+      "小中千昭",
+      "lain",
+      "电波",
+      "意识流"
+    ],
+    "hidden": false
   },
   {
     "name": "街 ~運命の交差点~",
@@ -495,7 +823,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2022-10-19T15:18:05+08:00",
-    "tags": []
+    "tags": [
+      "AVG",
+      "PSP",
+      "chunsoft",
+      "街",
+      "PS"
+    ],
+    "hidden": false
   },
   {
     "name": "连海CASINO",
@@ -505,7 +840,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2022-10-11T22:49:00+08:00",
-    "tags": []
+    "tags": [
+      "AVG",
+      "PC",
+      "STEAM",
+      "中国",
+      "游戏"
+    ],
+    "hidden": false
   },
   {
     "name": "キミガシネ —多数決デスゲーム—",
@@ -515,7 +857,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2022-08-07T22:57:20+08:00",
-    "tags": []
+    "tags": [
+      "悬疑",
+      "推理",
+      "AVG",
+      "RPG",
+      "死亡游戏"
+    ],
+    "hidden": false
   },
   {
     "name": "Sanitarium",
@@ -525,7 +874,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2022-08-07T22:56:08+08:00",
-    "tags": []
+    "tags": [
+      "AVG",
+      "PC",
+      "1998",
+      "疯人院",
+      "ADV"
+    ],
+    "hidden": false
   },
   {
     "name": "Kentucky Route Zero",
@@ -535,7 +891,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2022-08-07T22:55:49+08:00",
-    "tags": []
+    "tags": [
+      "AVG",
+      "独立游戏",
+      "PC",
+      "2013",
+      "meta"
+    ],
+    "hidden": false
   },
   {
     "name": "Slay the Spire",
@@ -545,7 +908,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2022-08-07T22:19:09+08:00",
-    "tags": []
+    "tags": [
+      "Roguelike",
+      "卡牌",
+      "独立游戏",
+      "PC",
+      "STEAM"
+    ],
+    "hidden": false
   },
   {
     "name": "彼岸花の咲く夜に 第一夜",
@@ -555,7 +925,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2022-08-05T16:11:34+08:00",
-    "tags": []
+    "tags": [
+      "龙骑士07",
+      "Galgame",
+      "竜騎士07",
+      "AVG",
+      "校园欺凌"
+    ],
+    "hidden": false
   },
   {
     "name": "Hades",
@@ -565,7 +942,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2022-08-01T16:54:39+08:00",
-    "tags": []
+    "tags": [
+      "Roguelike",
+      "独立游戏",
+      "PC",
+      "ACT",
+      "STEAM"
+    ],
+    "hidden": false
   },
   {
     "name": "グリザイア：ファントムトリガー 第8巻",
@@ -575,7 +959,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2022-07-19T16:46:11+08:00",
-    "tags": []
+    "tags": [
+      "FrontWing",
+      "Galgame",
+      "全年龄",
+      "灰色系列",
+      "桐谷华"
+    ],
+    "hidden": false
   },
   {
     "name": "Hello Charlotte EP1: Junk Food, Gods and Teddy Bears",
@@ -585,7 +976,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2022-07-16T22:01:18+08:00",
-    "tags": []
+    "tags": [
+      "RPGMaker",
+      "RPG",
+      "独立游戏",
+      "etherane",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "奸臣洗冤录",
@@ -595,7 +993,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2022-07-15T22:42:25+08:00",
-    "tags": []
+    "tags": [
+      "AVG",
+      "橙光",
+      "PC",
+      "国产",
+      "视觉小说"
+    ],
+    "hidden": false
   },
   {
     "name": "AKIBA'S TRIP",
@@ -605,7 +1010,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2022-07-15T22:35:40+08:00",
-    "tags": []
+    "tags": [
+      "PSP",
+      "ACT",
+      "扒衣服大作战",
+      "Akiba‘Strip",
+      "扒衣原之旅"
+    ],
+    "hidden": false
   },
   {
     "name": "Who's Lila?",
@@ -615,7 +1027,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2022-07-11T00:15:56+08:00",
-    "tags": []
+    "tags": [
+      "meta",
+      "PC",
+      "AVG",
+      "悬疑",
+      "2022"
+    ],
+    "hidden": false
   },
   {
     "name": "ファイアーエムブレム 風花雪月",
@@ -625,7 +1044,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2022-07-09T12:23:03+08:00",
-    "tags": []
+    "tags": [
+      "Switch",
+      "NS",
+      "任天堂",
+      "战棋",
+      "SRPG"
+    ],
+    "hidden": false
   },
   {
     "name": "AI: ソムニウムファイル ニルヴァーナイニシアチブ",
@@ -635,7 +1061,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2022-07-07T23:19:18+08:00",
-    "tags": []
+    "tags": [
+      "打越钢太郎",
+      "AVG",
+      "推理",
+      "解谜",
+      "悬疑"
+    ],
+    "hidden": false
   },
   {
     "name": "EVE ～new generation X～",
@@ -645,7 +1078,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2022-07-07T09:04:29+08:00",
-    "tags": []
+    "tags": [
+      "打越鋼太郎",
+      "Galgame",
+      "PC",
+      "镜像理论",
+      "PS2"
+    ],
+    "hidden": false
   },
   {
     "name": "Sid Meier's Civilization VI",
@@ -655,7 +1095,14 @@
     "rate": 0,
     "type": 4,
     "updated_at": "2022-06-05T23:15:06+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "SLG",
+      "再来一回合",
+      "STEAM",
+      "策略"
+    ],
+    "hidden": false
   },
   {
     "name": "冤罪執行遊戯ユルキル",
@@ -665,7 +1112,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2022-06-05T14:39:59+08:00",
-    "tags": []
+    "tags": [
+      "ADV",
+      "PS4",
+      "NS",
+      "PC",
+      "AVG"
+    ],
+    "hidden": false
   },
   {
     "name": "十三機兵防衛圏",
@@ -675,7 +1129,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2022-05-31T20:04:53+08:00",
-    "tags": []
+    "tags": [
+      "香草社",
+      "PS4",
+      "群像",
+      "AVG",
+      "科幻"
+    ],
+    "hidden": false
   },
   {
     "name": "ファイナルファンタジーVII リメイク",
@@ -685,7 +1146,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2022-05-23T18:32:21+08:00",
-    "tags": []
+    "tags": [
+      "最终幻想",
+      "JRPG",
+      "SquareEnix",
+      "PS4",
+      "RPG"
+    ],
+    "hidden": false
   },
   {
     "name": "トリックロジック",
@@ -695,7 +1163,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2022-05-20T12:27:02+08:00",
-    "tags": []
+    "tags": [
+      "PSP",
+      "推理",
+      "AVG",
+      "解谜",
+      "chunsoft"
+    ],
+    "hidden": false
   },
   {
     "name": "OPUS：龍脈常歌",
@@ -705,7 +1180,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2022-05-13T21:47:26+08:00",
-    "tags": []
+    "tags": [
+      "AVG",
+      "独立游戏",
+      "PC",
+      "科幻",
+      "国产游戏"
+    ],
+    "hidden": false
   },
   {
     "name": "ゆめにっき",
@@ -715,7 +1197,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2022-05-05T11:29:57+08:00",
-    "tags": []
+    "tags": [
+      "精神猎奇",
+      "RPG",
+      "PC",
+      "梦日记",
+      "致郁"
+    ],
+    "hidden": false
   },
   {
     "name": "I/O",
@@ -725,7 +1214,14 @@
     "rate": 10,
     "type": 2,
     "updated_at": "2022-04-30T23:04:11+08:00",
-    "tags": []
+    "tags": [
+      "中泽工",
+      "Galgame",
+      "田中ロミオ",
+      "悬疑",
+      "賽博朋克"
+    ],
+    "hidden": false
   },
   {
     "name": "操",
@@ -735,7 +1231,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2022-04-25T18:40:48+08:00",
-    "tags": []
+    "tags": [
+      "RPG",
+      "解谜",
+      "恐怖",
+      "PC",
+      "RPGMaker"
+    ],
+    "hidden": false
   },
   {
     "name": "海沙风云",
@@ -745,7 +1248,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2022-04-01T14:59:34+08:00",
-    "tags": []
+    "tags": [
+      "国产",
+      "AVG",
+      "粤语",
+      "Galgame",
+      "全年龄"
+    ],
+    "hidden": false
   },
   {
     "name": "すべてがFになる ～THE PERFECT INSIDER～",
@@ -755,7 +1265,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2022-03-26T22:40:10+08:00",
-    "tags": []
+    "tags": [
+      "KID",
+      "推理",
+      "Galgame",
+      "中泽工",
+      "游戏"
+    ],
+    "hidden": false
   },
   {
     "name": "瓦岗山异闻录",
@@ -766,11 +1283,13 @@
     "type": 2,
     "updated_at": "2022-03-26T20:01:37+08:00",
     "tags": [
-      "国产",
       "战棋",
+      "国产",
       "SLG",
-      "神作"
-    ]
+      "神作",
+      "曹操传"
+    ],
+    "hidden": false
   },
   {
     "name": "ファイナルファンタジーXIV 暁月のフィナーレ",
@@ -780,7 +1299,14 @@
     "rate": 10,
     "type": 2,
     "updated_at": "2022-03-19T22:15:00+08:00",
-    "tags": []
+    "tags": [
+      "MMORPG",
+      "SquareEnix",
+      "PC",
+      "最終幻想",
+      "最终幻想"
+    ],
+    "hidden": false
   },
   {
     "name": "ワールズエンドクラブ",
@@ -790,7 +1316,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2022-03-13T21:14:29+08:00",
-    "tags": []
+    "tags": [
+      "打越鋼太郎",
+      "AVG",
+      "小高和刚",
+      "中泽工",
+      "Switch"
+    ],
+    "hidden": false
   },
   {
     "name": "シンフォニック=レイン",
@@ -800,7 +1333,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2022-03-05T22:00:58+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "冈崎律子",
+      "工画堂",
+      "交响乐之雨",
+      "全年龄"
+    ],
+    "hidden": false
   },
   {
     "name": "送電塔のミメイ",
@@ -810,7 +1350,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2022-03-04T19:32:57+08:00",
-    "tags": []
+    "tags": [
+      "同人",
+      "Galgame",
+      "里見しば",
+      "和风",
+      "全年龄"
+    ],
+    "hidden": false
   },
   {
     "name": "弹弹堂",
@@ -820,7 +1367,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2022-02-10T21:31:22+08:00",
-    "tags": []
+    "tags": [
+      "页游",
+      "童年",
+      "Web",
+      "回合制",
+      "4399"
+    ],
+    "hidden": false
   },
   {
     "name": "グノーシア",
@@ -830,7 +1384,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2022-01-28T23:37:32+08:00",
-    "tags": []
+    "tags": [
+      "AVG",
+      "狼人杀",
+      "推理",
+      "解谜",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "Mirror 2: Project X",
@@ -840,7 +1401,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2022-01-23T23:21:07+08:00",
-    "tags": []
+    "tags": [
+      "三消",
+      "PC",
+      "STEAM",
+      "Galgame",
+      "国产"
+    ],
+    "hidden": false
   },
   {
     "name": "デスカムトゥルー",
@@ -850,7 +1418,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2022-01-20T21:14:12+08:00",
-    "tags": []
+    "tags": [
+      "小高和刚",
+      "真人演出",
+      "AVG",
+      "PC",
+      "NS"
+    ],
+    "hidden": false
   },
   {
     "name": "湖心亭奇談集",
@@ -860,7 +1435,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2022-01-01T01:11:12+08:00",
-    "tags": []
+    "tags": [
+      "AVG",
+      "ADV",
+      "2021",
+      "游戏",
+      "国产"
+    ],
+    "hidden": false
   },
   {
     "name": "Grand Theft Auto V",
@@ -870,7 +1452,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2021-10-17T19:53:28+08:00",
-    "tags": []
+    "tags": [
+      "GTA",
+      "Rockstar",
+      "PC",
+      "沙盒",
+      "开放世界"
+    ],
+    "hidden": false
   },
   {
     "name": "猫游记",
@@ -880,7 +1469,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2021-09-26T13:12:40+08:00",
-    "tags": []
+    "tags": [
+      "童年",
+      "猫扑",
+      "RPG",
+      "游戏",
+      "MMORPG"
+    ],
+    "hidden": false
   },
   {
     "name": "Portal 2",
@@ -890,7 +1486,14 @@
     "rate": 0,
     "type": 4,
     "updated_at": "2021-09-19T21:46:30+08:00",
-    "tags": []
+    "tags": [
+      "解谜",
+      "Valve",
+      "PC",
+      "FPS",
+      "第一人称冒险"
+    ],
+    "hidden": false
   },
   {
     "name": "夜、灯す",
@@ -900,7 +1503,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2021-08-02T20:11:57+08:00",
-    "tags": []
+    "tags": [
+      "百合",
+      "Galgame",
+      "PS4",
+      "日本一ソフトウェア",
+      "悬疑"
+    ],
+    "hidden": false
   },
   {
     "name": "Portal",
@@ -910,7 +1520,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2021-07-19T21:09:33+08:00",
-    "tags": []
+    "tags": [
+      "Valve",
+      "解谜",
+      "PC",
+      "FPS",
+      "Portal"
+    ],
+    "hidden": false
   },
   {
     "name": "Braid",
@@ -920,7 +1537,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2021-07-14T19:10:43+08:00",
-    "tags": []
+    "tags": [
+      "独立游戏",
+      "PC",
+      "解谜",
+      "Braid",
+      "时空幻境"
+    ],
+    "hidden": false
   },
   {
     "name": "I Have No Mouth, and I Must Scream",
@@ -930,7 +1554,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2021-06-17T15:36:18+08:00",
-    "tags": []
+    "tags": [
+      "AVG",
+      "PC",
+      "1995",
+      "Cyberdreams",
+      "CRPG"
+    ],
+    "hidden": false
   },
   {
     "name": "Minotaur",
@@ -940,7 +1571,12 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2021-06-16T17:06:51+08:00",
-    "tags": []
+    "tags": [
+      "AVG",
+      "PC",
+      "游戏"
+    ],
+    "hidden": false
   },
   {
     "name": "スローンとマクヘールの謎の物語",
@@ -950,7 +1586,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2021-06-09T12:22:34+08:00",
-    "tags": []
+    "tags": [
+      "NDS",
+      "AVG",
+      "海龟汤",
+      "解谜",
+      "Level5"
+    ],
+    "hidden": false
   },
   {
     "name": "アナタヲユルサナイ",
@@ -960,7 +1603,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2021-06-07T13:26:38+08:00",
-    "tags": []
+    "tags": [
+      "PSP",
+      "植松伸夫",
+      "AVG",
+      "竖屏",
+      "推理"
+    ],
+    "hidden": false
   },
   {
     "name": "有罪×無罪",
@@ -970,7 +1620,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2021-06-03T09:07:21+08:00",
-    "tags": []
+    "tags": [
+      "NDS",
+      "AVG",
+      "推理",
+      "悬疑",
+      "法庭"
+    ],
+    "hidden": false
   },
   {
     "name": "Forest",
@@ -980,7 +1637,14 @@
     "rate": 0,
     "type": 4,
     "updated_at": "2021-05-27T19:33:21+08:00",
-    "tags": []
+    "tags": [
+      "星空めてお",
+      "Galgame",
+      "Liar-soft",
+      "哲学",
+      "文学"
+    ],
+    "hidden": false
   },
   {
     "name": "Forget me not -パレット-",
@@ -990,7 +1654,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2021-04-18T21:38:04+08:00",
-    "tags": []
+    "tags": [
+      "解谜",
+      "PC",
+      "PS",
+      "AVG",
+      "RPG"
+    ],
+    "hidden": false
   },
   {
     "name": "三國志曹操伝",
@@ -1000,7 +1671,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2021-04-03T21:44:32+08:00",
-    "tags": []
+    "tags": [
+      "KOEI",
+      "战棋",
+      "PC",
+      "SLG",
+      "曹操传"
+    ],
+    "hidden": false
   },
   {
     "name": "監禁中 -カンキンチュウ-",
@@ -1010,7 +1688,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2021-04-03T11:46:49+08:00",
-    "tags": []
+    "tags": [
+      "G.Gear.inc",
+      "手游",
+      "悬疑",
+      "Android",
+      "解谜"
+    ],
+    "hidden": false
   },
   {
     "name": "火树银花",
@@ -1020,7 +1705,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2021-03-17T20:22:38+08:00",
-    "tags": []
+    "tags": [
+      "国产",
+      "狂气",
+      "Galgame",
+      "AVG",
+      "同人"
+    ],
+    "hidden": false
   },
   {
     "name": "天地刼：神魔至尊傳",
@@ -1030,7 +1722,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2021-03-10T18:04:33+08:00",
-    "tags": []
+    "tags": [
+      "汉堂",
+      "天地劫",
+      "国产",
+      "SRPG",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "四ツ目神",
@@ -1041,8 +1740,13 @@
     "type": 2,
     "updated_at": "2021-03-10T12:49:35+08:00",
     "tags": [
-      "BGM+1"
-    ]
+      "手游",
+      "SEEC",
+      "解谜",
+      "推理",
+      "2016"
+    ],
+    "hidden": false
   },
   {
     "name": "脱出ゲーム 嘘つきゲーム",
@@ -1052,7 +1756,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2021-03-04T19:49:37+08:00",
-    "tags": []
+    "tags": [
+      "解谜",
+      "手游",
+      "StudioWasabi",
+      "Android",
+      "推理"
+    ],
+    "hidden": false
   },
   {
     "name": "狼ゲーム",
@@ -1062,7 +1773,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2021-03-04T19:49:06+08:00",
-    "tags": []
+    "tags": [
+      "手游",
+      "解谜",
+      "AVG",
+      "StudioWasabi",
+      "推理"
+    ],
+    "hidden": false
   },
   {
     "name": "小林正雪2 抉择之惑",
@@ -1072,7 +1790,13 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2021-02-28T19:45:23+08:00",
-    "tags": []
+    "tags": [
+      "手游",
+      "2016",
+      "中国",
+      "推理"
+    ],
+    "hidden": false
   },
   {
     "name": "端木斐 VS 小林正雪",
@@ -1082,7 +1806,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2021-02-28T19:44:53+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "中国",
+      "iOS",
+      "游戏",
+      "国产"
+    ],
+    "hidden": false
   },
   {
     "name": "小林正雪 復仇之密室",
@@ -1092,7 +1823,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2021-02-28T19:44:32+08:00",
-    "tags": []
+    "tags": [
+      "解谜",
+      "推理",
+      "PC",
+      "STEAM",
+      "AVG"
+    ],
+    "hidden": false
   },
   {
     "name": "烟火",
@@ -1102,7 +1840,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2021-02-28T19:24:14+08:00",
-    "tags": []
+    "tags": [
+      "国产",
+      "解谜",
+      "悬疑",
+      "PC",
+      "恐怖"
+    ],
+    "hidden": false
   },
   {
     "name": "Tomb Raider",
@@ -1112,7 +1857,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2021-02-25T20:35:28+08:00",
-    "tags": []
+    "tags": [
+      "古墓丽影",
+      "ACT",
+      "PC",
+      "SquareEnix",
+      "劳拉"
+    ],
+    "hidden": false
   },
   {
     "name": "迷雾之夏-The Vigilant Villa",
@@ -1122,7 +1874,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2021-02-17T22:40:50+08:00",
-    "tags": []
+    "tags": [
+      "AVG",
+      "国产",
+      "PC",
+      "悬疑",
+      "STEAM"
+    ],
+    "hidden": false
   },
   {
     "name": "距离男主自杀还剩七天",
@@ -1132,7 +1891,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2021-02-17T01:04:05+08:00",
-    "tags": []
+    "tags": [
+      "国产",
+      "AVG",
+      "悬疑",
+      "Galgame",
+      "致意"
+    ],
+    "hidden": false
   },
   {
     "name": "仙劍奇俠傳",
@@ -1142,7 +1908,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2021-02-15T21:14:00+08:00",
-    "tags": []
+    "tags": [
+      "仙剑奇侠传",
+      "RPG",
+      "国产",
+      "大宇",
+      "Dos时期的神作"
+    ],
+    "hidden": false
   },
   {
     "name": "Katana ZERO",
@@ -1152,7 +1925,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2021-02-05T23:02:02+08:00",
-    "tags": []
+    "tags": [
+      "ACT",
+      "独立游戏",
+      "像素",
+      "横版",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "Banter Schooldays!!三〇一室无一人",
@@ -1162,7 +1942,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2021-01-31T19:02:30+08:00",
-    "tags": []
+    "tags": [
+      "国产",
+      "全年龄",
+      "推理",
+      "Galgame",
+      "国产Galgame"
+    ],
+    "hidden": false
   },
   {
     "name": "代码破译者",
@@ -1172,7 +1959,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2021-01-31T19:01:56+08:00",
-    "tags": []
+    "tags": [
+      "STEAM",
+      "推理",
+      "游戏",
+      "悬疑",
+      "SLG"
+    ],
+    "hidden": false
   },
   {
     "name": "Confess My Love",
@@ -1182,7 +1976,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2021-01-31T19:01:16+08:00",
-    "tags": []
+    "tags": [
+      "国产",
+      "PC",
+      "STEAM",
+      "同人",
+      "RPG"
+    ],
+    "hidden": false
   },
   {
     "name": "遠隔捜査 －真実への23日間－",
@@ -1192,7 +1993,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2020-11-21T17:23:58+08:00",
-    "tags": []
+    "tags": [
+      "PSP",
+      "推理",
+      "AVG",
+      "浪川大輔",
+      "游戏"
+    ],
+    "hidden": false
   },
   {
     "name": "ファタモルガーナの館 -Another Episodes-",
@@ -1202,7 +2010,14 @@
     "rate": 10,
     "type": 2,
     "updated_at": "2020-11-18T23:45:38+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "Novectacle",
+      "同人",
+      "必玩续作",
+      "全年龄"
+    ],
+    "hidden": false
   },
   {
     "name": "节奏大师",
@@ -1212,7 +2027,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-11-07T16:31:36+08:00",
-    "tags": []
+    "tags": [
+      "手游",
+      "音游",
+      "腾讯",
+      "iOS",
+      "MUG"
+    ],
+    "hidden": false
   },
   {
     "name": "QQ堂",
@@ -1222,7 +2044,14 @@
     "rate": 5,
     "type": 2,
     "updated_at": "2020-11-07T16:31:30+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "网游",
+      "童年",
+      "腾讯",
+      "2004"
+    ],
+    "hidden": false
   },
   {
     "name": "QQ宠物",
@@ -1232,7 +2061,14 @@
     "rate": 4,
     "type": 2,
     "updated_at": "2020-11-07T16:31:22+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "腾讯",
+      "童年",
+      "网游",
+      "2005"
+    ],
+    "hidden": false
   },
   {
     "name": "QQ飞车",
@@ -1242,7 +2078,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-11-07T16:30:10+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "网游",
+      "腾讯",
+      "童年",
+      "RAC"
+    ],
+    "hidden": false
   },
   {
     "name": "QQ三国",
@@ -1252,7 +2095,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-11-07T16:29:49+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "网游",
+      "腾讯",
+      "国产",
+      "RPG"
+    ],
+    "hidden": false
   },
   {
     "name": "The Room Three",
@@ -1262,7 +2112,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-10-21T20:50:05+08:00",
-    "tags": []
+    "tags": [
+      "解谜",
+      "手游",
+      "独立游戏",
+      "iOS",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "谎言之屋",
@@ -1272,7 +2129,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-10-20T11:18:21+08:00",
-    "tags": []
+    "tags": [
+      "岚少实况",
+      "中国",
+      "视频通关",
+      "RPGMaker",
+      "解迷"
+    ],
+    "hidden": false
   },
   {
     "name": "スーパーマリオブラザーズ",
@@ -1282,7 +2146,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-10-20T00:57:18+08:00",
-    "tags": []
+    "tags": [
+      "任天堂",
+      "马里奥",
+      "FC",
+      "童年",
+      "红白机"
+    ],
+    "hidden": false
   },
   {
     "name": "アマガミ ちょっとおまけ劇場",
@@ -1292,7 +2163,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-10-20T00:45:19+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "圣诞之吻",
+      "FD",
+      "纯爱",
+      "全年龄"
+    ],
+    "hidden": false
   },
   {
     "name": "鸑鷟：摩耶之纱 女警篇",
@@ -1302,7 +2180,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-10-20T00:40:34+08:00",
-    "tags": []
+    "tags": [
+      "国产",
+      "Galgame",
+      "同人",
+      "鸑鷟",
+      "全年龄"
+    ],
+    "hidden": false
   },
   {
     "name": "鸑鷟：橘子传",
@@ -1312,7 +2197,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-10-20T00:38:28+08:00",
-    "tags": []
+    "tags": [
+      "国产",
+      "Galgame",
+      "鸑鷟",
+      "橘子传",
+      "同人"
+    ],
+    "hidden": false
   },
   {
     "name": "LOVELY×CATION2",
@@ -1322,7 +2214,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-10-20T00:34:59+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "纯爱",
+      "暁WORKS-響-",
+      "拔作",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "The Room Two",
@@ -1332,7 +2231,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-10-20T00:16:45+08:00",
-    "tags": []
+    "tags": [
+      "解谜",
+      "iOS",
+      "手游",
+      "密室逃脱",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "The Room",
@@ -1342,7 +2248,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-10-19T00:38:59+08:00",
-    "tags": []
+    "tags": [
+      "解谜",
+      "iOS",
+      "手游",
+      "独立游戏",
+      "密室逃脱"
+    ],
+    "hidden": false
   },
   {
     "name": "WHITE ALBUM2 -closing chapter-",
@@ -1352,7 +2265,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-10-16T12:20:45+08:00",
-    "tags": []
+    "tags": [
+      "丸戸史明",
+      "Galgame",
+      "leaf",
+      "三角恋",
+      "WA2"
+    ],
+    "hidden": false
   },
   {
     "name": "Remember11 -the age of infinity-",
@@ -1362,7 +2282,14 @@
     "rate": 10,
     "type": 2,
     "updated_at": "2020-10-15T03:47:23+08:00",
-    "tags": []
+    "tags": [
+      "KID",
+      "Galgame",
+      "打越刚太郎",
+      "infinity",
+      "悬疑"
+    ],
+    "hidden": false
   },
   {
     "name": "Cuphead",
@@ -1372,7 +2299,14 @@
     "rate": 0,
     "type": 4,
     "updated_at": "2020-10-05T22:43:49+08:00",
-    "tags": []
+    "tags": [
+      "独立游戏",
+      "PC",
+      "ACT",
+      "复古",
+      "横板"
+    ],
+    "hidden": false
   },
   {
     "name": "死月妖花～四月八日～",
@@ -1382,7 +2316,14 @@
     "rate": 0,
     "type": 1,
     "updated_at": "2020-09-10T11:28:58+08:00",
-    "tags": []
+    "tags": [
+      "悬疑",
+      "同人",
+      "AVG",
+      "推理",
+      "Galgame"
+    ],
+    "hidden": false
   },
   {
     "name": "Minesweeper",
@@ -1392,7 +2333,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-09-07T22:55:52+08:00",
-    "tags": []
+    "tags": [
+      "扫雷",
+      "小游戏",
+      "PC",
+      "Windows",
+      "浪费人参"
+    ],
+    "hidden": false
   },
   {
     "name": "軒轅劍外傳 蒼之濤",
@@ -1402,7 +2350,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-09-07T21:29:52+08:00",
-    "tags": []
+    "tags": [
+      "轩辕剑",
+      "RPG",
+      "大宇",
+      "苍之涛",
+      "国产"
+    ],
+    "hidden": false
   },
   {
     "name": "グリザイア：ファントムトリガー 第7巻",
@@ -1412,7 +2367,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-08-31T01:13:25+08:00",
-    "tags": []
+    "tags": [
+      "FrontWing",
+      "Galgame",
+      "灰色系列",
+      "全年龄",
+      "桐谷华"
+    ],
+    "hidden": false
   },
   {
     "name": "軒轅劍參 雲和山的彼端",
@@ -1422,7 +2384,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-08-21T22:55:42+08:00",
-    "tags": []
+    "tags": [
+      "轩辕剑",
+      "RPG",
+      "云和山的彼端",
+      "国产",
+      "DOMO"
+    ],
+    "hidden": false
   },
   {
     "name": "軒轅劒外傳：漢之雲",
@@ -1432,7 +2401,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-08-20T12:36:50+08:00",
-    "tags": []
+    "tags": [
+      "RPG",
+      "轩辕剑",
+      "国产",
+      "大宇",
+      "DOMO"
+    ],
+    "hidden": false
   },
   {
     "name": "ナンパッション",
@@ -1442,7 +2418,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-08-14T10:16:58+08:00",
-    "tags": []
+    "tags": [
+      "手游",
+      "G.Gear.inc",
+      "解谜",
+      "搞笑",
+      "G.Gear"
+    ],
+    "hidden": false
   },
   {
     "name": "フラれ回避",
@@ -1452,7 +2435,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-08-13T22:43:35+08:00",
-    "tags": []
+    "tags": [
+      "手游",
+      "G.Gear.inc",
+      "修罗场",
+      "Android",
+      "ADV"
+    ],
+    "hidden": false
   },
   {
     "name": "僕の彼女は浮気なんかしない",
@@ -1462,7 +2452,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-08-12T22:38:48+08:00",
-    "tags": []
+    "tags": [
+      "手游",
+      "G.Gear.inc",
+      "AVG",
+      "悬疑",
+      "修罗场"
+    ],
+    "hidden": false
   },
   {
     "name": "元カノ(仮)と今カノと僕",
@@ -1472,7 +2469,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-08-12T11:08:23+08:00",
-    "tags": []
+    "tags": [
+      "手游",
+      "AVG",
+      "G.Gear.inc",
+      "解谜",
+      "修罗场"
+    ],
+    "hidden": false
   },
   {
     "name": "元カノは友達だから問題ない",
@@ -1482,7 +2486,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-08-10T14:05:55+08:00",
-    "tags": []
+    "tags": [
+      "手游",
+      "G.Gear.inc",
+      "AVG",
+      "悬疑",
+      "Android"
+    ],
+    "hidden": false
   },
   {
     "name": "PRICE",
@@ -1492,7 +2503,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-08-08T22:27:59+08:00",
-    "tags": []
+    "tags": [
+      "AVG",
+      "国产",
+      "PC",
+      "解谜",
+      "STEAM"
+    ],
+    "hidden": false
   },
   {
     "name": "CHAOS;CHILD",
@@ -1502,7 +2520,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-07-28T19:17:40+08:00",
-    "tags": []
+    "tags": [
+      "5pb.",
+      "科学妄想ADV",
+      "Galgame",
+      "志倉千代丸",
+      "悬疑"
+    ],
+    "hidden": false
   },
   {
     "name": "ZERO ESCAPE 刻のジレンマ",
@@ -1512,7 +2537,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-07-06T01:33:17+08:00",
-    "tags": []
+    "tags": [
+      "打越鋼太郎",
+      "极限脱出",
+      "AVG",
+      "悬疑",
+      "3DS"
+    ],
+    "hidden": false
   },
   {
     "name": "ひぐらしのなく頃に解",
@@ -1522,7 +2554,14 @@
     "rate": 10,
     "type": 2,
     "updated_at": "2020-06-28T12:31:02+08:00",
-    "tags": []
+    "tags": [
+      "竜騎士07",
+      "Galgame",
+      "寒蝉鸣泣之时",
+      "同人",
+      "友情"
+    ],
+    "hidden": false
   },
   {
     "name": "ひぐらしのなく頃に",
@@ -1532,7 +2571,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-06-19T13:13:36+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "龙骑士07",
+      "寒蝉鸣泣之时",
+      "悬疑",
+      "竜騎士07"
+    ],
+    "hidden": false
   },
   {
     "name": "のじゃロリのヤンデレ黙示録",
@@ -1542,7 +2588,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-06-04T01:41:51+08:00",
-    "tags": []
+    "tags": [
+      "病娇",
+      "同人",
+      "Galgame",
+      "血腥",
+      "超短警告"
+    ],
+    "hidden": false
   },
   {
     "name": "デンシャ",
@@ -1552,7 +2605,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-06-03T08:06:57+08:00",
-    "tags": []
+    "tags": [
+      "RPGMaker",
+      "PC",
+      "小麦畑",
+      "RPG",
+      "独立游戏"
+    ],
+    "hidden": false
   },
   {
     "name": "ペルソナ4 ザ・ゴールデン",
@@ -1562,7 +2622,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-23T11:49:23+08:00",
-    "tags": []
+    "tags": [
+      "女神异闻录",
+      "ATLUS",
+      "RPG",
+      "PSV",
+      "JRPG"
+    ],
+    "hidden": false
   },
   {
     "name": "Helltaker",
@@ -1572,7 +2639,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-23T01:57:49+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "独立游戏",
+      "解谜",
+      "推箱子",
+      "STEAM"
+    ],
+    "hidden": false
   },
   {
     "name": "極限脱出ADV 善人シボウデス",
@@ -1582,7 +2656,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-22T12:08:14+08:00",
-    "tags": []
+    "tags": [
+      "打越钢太郎",
+      "极限脱出",
+      "AVG",
+      "3DS",
+      "悬疑"
+    ],
+    "hidden": false
   },
   {
     "name": "メモリーズオフ -Innocent Fille-",
@@ -1592,7 +2673,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-18T13:20:02+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "秋之回忆",
+      "5pb.",
+      "Memories-off",
+      "GAL"
+    ],
+    "hidden": false
   },
   {
     "name": "黑森町绮谭",
@@ -1602,7 +2690,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T10:28:01+08:00",
-    "tags": []
+    "tags": [
+      "国产",
+      "RPG",
+      "解谜",
+      "PC",
+      "STEAM"
+    ],
+    "hidden": false
   },
   {
     "name": "風色幻想XX 交錯的軌跡",
@@ -1612,7 +2707,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T10:27:21+08:00",
-    "tags": []
+    "tags": [
+      "风色幻想",
+      "SRPG",
+      "PC",
+      "伊莎贝拉",
+      "弘煜科技"
+    ],
+    "hidden": false
   },
   {
     "name": "采配のゆくえ",
@@ -1622,7 +2724,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T10:26:38+08:00",
-    "tags": []
+    "tags": [
+      "NDS",
+      "AVG",
+      "战国",
+      "KOEI",
+      "推理"
+    ],
+    "hidden": false
   },
   {
     "name": "寻仙",
@@ -1632,7 +2741,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-15T10:26:17+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "网游",
+      "童年",
+      "MMORPG",
+      "安卓"
+    ],
+    "hidden": false
   },
   {
     "name": "精忠报国岳飞传",
@@ -1642,7 +2758,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T10:25:39+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "游戏",
+      "SLG",
+      "同人",
+      "曹操传"
+    ],
+    "hidden": false
   },
   {
     "name": "2048",
@@ -1652,7 +2775,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T10:23:45+08:00",
-    "tags": []
+    "tags": [
+      "PUZ",
+      "小游戏",
+      "杀时间",
+      "益智",
+      "Web"
+    ],
+    "hidden": false
   },
   {
     "name": "メモリーズオフ ゆびきりの記憶 ふたりの風流庵",
@@ -1662,7 +2792,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T10:23:20+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "秋之回忆",
+      "5pb",
+      "PSP",
+      "FD"
+    ],
+    "hidden": false
   },
   {
     "name": "鸑鷟：镜花水月",
@@ -1672,7 +2809,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T10:22:44+08:00",
-    "tags": []
+    "tags": [
+      "国产",
+      "Galgame",
+      "鸑鷟",
+      "同人",
+      "GAL"
+    ],
+    "hidden": false
   },
   {
     "name": "Mirror",
@@ -1682,7 +2826,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T10:22:39+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "消消乐",
+      "STEAM",
+      "黄油",
+      "R18"
+    ],
+    "hidden": false
   },
   {
     "name": "夜廻",
@@ -1692,7 +2843,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T10:22:05+08:00",
-    "tags": []
+    "tags": [
+      "日本一",
+      "恐怖",
+      "PSV",
+      "解谜",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "戦場のヴァルキュリア4",
@@ -1702,7 +2860,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T10:22:00+08:00",
-    "tags": []
+    "tags": [
+      "SEGA",
+      "PS4",
+      "SRPG",
+      "战场女武神",
+      "2018"
+    ],
+    "hidden": false
   },
   {
     "name": "グリザイア：ファントムトリガー 第1巻",
@@ -1712,7 +2877,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T10:19:39+08:00",
-    "tags": []
+    "tags": [
+      "FrontWing",
+      "Galgame",
+      "灰色系列",
+      "渡辺明夫",
+      "全年龄"
+    ],
+    "hidden": false
   },
   {
     "name": "奥様は惨殺少女",
@@ -1722,7 +2894,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T10:18:34+08:00",
-    "tags": []
+    "tags": [
+      "同人",
+      "Galgame",
+      "病娇",
+      "全年龄",
+      "猎奇"
+    ],
+    "hidden": false
   },
   {
     "name": "アリスの精神裁判",
@@ -1732,7 +2911,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T10:17:22+08:00",
-    "tags": []
+    "tags": [
+      "手游",
+      "推理",
+      "SEEC",
+      "Android",
+      "解谜"
+    ],
+    "hidden": false
   },
   {
     "name": "メモリーズオフ6 ～T-Wave～",
@@ -1742,7 +2928,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T10:15:44+08:00",
-    "tags": []
+    "tags": [
+      "秋之回忆",
+      "Galgame",
+      "5pb",
+      "KID",
+      "学姐"
+    ],
+    "hidden": false
   },
   {
     "name": "ザンキゼロ",
@@ -1752,7 +2945,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T10:15:23+08:00",
-    "tags": []
+    "tags": [
+      "SpikeChunsoft",
+      "PS4",
+      "PSV",
+      "DRPG",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "青鬼",
@@ -1762,7 +2962,14 @@
     "rate": 4,
     "type": 2,
     "updated_at": "2020-05-15T10:15:08+08:00",
-    "tags": []
+    "tags": [
+      "RPG",
+      "恐怖",
+      "PC",
+      "独立游戏",
+      "AVG"
+    ],
+    "hidden": false
   },
   {
     "name": "端木斐异闻录",
@@ -1772,7 +2979,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T10:14:48+08:00",
-    "tags": []
+    "tags": [
+      "推理",
+      "国产",
+      "STEAM",
+      "AVG",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "Memories Off #5 encore",
@@ -1782,7 +2996,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T10:14:29+08:00",
-    "tags": []
+    "tags": [
+      "秋之回忆",
+      "KID",
+      "Galgame",
+      "MO",
+      "PSP"
+    ],
+    "hidden": false
   },
   {
     "name": "犯人は僕です。",
@@ -1792,7 +3013,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T10:13:31+08:00",
-    "tags": []
+    "tags": [
+      "手游",
+      "推理",
+      "G.Gear.inc",
+      "悬疑",
+      "AVG"
+    ],
+    "hidden": false
   },
   {
     "name": "DISTRAINT",
@@ -1802,7 +3030,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T10:12:42+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "像素",
+      "解谜",
+      "AVG",
+      "独立游戏"
+    ],
+    "hidden": false
   },
   {
     "name": "三国赵云传",
@@ -1812,7 +3047,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-15T10:12:28+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "ARPG",
+      "国产",
+      "童年",
+      "亢龙无悔"
+    ],
+    "hidden": false
   },
   {
     "name": "战舰少女R",
@@ -1822,7 +3064,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T10:11:32+08:00",
-    "tags": []
+    "tags": [
+      "手游",
+      "国产",
+      "舰娘",
+      "Android",
+      "战舰少女"
+    ],
+    "hidden": false
   },
   {
     "name": "メモリーズオフ6 Next Relation",
@@ -1832,7 +3081,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T10:10:39+08:00",
-    "tags": []
+    "tags": [
+      "秋之回忆",
+      "Galgame",
+      "5pb",
+      "PSP",
+      "MO"
+    ],
+    "hidden": false
   },
   {
     "name": "恋と選挙とチョコレート ポータブル",
@@ -1842,7 +3098,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T10:09:47+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "PSP",
+      "sprite",
+      "恋爱选举巧克力",
+      "雪碧社"
+    ],
+    "hidden": false
   },
   {
     "name": "人魚沼",
@@ -1852,7 +3115,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T10:09:25+08:00",
-    "tags": []
+    "tags": [
+      "RPG",
+      "PC",
+      "解谜",
+      "恐怖",
+      "岚少实况"
+    ],
+    "hidden": false
   },
   {
     "name": "グリザイア：ファントムトリガー 第2巻",
@@ -1862,7 +3132,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T10:09:06+08:00",
-    "tags": []
+    "tags": [
+      "FrontWing",
+      "Galgame",
+      "灰色系列",
+      "グリザイア",
+      "全年龄"
+    ],
+    "hidden": false
   },
   {
     "name": "グリザイア：ファントムトリガー 第5.5巻",
@@ -1872,7 +3149,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T10:08:56+08:00",
-    "tags": []
+    "tags": [
+      "FrontWing",
+      "Galgame",
+      "灰色系列",
+      "全年龄",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "グリザイア：ファントムトリガー 第3巻",
@@ -1882,7 +3166,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T10:08:51+08:00",
-    "tags": []
+    "tags": [
+      "FrontWing",
+      "Galgame",
+      "灰色系列",
+      "渡辺明夫",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "恒水中学连环虐杀",
@@ -1892,7 +3183,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T10:08:15+08:00",
-    "tags": []
+    "tags": [
+      "国产",
+      "AVG",
+      "推理",
+      "橙光",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "グリザイア：ファントムトリガー 第4巻",
@@ -1902,7 +3200,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T10:07:56+08:00",
-    "tags": []
+    "tags": [
+      "FrontWing",
+      "Galgame",
+      "全年龄",
+      "灰色系列",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "真・三國無双7 猛将伝",
@@ -1912,7 +3217,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T09:54:57+08:00",
-    "tags": []
+    "tags": [
+      "ACT",
+      "KOEI",
+      "PC",
+      "割草",
+      "真三国无双"
+    ],
+    "hidden": false
   },
   {
     "name": "Plague Inc.",
@@ -1922,7 +3234,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T09:41:45+08:00",
-    "tags": []
+    "tags": [
+      "SLG",
+      "手游",
+      "策略",
+      "独立游戏",
+      "反人类"
+    ],
+    "hidden": false
   },
   {
     "name": "俺の妹がこんなに可愛いわけがない ポータブル",
@@ -1932,7 +3251,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T09:40:15+08:00",
-    "tags": []
+    "tags": [
+      "PSP",
+      "俺妹",
+      "Galgame",
+      "綾瀬本命",
+      "黑猫线"
+    ],
+    "hidden": false
   },
   {
     "name": "真・三國無双7",
@@ -1942,7 +3268,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T09:39:46+08:00",
-    "tags": []
+    "tags": [
+      "ACT",
+      "无双",
+      "KOEI",
+      "PS3",
+      "割草"
+    ],
+    "hidden": false
   },
   {
     "name": "逆転裁判5",
@@ -1952,7 +3285,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T09:39:22+08:00",
-    "tags": []
+    "tags": [
+      "3DS",
+      "逆转裁判",
+      "Capcom",
+      "AVG",
+      "推理"
+    ],
+    "hidden": false
   },
   {
     "name": "俺の妹がこんなに可愛いわけがない ポータブルが続くわけがない",
@@ -1962,7 +3302,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T09:37:51+08:00",
-    "tags": []
+    "tags": [
+      "PSP",
+      "俺妹",
+      "Galgame",
+      "AVG",
+      "续章"
+    ],
+    "hidden": false
   },
   {
     "name": "暁の護衛",
@@ -1972,7 +3319,14 @@
     "rate": 5,
     "type": 2,
     "updated_at": "2020-05-15T09:37:40+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "晓之护卫",
+      "衣笠彰梧",
+      "搞笑",
+      "大小姐"
+    ],
+    "hidden": false
   },
   {
     "name": "恋愛0キロメートル",
@@ -1982,7 +3336,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T09:37:15+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "ASaProject",
+      "搞笑",
+      "颜艺",
+      "欢乐"
+    ],
+    "hidden": false
   },
   {
     "name": "大富翁6",
@@ -1992,7 +3353,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T09:35:59+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "大富翁",
+      "童年",
+      "国产",
+      "经典"
+    ],
+    "hidden": false
   },
   {
     "name": "剑侠情缘贰",
@@ -2002,7 +3370,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T09:35:35+08:00",
-    "tags": []
+    "tags": [
+      "剑侠情缘",
+      "PC",
+      "RPG",
+      "国产",
+      "ARPG"
+    ],
+    "hidden": false
   },
   {
     "name": "グリザイア：ファントムトリガー 第5巻",
@@ -2012,7 +3387,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T09:35:11+08:00",
-    "tags": []
+    "tags": [
+      "FrontWing",
+      "Galgame",
+      "全年龄",
+      "灰色系列",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "リアル妹がいる大泉くんのばあい",
@@ -2022,7 +3404,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T09:35:05+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "妹控",
+      "ALcotハニカム",
+      "妹系",
+      "alcot"
+    ],
+    "hidden": false
   },
   {
     "name": "苍蓝眼瞳的人偶",
@@ -2032,7 +3421,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T09:33:13+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "国产",
+      "蓝天使制作组",
+      "性转点赞",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "Road Rash",
@@ -2042,7 +3438,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T09:30:42+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "童年",
+      "RAC",
+      "EA",
+      "暴力摩托"
+    ],
+    "hidden": false
   },
   {
     "name": "とらドラ・ポータブル!",
@@ -2052,7 +3455,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T09:28:01+08:00",
-    "tags": []
+    "tags": [
+      "PSP",
+      "龙与虎",
+      "Galgame",
+      "龙虎斗",
+      "孕妇结局"
+    ],
+    "hidden": false
   },
   {
     "name": "メモリーズオフ ゆびきりの記憶",
@@ -2062,7 +3472,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T09:27:44+08:00",
-    "tags": []
+    "tags": [
+      "秋之回忆",
+      "Galgame",
+      "5pb",
+      "GAL",
+      "PSP"
+    ],
+    "hidden": false
   },
   {
     "name": "メモリーズオフ -Innocent Fille- for Dearest",
@@ -2072,7 +3489,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T09:27:39+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "秋之回忆",
+      "5pb.",
+      "最終作",
+      "Memories_off"
+    ],
+    "hidden": false
   },
   {
     "name": "Memories Off 5 とぎれたフィルム",
@@ -2082,7 +3506,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T09:27:27+08:00",
-    "tags": []
+    "tags": [
+      "秋之回忆",
+      "KID",
+      "Galgame",
+      "5pb",
+      "GAL"
+    ],
+    "hidden": false
   },
   {
     "name": "三國群英傳Ⅱ",
@@ -2092,7 +3523,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T09:26:56+08:00",
-    "tags": []
+    "tags": [
+      "SLG",
+      "PC",
+      "童年",
+      "宇浚奥汀",
+      "三国"
+    ],
+    "hidden": false
   },
   {
     "name": "グリザイア：ファントムトリガー 第6巻",
@@ -2102,7 +3540,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T09:25:40+08:00",
-    "tags": []
+    "tags": [
+      "FrontWing",
+      "Galgame",
+      "PC",
+      "灰色系列",
+      "渡辺明夫"
+    ],
+    "hidden": false
   },
   {
     "name": "黒先輩と黒屋敷の闇に迷わない",
@@ -2112,7 +3557,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T09:23:21+08:00",
-    "tags": []
+    "tags": [
+      "RPG",
+      "2014",
+      "饗庭淵",
+      "解密",
+      "同人"
+    ],
+    "hidden": false
   },
   {
     "name": "狼と香辛料 海を渡る風",
@@ -2122,7 +3574,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T09:22:19+08:00",
-    "tags": []
+    "tags": [
+      "NDS",
+      "萌狼",
+      "AVG",
+      "小清水亚美",
+      "福山润"
+    ],
+    "hidden": false
   },
   {
     "name": "この素晴らしい世界に祝福を! in the life",
@@ -2132,7 +3591,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T09:21:42+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "RPG",
+      "神还原",
+      "RPGMaker",
+      "同人"
+    ],
+    "hidden": false
   },
   {
     "name": "Memories Off 〜それから again〜",
@@ -2142,7 +3608,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T09:21:20+08:00",
-    "tags": []
+    "tags": [
+      "秋之回忆",
+      "KID",
+      "Galgame",
+      "MO4",
+      "again"
+    ],
+    "hidden": false
   },
   {
     "name": "マッドファーザー",
@@ -2152,7 +3625,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T09:21:12+08:00",
-    "tags": []
+    "tags": [
+      "恐怖",
+      "解谜",
+      "RPG",
+      "RPGMaker",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "名探偵コナン 蒼き宝石の輪舞曲",
@@ -2162,7 +3642,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T09:21:01+08:00",
-    "tags": []
+    "tags": [
+      "NDS",
+      "AVG",
+      "推理",
+      "解谜",
+      "2011"
+    ],
+    "hidden": false
   },
   {
     "name": "絶対絶望少女 ダンガンロンパ AnotherEpisode",
@@ -2172,7 +3659,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T09:20:27+08:00",
-    "tags": []
+    "tags": [
+      "弹丸论破",
+      "PSV",
+      "绝对绝望少女",
+      "SpikeChunsoft",
+      "TPS"
+    ],
+    "hidden": false
   },
   {
     "name": "Yu-Gi-Oh! Power of Chaos: Joey the Passion",
@@ -2182,7 +3676,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T09:19:41+08:00",
-    "tags": []
+    "tags": [
+      "游戏王",
+      "PC",
+      "Konami",
+      "城之内",
+      "卡牌"
+    ],
+    "hidden": false
   },
   {
     "name": "レイトン教授VS逆転裁判",
@@ -2192,7 +3693,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T09:18:23+08:00",
-    "tags": []
+    "tags": [
+      "逆转裁判",
+      "3DS",
+      "雷顿教授",
+      "AVG",
+      "Capcom"
+    ],
+    "hidden": false
   },
   {
     "name": "ニュー ダンガンロンパV3 みんなのコロシアイ新学期",
@@ -2202,7 +3710,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-15T09:14:06+08:00",
-    "tags": []
+    "tags": [
+      "弹丸论破",
+      "推理",
+      "AVG",
+      "小高和剛",
+      "悬疑"
+    ],
+    "hidden": false
   },
   {
     "name": "殺戮の天使",
@@ -2212,7 +3727,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T09:13:58+08:00",
-    "tags": []
+    "tags": [
+      "RPG",
+      "独立游戏",
+      "恐怖解密",
+      "RPGMaker",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "乙女理論とその後の周辺 -Belle Epoque-",
@@ -2222,7 +3744,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T09:13:52+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "Navel",
+      "伪娘",
+      "FD",
+      "妹控"
+    ],
+    "hidden": false
   },
   {
     "name": "Drawn: The Painted Tower",
@@ -2232,7 +3761,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-15T09:11:08+08:00",
-    "tags": []
+    "tags": [
+      "解谜",
+      "PC",
+      "AVG",
+      "独立游戏",
+      "PUZ"
+    ],
+    "hidden": false
   },
   {
     "name": "流言侦探-活着的死者",
@@ -2242,7 +3778,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T09:10:53+08:00",
-    "tags": []
+    "tags": [
+      "手游",
+      "国产",
+      "悬疑",
+      "AVG",
+      "推理"
+    ],
+    "hidden": false
   },
   {
     "name": "三国杀",
@@ -2252,7 +3795,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T09:10:44+08:00",
-    "tags": []
+    "tags": [
+      "桌游",
+      "三国杀",
+      "PC",
+      "国产",
+      "打酱油的"
+    ],
+    "hidden": false
   },
   {
     "name": "大逆転裁判 -成歩堂龍ノ介の冒險-",
@@ -2262,7 +3812,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T09:10:23+08:00",
-    "tags": []
+    "tags": [
+      "逆转裁判",
+      "巧舟",
+      "3DS",
+      "AVG",
+      "Capcom"
+    ],
+    "hidden": false
   },
   {
     "name": "真・三國無双6 猛将伝",
@@ -2272,7 +3829,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T09:09:51+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "ACT",
+      "KOEI",
+      "割草",
+      "无双"
+    ],
+    "hidden": false
   },
   {
     "name": "魔塔",
@@ -2282,7 +3846,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T09:08:40+08:00",
-    "tags": []
+    "tags": [
+      "RPG",
+      "PC",
+      "flash",
+      "童年",
+      "国产"
+    ],
+    "hidden": false
   },
   {
     "name": "犯人は僕です。～露天風呂編～",
@@ -2292,7 +3863,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T09:08:23+08:00",
-    "tags": []
+    "tags": [
+      "手游",
+      "G.Gear.inc",
+      "推理",
+      "悬疑",
+      "AVG"
+    ],
+    "hidden": false
   },
   {
     "name": "Zuma",
@@ -2302,7 +3880,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T09:07:26+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "popcap",
+      "童年",
+      "PUZ",
+      "小游戏"
+    ],
+    "hidden": false
   },
   {
     "name": "Child of Light",
@@ -2312,7 +3897,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-15T09:06:06+08:00",
-    "tags": []
+    "tags": [
+      "RPG",
+      "Ubisoft",
+      "PC",
+      "回合制",
+      "清新"
+    ],
+    "hidden": false
   },
   {
     "name": "返校",
@@ -2322,7 +3914,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T09:05:36+08:00",
-    "tags": []
+    "tags": [
+      "解谜",
+      "恐怖",
+      "PC",
+      "STEAM",
+      "国产"
+    ],
+    "hidden": false
   },
   {
     "name": "魔法の塔",
@@ -2332,7 +3931,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-15T09:03:54+08:00",
-    "tags": []
+    "tags": [
+      "童年",
+      "PC",
+      "小游戏",
+      "RPG",
+      "魔塔"
+    ],
+    "hidden": false
   },
   {
     "name": "ファイナルファンタジーXIV 新生エオルゼア",
@@ -2342,7 +3948,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T09:03:25+08:00",
-    "tags": []
+    "tags": [
+      "MMORPG",
+      "PC",
+      "最终幻想",
+      "SquareEnix",
+      "网游"
+    ],
+    "hidden": false
   },
   {
     "name": "ファイナルファンタジーXIV",
@@ -2352,7 +3965,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T09:02:49+08:00",
-    "tags": []
+    "tags": [
+      "MMORPG",
+      "PC",
+      "最終幻想",
+      "SquareEnix",
+      "网游"
+    ],
+    "hidden": false
   },
   {
     "name": "遊戯王ファイブディーズ Tag Force 5",
@@ -2362,7 +3982,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T09:02:12+08:00",
-    "tags": []
+    "tags": [
+      "游戏王",
+      "PSP",
+      "Konami",
+      "打牌王",
+      "SLG"
+    ],
+    "hidden": false
   },
   {
     "name": "逆転裁判6",
@@ -2372,7 +3999,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T09:00:30+08:00",
-    "tags": []
+    "tags": [
+      "3DS",
+      "逆转裁判",
+      "AVG",
+      "Capcom",
+      "推理"
+    ],
+    "hidden": false
   },
   {
     "name": "剑侠情缘网络版叁",
@@ -2382,7 +4016,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T08:59:14+08:00",
-    "tags": []
+    "tags": [
+      "基3",
+      "剑三",
+      "西山居",
+      "MMORPG",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "深夜廻",
@@ -2392,7 +4033,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T08:57:46+08:00",
-    "tags": []
+    "tags": [
+      "恐怖",
+      "日本一",
+      "PC",
+      "PS4",
+      "PSV"
+    ],
+    "hidden": false
   },
   {
     "name": "三國志IX",
@@ -2402,7 +4050,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T08:57:17+08:00",
-    "tags": []
+    "tags": [
+      "SLG",
+      "KOEI",
+      "三国志",
+      "PC",
+      "光荣"
+    ],
+    "hidden": false
   },
   {
     "name": "戦場のヴァルキュリア2 ガリア王立士官学校",
@@ -2412,7 +4067,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T08:54:21+08:00",
-    "tags": []
+    "tags": [
+      "PSP",
+      "SEGA",
+      "SRPG",
+      "战场女武神2",
+      "战场女武神"
+    ],
+    "hidden": false
   },
   {
     "name": "逆転検事",
@@ -2422,7 +4084,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T08:53:19+08:00",
-    "tags": []
+    "tags": [
+      "NDS",
+      "Capcom",
+      "逆转检事",
+      "AVG",
+      "推理"
+    ],
+    "hidden": false
   },
   {
     "name": "風色幻想6～冒險奏鳴～",
@@ -2432,7 +4101,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-15T08:51:27+08:00",
-    "tags": []
+    "tags": [
+      "风色幻想",
+      "PC",
+      "SRPG",
+      "弘煜科技",
+      "SLG"
+    ],
+    "hidden": false
   },
   {
     "name": "AI: ソムニウム ファイル",
@@ -2442,7 +4118,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T08:50:53+08:00",
-    "tags": []
+    "tags": [
+      "打越鋼太郎",
+      "AVG",
+      "悬疑",
+      "SpikeChunsoft",
+      "解谜"
+    ],
+    "hidden": false
   },
   {
     "name": "アマガミ",
@@ -2452,7 +4135,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T08:50:47+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "PSP",
+      "圣诞之吻",
+      "恋爱",
+      "绚辻词"
+    ],
+    "hidden": false
   },
   {
     "name": "三國志X",
@@ -2462,7 +4152,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T08:49:27+08:00",
-    "tags": []
+    "tags": [
+      "SLG",
+      "KOEI",
+      "PC",
+      "三国",
+      "光荣"
+    ],
+    "hidden": false
   },
   {
     "name": "ファイナルファンタジーXIV  紅蓮のリベレーター",
@@ -2472,7 +4169,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T08:48:21+08:00",
-    "tags": []
+    "tags": [
+      "MMORPG",
+      "SquareEnix",
+      "PC",
+      "最终幻想",
+      "网游"
+    ],
+    "hidden": false
   },
   {
     "name": "Memories Off Duet",
@@ -2482,7 +4186,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-15T08:47:10+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "KID",
+      "秋之回忆",
+      "GAL",
+      "打越钢太郎"
+    ],
+    "hidden": false
   },
   {
     "name": "STEINS;GATE 0",
@@ -2492,7 +4203,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T08:46:54+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "命运石之门",
+      "5pb",
+      "假想科学ADV",
+      "5pb."
+    ],
+    "hidden": false
   },
   {
     "name": "月に寄りそう乙女の作法",
@@ -2502,7 +4220,14 @@
     "rate": 5,
     "type": 2,
     "updated_at": "2020-05-15T08:45:15+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "Navel",
+      "伪娘",
+      "女装",
+      "小仓朝日"
+    ],
+    "hidden": false
   },
   {
     "name": "Memories Off 〜それから〜",
@@ -2512,7 +4237,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T08:44:56+08:00",
-    "tags": []
+    "tags": [
+      "秋之回忆",
+      "KID",
+      "Galgame",
+      "从今以后",
+      "雨何时会停"
+    ],
+    "hidden": false
   },
   {
     "name": "三國志姜維傳",
@@ -2522,7 +4254,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-15T08:44:46+08:00",
-    "tags": []
+    "tags": [
+      "SLG",
+      "同人",
+      "三国",
+      "战棋",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "蓝宝石般的被害妄想少女",
@@ -2532,7 +4271,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-15T08:44:33+08:00",
-    "tags": []
+    "tags": [
+      "国产",
+      "AVG",
+      "推理",
+      "橙光",
+      "馄饨仙人"
+    ],
+    "hidden": false
   },
   {
     "name": "魔女の家",
@@ -2542,7 +4288,14 @@
     "rate": 10,
     "type": 2,
     "updated_at": "2020-05-15T08:44:21+08:00",
-    "tags": []
+    "tags": [
+      "RPG",
+      "解谜",
+      "恐怖",
+      "致郁",
+      "PC"
+    ],
+    "hidden": false
   },
   {
     "name": "かまいたちの夜",
@@ -2552,7 +4305,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T08:43:12+08:00",
-    "tags": []
+    "tags": [
+      "chunsoft",
+      "推理",
+      "AVG",
+      "PS",
+      "恐怖惊魂夜"
+    ],
+    "hidden": false
   },
   {
     "name": "逆転裁判4",
@@ -2562,7 +4322,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T08:43:07+08:00",
-    "tags": []
+    "tags": [
+      "逆转裁判",
+      "NDS",
+      "Capcom",
+      "AVG",
+      "推理"
+    ],
+    "hidden": false
   },
   {
     "name": "三國志11",
@@ -2572,7 +4339,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-15T08:41:26+08:00",
-    "tags": []
+    "tags": [
+      "SLG",
+      "KOEI",
+      "PC",
+      "三国志",
+      "光荣"
+    ],
+    "hidden": false
   },
   {
     "name": "Monument Valley",
@@ -2582,7 +4356,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T08:40:56+08:00",
-    "tags": []
+    "tags": [
+      "手游",
+      "解谜",
+      "独立游戏",
+      "iOS",
+      "几何"
+    ],
+    "hidden": false
   },
   {
     "name": "Plants Vs. Zombies",
@@ -2592,7 +4373,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T08:40:47+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "塔防",
+      "小游戏",
+      "植物战僵尸",
+      "植物大战僵尸"
+    ],
+    "hidden": false
   },
   {
     "name": "Deemo",
@@ -2602,7 +4390,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T08:40:37+08:00",
-    "tags": []
+    "tags": [
+      "音游",
+      "Rayark",
+      "iOS",
+      "MUG",
+      "音乐"
+    ],
+    "hidden": false
   },
   {
     "name": "風色幻想5～赤月戰爭～",
@@ -2612,7 +4407,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-15T08:39:32+08:00",
-    "tags": []
+    "tags": [
+      "风色幻想",
+      "PC",
+      "風色幻想5",
+      "SLG",
+      "弘煜科技"
+    ],
+    "hidden": false
   },
   {
     "name": "大富翁4",
@@ -2622,7 +4424,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T08:39:20+08:00",
-    "tags": []
+    "tags": [
+      "大富翁",
+      "PC",
+      "经典",
+      "童年",
+      "国产"
+    ],
+    "hidden": false
   },
   {
     "name": "乙女理論とその周辺 -École de Paris-",
@@ -2632,7 +4441,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T08:39:06+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "Navel",
+      "伪娘",
+      "妹控",
+      "女装"
+    ],
+    "hidden": false
   },
   {
     "name": "銃声とダイヤモンド",
@@ -2642,7 +4458,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T08:38:55+08:00",
-    "tags": []
+    "tags": [
+      "PSP",
+      "AVG",
+      "推理",
+      "谈判",
+      "SCE"
+    ],
+    "hidden": false
   },
   {
     "name": "Ib",
@@ -2652,7 +4475,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T08:38:38+08:00",
-    "tags": []
+    "tags": [
+      "恐怖",
+      "解密",
+      "PC",
+      "独立游戏",
+      "RPG"
+    ],
+    "hidden": false
   },
   {
     "name": "What Remains of Edith Finch",
@@ -2662,7 +4492,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T08:38:21+08:00",
-    "tags": []
+    "tags": [
+      "独立游戏",
+      "PC",
+      "AVG",
+      "步行模拟",
+      "剧情"
+    ],
+    "hidden": false
   },
   {
     "name": "逆転検事2",
@@ -2672,7 +4509,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-15T08:38:16+08:00",
-    "tags": []
+    "tags": [
+      "NDS",
+      "Capcom",
+      "AVG",
+      "逆转检事",
+      "推理"
+    ],
+    "hidden": false
   },
   {
     "name": "仙剑奇侠传四",
@@ -2682,7 +4526,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-15T08:38:01+08:00",
-    "tags": []
+    "tags": [
+      "RPG",
+      "仙剑奇侠传",
+      "仙劍4",
+      "上海软星",
+      "仙剑"
+    ],
+    "hidden": false
   },
   {
     "name": "ファイナルファンタジーXIV 蒼天のイシュガルド",
@@ -2692,7 +4543,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T08:37:52+08:00",
-    "tags": []
+    "tags": [
+      "MMORPG",
+      "最终幻想",
+      "PC",
+      "SquareEnix",
+      "网游"
+    ],
+    "hidden": false
   },
   {
     "name": "Ori and the Will of the Wisps",
@@ -2702,7 +4560,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-15T08:37:45+08:00",
-    "tags": []
+    "tags": [
+      "横版",
+      "PC",
+      "ACT",
+      "奥日",
+      "类银河战士恶魔城"
+    ],
+    "hidden": false
   },
   {
     "name": "戦場のヴァルキュリア3",
@@ -2712,7 +4577,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-15T08:37:37+08:00",
-    "tags": []
+    "tags": [
+      "PSP",
+      "SEGA",
+      "戦場のヴァルキュリア3",
+      "SRPG",
+      "戦場のヴァルキュリア"
+    ],
+    "hidden": false
   },
   {
     "name": "Gorogoa",
@@ -2722,7 +4594,14 @@
     "rate": 7,
     "type": 2,
     "updated_at": "2020-05-15T08:37:33+08:00",
-    "tags": []
+    "tags": [
+      "解谜",
+      "独立游戏",
+      "PC",
+      "PUZ",
+      "创意"
+    ],
+    "hidden": false
   },
   {
     "name": "G線上の魔王",
@@ -2732,7 +4611,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-15T08:37:24+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "G线上的魔王",
+      "AKABEiSOFT2",
+      "推理",
+      "悬疑"
+    ],
+    "hidden": false
   },
   {
     "name": "極限脱出 9時間9人9の扉",
@@ -2742,7 +4628,14 @@
     "rate": 10,
     "type": 2,
     "updated_at": "2020-05-15T08:36:47+08:00",
-    "tags": []
+    "tags": [
+      "打越鋼太郎",
+      "AVG",
+      "NDS",
+      "悬疑",
+      "密室逃脱"
+    ],
+    "hidden": false
   },
   {
     "name": "Memories Off 2nd",
@@ -2752,7 +4645,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-14T13:30:08+08:00",
-    "tags": []
+    "tags": [
+      "秋之回忆",
+      "KID",
+      "Galgame",
+      "白河萤",
+      "水树奈奈"
+    ],
+    "hidden": false
   },
   {
     "name": "ウィッシュルーム 天使の記憶",
@@ -2762,7 +4662,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-14T13:30:00+08:00",
-    "tags": []
+    "tags": [
+      "NDS",
+      "AVG",
+      "本格AVG",
+      "黄昏旅馆",
+      "推理"
+    ],
+    "hidden": false
   },
   {
     "name": "ダンガンロンパ 希望の学園と絶望の高校生",
@@ -2772,7 +4679,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-14T13:29:44+08:00",
-    "tags": []
+    "tags": [
+      "推理",
+      "弹丸论破",
+      "AVG",
+      "PSP",
+      "悬疑"
+    ],
+    "hidden": false
   },
   {
     "name": "Ori and the Blind Forest",
@@ -2782,7 +4696,14 @@
     "rate": 10,
     "type": 2,
     "updated_at": "2020-05-14T13:28:20+08:00",
-    "tags": []
+    "tags": [
+      "PC",
+      "ACT",
+      "横版",
+      "STEAM",
+      "MoonStudios"
+    ],
+    "hidden": false
   },
   {
     "name": "レイジングループ",
@@ -2792,7 +4713,14 @@
     "rate": 10,
     "type": 2,
     "updated_at": "2020-05-14T13:27:00+08:00",
-    "tags": []
+    "tags": [
+      "悬疑",
+      "狼人杀",
+      "Galgame",
+      "AVG",
+      "轮回"
+    ],
+    "hidden": false
   },
   {
     "name": "VA-11 Hall-A: Cyberpunk Bartender Action",
@@ -2802,7 +4730,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-14T13:26:50+08:00",
-    "tags": []
+    "tags": [
+      "赛博朋克",
+      "AVG",
+      "独立游戏",
+      "PC",
+      "STEAM"
+    ],
+    "hidden": false
   },
   {
     "name": "WHITE ALBUM2 -introductory chapter-",
@@ -2812,7 +4747,14 @@
     "rate": 6,
     "type": 2,
     "updated_at": "2020-05-14T13:26:23+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "丸户史明",
+      "leaf",
+      "三角恋",
+      "WA2"
+    ],
+    "hidden": false
   },
   {
     "name": "ペルソナ3 ポータブル",
@@ -2822,7 +4764,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-14T13:26:07+08:00",
-    "tags": []
+    "tags": [
+      "PSP",
+      "ATLUS",
+      "女神异闻录",
+      "RPG",
+      "P3P"
+    ],
+    "hidden": false
   },
   {
     "name": "うみねこのなく頃に",
@@ -2832,7 +4781,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-14T13:25:40+08:00",
-    "tags": []
+    "tags": [
+      "竜騎士07",
+      "海猫",
+      "推理",
+      "龙骑士07",
+      "Galgame"
+    ],
+    "hidden": false
   },
   {
     "name": "FEZ",
@@ -2842,7 +4798,14 @@
     "rate": 10,
     "type": 2,
     "updated_at": "2020-05-14T13:25:19+08:00",
-    "tags": []
+    "tags": [
+      "独立游戏",
+      "解谜",
+      "PC",
+      "像素风",
+      "PUZ"
+    ],
+    "hidden": false
   },
   {
     "name": "逆転裁判 蘇る逆転",
@@ -2852,7 +4815,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-14T13:24:26+08:00",
-    "tags": []
+    "tags": [
+      "逆转裁判",
+      "Capcom",
+      "AVG",
+      "NDS",
+      "巧舟"
+    ],
+    "hidden": false
   },
   {
     "name": "うみねこのなく頃に散",
@@ -2862,7 +4832,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-14T13:24:16+08:00",
-    "tags": []
+    "tags": [
+      "竜騎士07",
+      "Galgame",
+      "悬疑",
+      "推理",
+      "07th_Expansion"
+    ],
+    "hidden": false
   },
   {
     "name": "ファイナルファンタジーXIV 漆黒のヴィランズ",
@@ -2872,7 +4849,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-14T13:23:34+08:00",
-    "tags": []
+    "tags": [
+      "MMORPG",
+      "SquareEnix",
+      "最终幻想",
+      "PC",
+      "FF14"
+    ],
+    "hidden": false
   },
   {
     "name": "逆転裁判2",
@@ -2882,7 +4866,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-14T13:23:25+08:00",
-    "tags": []
+    "tags": [
+      "逆转裁判",
+      "Capcom",
+      "AVG",
+      "GBA",
+      "巧舟"
+    ],
+    "hidden": false
   },
   {
     "name": "リトルバスターズ！エクスタシー",
@@ -2892,7 +4883,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-14T13:23:14+08:00",
-    "tags": []
+    "tags": [
+      "key",
+      "麻枝准",
+      "Galgame",
+      "友情",
+      "LittleBusters!"
+    ],
+    "hidden": false
   },
   {
     "name": "逆転裁判",
@@ -2902,7 +4900,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-14T13:22:23+08:00",
-    "tags": []
+    "tags": [
+      "逆转裁判",
+      "Capcom",
+      "AVG",
+      "GBA",
+      "推理"
+    ],
+    "hidden": false
   },
   {
     "name": "YGOPro",
@@ -2912,7 +4917,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-14T13:22:15+08:00",
-    "tags": []
+    "tags": [
+      "游戏王",
+      "PC",
+      "卡牌",
+      "桌游",
+      "TCG"
+    ],
+    "hidden": false
   },
   {
     "name": "ファタモルガーナの館",
@@ -2922,7 +4934,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-14T13:22:07+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "同人",
+      "推理悬疑",
+      "Novectacle",
+      "AVG"
+    ],
+    "hidden": false
   },
   {
     "name": "スーパーダンガンロンパ2 さよなら絶望学園",
@@ -2932,7 +4951,14 @@
     "rate": 10,
     "type": 2,
     "updated_at": "2020-05-14T13:22:00+08:00",
-    "tags": []
+    "tags": [
+      "推理",
+      "弹丸论破",
+      "AVG",
+      "悬疑",
+      "PSP"
+    ],
+    "hidden": false
   },
   {
     "name": "潜伏之赤途",
@@ -2942,7 +4968,14 @@
     "rate": 10,
     "type": 2,
     "updated_at": "2020-05-14T13:21:17+08:00",
-    "tags": []
+    "tags": [
+      "国产",
+      "AVG",
+      "橙光",
+      "谍战",
+      "历史"
+    ],
+    "hidden": false
   },
   {
     "name": "428 ～封鎖された渋谷で～",
@@ -2952,7 +4985,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-14T13:20:49+08:00",
-    "tags": []
+    "tags": [
+      "AVG",
+      "PSP",
+      "chunsoft",
+      "428",
+      "悬疑"
+    ],
+    "hidden": false
   },
   {
     "name": "Ruina 廃都の物語",
@@ -2962,7 +5002,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-14T13:20:39+08:00",
-    "tags": []
+    "tags": [
+      "RPG",
+      "独立游戏",
+      "PC",
+      "RPGMaker",
+      "同人"
+    ],
+    "hidden": false
   },
   {
     "name": "STEINS;GATE",
@@ -2972,7 +5019,14 @@
     "rate": 8,
     "type": 2,
     "updated_at": "2020-05-14T13:20:02+08:00",
-    "tags": []
+    "tags": [
+      "命运石之门",
+      "5pb",
+      "Galgame",
+      "Nitro+",
+      "空想科学ADV"
+    ],
+    "hidden": false
   },
   {
     "name": "大逆転裁判2 -成歩堂龍ノ介の覺悟-",
@@ -2982,7 +5036,14 @@
     "rate": 10,
     "type": 2,
     "updated_at": "2020-05-14T13:19:43+08:00",
-    "tags": []
+    "tags": [
+      "巧舟",
+      "逆转裁判",
+      "Capcom",
+      "3DS",
+      "AVG"
+    ],
+    "hidden": false
   },
   {
     "name": "ゴースト トリック",
@@ -2992,7 +5053,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-14T13:19:28+08:00",
-    "tags": []
+    "tags": [
+      "巧舟",
+      "AVG",
+      "Capcom",
+      "NDS",
+      "解谜"
+    ],
+    "hidden": false
   },
   {
     "name": "逆転裁判3",
@@ -3002,7 +5070,14 @@
     "rate": 9,
     "type": 2,
     "updated_at": "2020-05-14T13:18:53+08:00",
-    "tags": []
+    "tags": [
+      "逆转裁判",
+      "Capcom",
+      "AVG",
+      "巧舟",
+      "GBA"
+    ],
+    "hidden": false
   },
   {
     "name": "Ever17 -the out of infinity-",
@@ -3012,6 +5087,13 @@
     "rate": 10,
     "type": 2,
     "updated_at": "2020-05-14T13:18:29+08:00",
-    "tags": []
+    "tags": [
+      "Galgame",
+      "KID",
+      "Ever17",
+      "悬疑",
+      "神作"
+    ],
+    "hidden": false
   }
 ]
