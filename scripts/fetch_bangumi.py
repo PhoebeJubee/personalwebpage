@@ -105,6 +105,10 @@ def main():
         os.makedirs(OUT_DIR, exist_ok=True)
         with open(OUT_FILE, "w", encoding="utf-8") as f:
             json.dump([], f, ensure_ascii=False, indent=2)
+        assets_dir = os.path.join(ROOT, "assets", "data")
+        os.makedirs(assets_dir, exist_ok=True)
+        with open(os.path.join(assets_dir, "bangumi.json"), "w", encoding="utf-8") as f:
+            json.dump([], f, ensure_ascii=False, indent=2)
         return
 
     try:
@@ -115,6 +119,10 @@ def main():
         os.makedirs(OUT_DIR, exist_ok=True)
         with open(OUT_FILE, "w", encoding="utf-8") as f:
             json.dump([], f, ensure_ascii=False, indent=2)
+        assets_dir = os.path.join(ROOT, "assets", "data")
+        os.makedirs(assets_dir, exist_ok=True)
+        with open(os.path.join(assets_dir, "bangumi.json"), "w", encoding="utf-8") as f:
+            json.dump([], f, ensure_ascii=False, indent=2)
         return
 
     hidden_map = _load_existing_hidden()
@@ -124,6 +132,10 @@ def main():
             g["hidden"] = hidden_map[g["name"]]
     os.makedirs(OUT_DIR, exist_ok=True)
     with open(OUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(games, f, ensure_ascii=False, indent=2)
+    assets_dir = os.path.join(ROOT, "assets", "data")
+    os.makedirs(assets_dir, exist_ok=True)
+    with open(os.path.join(assets_dir, "bangumi.json"), "w", encoding="utf-8") as f:
         json.dump(games, f, ensure_ascii=False, indent=2)
     print(f"[bangumi] 已写入 {len(games)} 条游戏记录 -> {os.path.relpath(OUT_FILE, ROOT)}")
 

@@ -106,12 +106,27 @@ def _load_existing_hidden():
         return {}
 
 
+def _load_existing_custom_desc():
+    if not os.path.exists(OUT_FILE):
+        return {}
+    try:
+        with open(OUT_FILE, "r", encoding="utf-8") as f:
+            old = json.load(f)
+        return {r["name"]: r.get("custom_description", "") for r in old if r.get("name")}
+    except Exception:
+        return {}
+
+
 def main():
     username, featured = load_cfg()
     if not username or username == "YOUR_GITHUB_USERNAME":
         print("[github] 未配置 username，写出空数据。请在 scripts/config.ini 填写 [github] username")
         os.makedirs(OUT_DIR, exist_ok=True)
         with open(OUT_FILE, "w", encoding="utf-8") as f:
+            json.dump([], f, ensure_ascii=False, indent=2)
+        assets_dir = os.path.join(ROOT, "assets", "data")
+        os.makedirs(assets_dir, exist_ok=True)
+        with open(os.path.join(assets_dir, "github.json"), "w", encoding="utf-8") as f:
             json.dump([], f, ensure_ascii=False, indent=2)
         return
 
@@ -123,6 +138,10 @@ def main():
         os.makedirs(OUT_DIR, exist_ok=True)
         with open(OUT_FILE, "w", encoding="utf-8") as f:
             json.dump([], f, ensure_ascii=False, indent=2)
+        assets_dir = os.path.join(ROOT, "assets", "data")
+        os.makedirs(assets_dir, exist_ok=True)
+        with open(os.path.join(assets_dir, "github.json"), "w", encoding="utf-8") as f:
+            json.dump([], f, ensure_ascii=False, indent=2)
         return
 
     repos = [r for r in repos if not r.get("fork")]
@@ -133,6 +152,7 @@ def main():
         repos = repos[:MAX_REPOS]
 
     hidden_map = _load_existing_hidden()
+    custom_desc_map = _load_existing_custom_desc()
     out = []
     for r in repos:
         name = r.get("name", "")
@@ -141,10 +161,16 @@ def main():
         item = normalize(r, readme)
         if name in hidden_map:
             item["hidden"] = hidden_map[name]
+        if name in custom_desc_map and custom_desc_map[name]:
+            item["custom_description"] = custom_desc_map[name]
         out.append(item)
 
     os.makedirs(OUT_DIR, exist_ok=True)
     with open(OUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, indent=2)
+    assets_dir = os.path.join(ROOT, "assets", "data")
+    os.makedirs(assets_dir, exist_ok=True)
+    with open(os.path.join(assets_dir, "github.json"), "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
     print(f"[github] 已写入 {len(out)} 个仓库 -> {os.path.relpath(OUT_FILE, ROOT)}")
 

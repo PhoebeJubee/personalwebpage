@@ -22,7 +22,7 @@ DATA_DIR = os.path.join(ROOT, "static", "data")
 CONFIG_FILE = os.path.join(SCRIPTS, "config.ini")
 
 HUGO_PORT = 1319
-HUGO_URL = f"http://127.0.0.1:{HUGO_PORT}"
+HUGO_URL = f"http://127.0.0.1:{HUGO_PORT}/personalwebpage"
 
 PAGE_MAP = {
     "bangumi": "timeline",
@@ -52,7 +52,7 @@ def _start_hugo():
     cmd = [
         "hugo", "server", "-D", "--port", str(HUGO_PORT),
         "--bind", "127.0.0.1",
-        "--baseURL", f"http://127.0.0.1:{HUGO_PORT}/",
+        "--baseURL", f"http://127.0.0.1:{HUGO_PORT}/personalwebpage/",
         "--disableLiveReload",
     ]
     _hugo_proc = subprocess.Popen(
@@ -114,6 +114,10 @@ def _read_json(source):
 def _write_json(source, data):
     os.makedirs(DATA_DIR, exist_ok=True)
     with open(_data_file(source), "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    assets_dir = os.path.join(ROOT, "assets", "data")
+    os.makedirs(assets_dir, exist_ok=True)
+    with open(os.path.join(assets_dir, f"{source}.json"), "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
@@ -251,6 +255,21 @@ def api_toggle_hidden(source):
     item["hidden"] = not item.get("hidden", False)
     _write_json(source, data)
     return jsonify({"ok": True, "hidden": item["hidden"]})
+
+
+@app.route("/api/data/<source>/<int:index>", methods=["PATCH"])
+def api_patch_item(source, index):
+    if source not in SOURCES:
+        return jsonify({"error": "unknown source"}), 404
+    data = _read_json(source)
+    if not isinstance(data, list) or index < 0 or index >= len(data):
+        return jsonify({"error": "invalid index"}), 400
+    updates = request.get_json() or {}
+    item = data[index]
+    for k, v in updates.items():
+        item[k] = v
+    _write_json(source, data)
+    return jsonify({"ok": True, "item": item})
 
 
 @app.route("/api/hugo-status")

@@ -62,7 +62,7 @@
         {{ range first 4 $visible }}
           <a href="{{ .url }}" target="_blank" rel="noopener" class="video-card">
             <div class="video-thumb">
-              <img src="{{ .pic }}@480w_270h_1c.webp" alt="{{ .title }}" loading="lazy">
+              <img src="{{ .pic }}@480w_270h_1c.webp" alt="{{ .title }}" loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous">
               <span class="video-duration">{{ .duration }}s</span>
             </div>
             <div class="video-info">
@@ -110,11 +110,10 @@
             <div class="project-name">
               <a href="{{ .html_url }}" target="_blank" rel="noopener">{{ .name }}</a>
             </div>
-            <div class="project-desc">{{ .description | default "暂无描述" }}</div>
+            <div class="project-desc">{{ .custom_description | default .description | default "暂无描述" }}</div>
             <div class="project-meta">
               {{ if .language }}<span class="lang-badge">{{ .language }}</span>{{ end }}
               <span>⭐ {{ .stargazers_count }}</span>
-              <span>🍴 {{ .forks_count }}</span>
             </div>
           </div>
         {{ end }}
@@ -152,7 +151,7 @@
         {{ range first 4 $visible }}
           <div class="game-card">
             {{ if .cover }}
-              <img src="{{ .cover }}" alt="{{ .name_cn | default .name }}" class="game-cover" loading="lazy">
+              <img src="{{ .cover }}" alt="{{ .name_cn | default .name }}" class="game-cover" loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous">
             {{ end }}
             <div class="game-info">
               <div class="game-title">{{ .name_cn | default .name }}</div>

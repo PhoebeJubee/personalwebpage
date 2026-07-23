@@ -86,6 +86,7 @@
   <!-- Preview -->
   <div id="panel-preview" class="hidden fade-in">
     <div class="flex gap-2 mb-4">
+      <button onclick="switchPreview('homepage')" id="prev-homepage" class="px-3 py-1.5 text-sm rounded-lg transition">首页</button>
       <button onclick="switchPreview('bilibili')" id="prev-bilibili" class="px-3 py-1.5 text-sm rounded-lg transition">Bilibili</button>
       <button onclick="switchPreview('github')" id="prev-github" class="px-3 py-1.5 text-sm rounded-lg transition">GitHub</button>
       <button onclick="switchPreview('bangumi')" id="prev-bangumi" class="px-3 py-1.5 text-sm rounded-lg transition">Bangumi</button>
@@ -179,7 +180,7 @@ function switchPreview(src) {
 }
 
 function updatePreviewButtons() {
-  ['bangumi','bilibili','github'].forEach(s => {
+  ['homepage','bangumi','bilibili','github'].forEach(s => {
     const pe = document.getElementById(`prev-${s}`);
     if (pe) pe.classList.toggle('bg-blue-100', s === currentPreview);
     const se = document.getElementById(`src-${s}`);
@@ -285,22 +286,29 @@ function getItemTitle(item) {
 }
 
 async function loadPreview() {
-  const data = await api('GET', `/api/data/${currentPreview}`);
-  previewData = Array.isArray(data) ? data : [];
-
   const slug = PAGE_MAP[currentPreview];
   const iframe = document.getElementById('preview-iframe');
-  iframe.src = `${HUGO_URL}/${slug}/`;
-  document.getElementById('preview-title').textContent = `${getSourceLabel(currentPreview)} 预览`;
+  const itemListPanel = document.querySelector('.lg\\:col-span-1');
+
+  if (currentPreview === 'homepage') {
+    iframe.src = `${HUGO_URL}/`;
+    document.getElementById('preview-title').textContent = '首页预览';
+    if (itemListPanel) itemListPanel.classList.add('hidden');
+  } else {
+    const data = await api('GET', `/api/data/${currentPreview}`);
+    previewData = Array.isArray(data) ? data : [];
+    iframe.src = `${HUGO_URL}/${slug}/`;
+    document.getElementById('preview-title').textContent = `${getSourceLabel(currentPreview)} 预览`;
+    if (itemListPanel) itemListPanel.classList.remove('hidden');
+    renderItemList();
+  }
 
   iframe.onload = () => {
     document.getElementById('iframe-loading').classList.add('hidden');
   };
-
-  renderItemList();
 }
 
-const PAGE_MAP = { bangumi: 'timeline', bilibili: 'gaming', github: 'projects' };
+const PAGE_MAP = { homepage: '', bangumi: 'timeline', bilibili: 'gaming', github: 'projects' };
 
 function renderItemList() {
   const container = document.getElementById('item-list');
@@ -314,24 +322,67 @@ function renderItemList() {
     return;
   }
 
+  const isGithub = currentPreview === 'github';
+
   container.innerHTML = previewData.map((item, idx) => {
     const isHidden = !!item.hidden;
     const title = getItemTitle(item);
+    const desc = item.custom_description || item.description || '';
+    const hasCustomDesc = !!item.custom_description;
     return `
-      <div class="item-row flex items-center gap-2 py-2 px-2 rounded-lg border-b border-gray-50 ${isHidden ? 'is-hidden' : ''}">
-        <button onclick="toggleHidden(${idx})" class="shrink-0 w-7 h-7 flex items-center justify-center rounded-full transition ${isHidden ? 'bg-red-50 text-red-400 hover:bg-red-100' : 'bg-green-50 text-green-500 hover:bg-green-100'}" title="${isHidden ? '显示' : '隐藏'}">
-          ${isHidden
-            ? '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>'
-            : '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>'
-          }
-        </button>
-        <div class="flex-1 min-w-0">
-          <div class="text-sm truncate ${isHidden ? 'text-gray-400' : 'text-gray-700'}">${escHtml(title)}</div>
+      <div class="item-row py-2 px-2 rounded-lg border-b border-gray-50 ${isHidden ? 'is-hidden' : ''}" id="item-row-${idx}">
+        <div class="flex items-center gap-2">
+          <button onclick="toggleHidden(${idx})" class="shrink-0 w-7 h-7 flex items-center justify-center rounded-full transition ${isHidden ? 'bg-red-50 text-red-400 hover:bg-red-100' : 'bg-green-50 text-green-500 hover:bg-green-100'}" title="${isHidden ? '显示' : '隐藏'}">
+            ${isHidden
+              ? '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>'
+              : '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>'
+            }
+          </button>
+          <div class="flex-1 min-w-0">
+            <div class="text-sm truncate ${isHidden ? 'text-gray-400' : 'text-gray-700'}">${escHtml(title)}</div>
+            ${isGithub && desc ? `<div class="text-xs text-gray-400 truncate mt-0.5" title="${escHtml(desc)}">${hasCustomDesc ? '✏️ ' : ''}${escHtml(desc.length > 40 ? desc.slice(0, 40) + '...' : desc)}</div>` : ''}
+          </div>
+          ${isGithub ? `<button onclick="startEditDesc(${idx})" class="shrink-0 w-7 h-7 flex items-center justify-center rounded-full bg-blue-50 text-blue-400 hover:bg-blue-100 transition" title="编辑简介"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg></button>` : ''}
+          ${isHidden ? '<span class="text-xs text-red-400 shrink-0">已隐藏</span>' : ''}
         </div>
-        ${isHidden ? '<span class="text-xs text-red-400 shrink-0">已隐藏</span>' : ''}
+        <div id="edit-desc-${idx}" class="hidden mt-2">
+          <textarea id="desc-input-${idx}" class="w-full text-xs border border-gray-200 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-200 resize-y" rows="3" placeholder="输入自定义简介...">${escHtml(item.custom_description || '')}</textarea>
+          <div class="flex gap-1 mt-1">
+            <button onclick="saveEditDesc(${idx})" class="px-2 py-0.5 text-xs bg-green-500 hover:bg-green-600 text-white rounded transition">保存</button>
+            <button onclick="cancelEditDesc(${idx})" class="px-2 py-0.5 text-xs bg-gray-100 hover:bg-gray-200 text-gray-600 rounded transition">取消</button>
+            ${hasCustomDesc ? `<button onclick="clearEditDesc(${idx})" class="px-2 py-0.5 text-xs bg-red-50 hover:bg-red-100 text-red-500 rounded transition">恢复默认</button>` : ''}
+          </div>
+        </div>
       </div>
     `;
   }).join('');
+}
+
+function startEditDesc(idx) {
+  document.getElementById(`edit-desc-${idx}`).classList.remove('hidden');
+  document.getElementById(`desc-input-${idx}`).focus();
+}
+
+function cancelEditDesc(idx) {
+  document.getElementById(`edit-desc-${idx}`).classList.add('hidden');
+  document.getElementById(`desc-input-${idx}`).value = previewData[idx].custom_description || '';
+}
+
+async function saveEditDesc(idx) {
+  const val = document.getElementById(`desc-input-${idx}`).value.trim();
+  await api('PATCH', `/api/data/github/${idx}`, { custom_description: val });
+  previewData[idx].custom_description = val;
+  renderItemList();
+  refreshIframe();
+  refreshStatus();
+}
+
+async function clearEditDesc(idx) {
+  await api('PATCH', `/api/data/github/${idx}`, { custom_description: '' });
+  previewData[idx].custom_description = '';
+  renderItemList();
+  refreshIframe();
+  refreshStatus();
 }
 
 async function toggleHidden(idx) {

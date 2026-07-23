@@ -29,7 +29,7 @@ function renderProjectCard(repo, idx) {
   const langColor = LANGUAGE_COLORS[repo.language] || '#8b8b8b';
   const topics = (repo.topics || []).slice(0, 6);
   const hasReadme = repo.readme && repo.readme.trim().length > 10;
-  const desc = repo.description ? escapeHtml(repo.description) : '';
+  const desc = repo.custom_description || repo.description ? escapeHtml(repo.custom_description || repo.description) : '';
   const updatedAt = repo.updated_at ? new Date(repo.updated_at).toLocaleDateString('zh-CN') : '';
 
   return `
@@ -67,10 +67,6 @@ function renderProjectCard(repo, idx) {
             <div style="display: flex; align-items: center; gap: 4px; font-size: 14px; color: #f59e0b; font-weight: 600;">
               <svg style="width: 16px; height: 16px;" fill="currentColor" viewBox="0 0 16 16"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
               ${repo.stargazers_count || 0}
-            </div>
-            <div style="display: flex; align-items: center; gap: 4px; font-size: 13px; color: #6b7280;">
-              <svg style="width: 14px; height: 14px;" fill="currentColor" viewBox="0 0 16 16"><path d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/></svg>
-              ${repo.forks_count || 0}
             </div>
           </div>
           ${updatedAt ? `
