@@ -134,14 +134,7 @@ def main():
         repos = fetch_repos(username)
     except Exception as e:
         print(f"[github] 抓取失败: {e}", file=sys.stderr)
-        print("[github] 写出空数据，站点仍可构建")
-        os.makedirs(OUT_DIR, exist_ok=True)
-        with open(OUT_FILE, "w", encoding="utf-8") as f:
-            json.dump([], f, ensure_ascii=False, indent=2)
-        assets_dir = os.path.join(ROOT, "assets", "data")
-        os.makedirs(assets_dir, exist_ok=True)
-        with open(os.path.join(assets_dir, "github.json"), "w", encoding="utf-8") as f:
-            json.dump([], f, ensure_ascii=False, indent=2)
+        print("[github] 保留历史数据，站点仍可构建")
         return
 
     repos = [r for r in repos if not r.get("fork")]

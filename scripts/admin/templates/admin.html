@@ -290,14 +290,15 @@ async function loadPreview() {
   const iframe = document.getElementById('preview-iframe');
   const itemListPanel = document.querySelector('.lg\\:col-span-1');
 
+  const bust = '?t=' + Date.now();
   if (currentPreview === 'homepage') {
-    iframe.src = `${HUGO_URL}/`;
+    iframe.src = `${HUGO_URL}/${bust}`;
     document.getElementById('preview-title').textContent = '首页预览';
     if (itemListPanel) itemListPanel.classList.add('hidden');
   } else {
     const data = await api('GET', `/api/data/${currentPreview}`);
     previewData = Array.isArray(data) ? data : [];
-    iframe.src = `${HUGO_URL}/${slug}/`;
+    iframe.src = `${HUGO_URL}/${slug}/${bust}`;
     document.getElementById('preview-title').textContent = `${getSourceLabel(currentPreview)} 预览`;
     if (itemListPanel) itemListPanel.classList.remove('hidden');
     renderItemList();
@@ -400,7 +401,9 @@ function refreshIframe() {
   const iframe = document.getElementById('preview-iframe');
   const loading = document.getElementById('iframe-loading');
   loading.classList.remove('hidden');
-  iframe.src = iframe.src;
+  const url = new URL(iframe.src);
+  url.searchParams.set('t', Date.now());
+  iframe.src = url.toString();
 }
 
 function setDevice(device) {

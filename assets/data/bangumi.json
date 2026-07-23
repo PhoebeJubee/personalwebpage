@@ -1,1 +1,5099 @@
-[]
+[
+  {
+    "name": "カルタグラ～ツキ狂イノ病～　《REBIRTH FHD SIZE EDITION》",
+    "name_cn": "恋狱～月狂病～ 重制版",
+    "date": "2023-04-28",
+    "cover": "https://lain.bgm.tv/pic/cover/l/66/ed/410409_UT7gV.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2026-06-27T22:29:44+08:00",
+    "tags": [
+      "InnocentGrey",
+      "Galgame",
+      "杉菜水姫",
+      "悬疑",
+      "猎奇"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ファイアーエムブレム 万紫千紅",
+    "name_cn": "火焰之纹章 万紫千红",
+    "date": "2026-09-17",
+    "cover": "https://lain.bgm.tv/pic/cover/l/be/f5/584745_zaPfk.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2026-06-21T17:15:57+08:00",
+    "tags": [
+      "NS2",
+      "SRPG",
+      "火焰纹章",
+      "2026",
+      "JRPG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "乌合之众",
+    "name_cn": "乌合之众",
+    "date": null,
+    "cover": "https://lain.bgm.tv/pic/cover/l/f5/cb/513447_F86X2.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2026-06-21T17:13:59+08:00",
+    "tags": [
+      "PC",
+      "国产",
+      "AVG",
+      "游戏",
+      "悬疑"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "The Sekimeiya: Spun Glass",
+    "name_cn": "The Sekimeiya: Spun Glass",
+    "date": "2021-05-06",
+    "cover": "https://lain.bgm.tv/pic/cover/l/09/6f/397812_P3A33.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2026-06-21T16:52:34+08:00",
+    "tags": [
+      "悬疑",
+      "推理",
+      "AVG",
+      "Galgame",
+      "时间旅行"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "魔法少女ノ魔女裁判",
+    "name_cn": "魔法少女的魔女审判",
+    "date": "2025-07-18",
+    "cover": "https://lain.bgm.tv/pic/cover/l/df/0f/488392_h78qM.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2026-06-21T15:37:03+08:00",
+    "tags": [
+      "百合",
+      "推理",
+      "Galgame",
+      "悬疑",
+      "魔法少女"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Suzerain",
+    "name_cn": "Suzerain",
+    "date": "2020-12-04",
+    "cover": "https://lain.bgm.tv/pic/cover/l/d9/01/325608_2N406.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2026-04-12T11:12:53+08:00",
+    "tags": [
+      "AVG",
+      "政治",
+      "PC",
+      "模拟",
+      "STEAM"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "シルバー事件",
+    "name_cn": "银色事件",
+    "date": "1999-10-07",
+    "cover": "https://lain.bgm.tv/pic/cover/l/1d/98/194804_XJpq2.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2026-03-09T12:30:10+08:00",
+    "tags": [
+      "AVG",
+      "须田刚一",
+      "PC",
+      "电波",
+      "1999"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "パラノマサイト FILE38 伊勢人魚物語",
+    "name_cn": "灵视异闻 FILE38 伊势人鱼物语",
+    "date": "2026-02-19",
+    "cover": "https://lain.bgm.tv/pic/cover/l/98/65/625770_Aw0a0.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2026-02-24T21:34:35+08:00",
+    "tags": [
+      "悬疑",
+      "AVG",
+      "推理",
+      "SquareEnix",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "二分光景——COSER解体事件",
+    "name_cn": "二分光景——COSER解体事件",
+    "date": "2025-04-04",
+    "cover": "https://lain.bgm.tv/pic/cover/l/9f/1e/555023_lueMg.jpg",
+    "rate": 0,
+    "type": 3,
+    "updated_at": "2025-11-02T18:43:08+08:00",
+    "tags": [
+      "国产",
+      "狂气",
+      "PC",
+      "2025",
+      "同人"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ルートダブル -Before Crime * After Days-",
+    "name_cn": "Root Double -Before Crime * After Days-",
+    "date": "2012-06-14",
+    "cover": "https://lain.bgm.tv/pic/cover/l/85/fc/27914_YSS1y.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2025-10-07T22:07:20+08:00",
+    "tags": [
+      "Galgame",
+      "中泽工",
+      "悬疑",
+      "全年龄",
+      "AVG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "最终幻想14：水晶世界",
+    "name_cn": "最终幻想14：水晶世界",
+    "date": "2025-06-19",
+    "cover": "https://lain.bgm.tv/pic/cover/l/38/f1/524730_NZ4ZM.jpg",
+    "rate": 0,
+    "type": 2,
+    "updated_at": "2025-10-03T16:49:07+08:00",
+    "tags": [
+      "MMORPG",
+      "手游",
+      "Android",
+      "iOS",
+      "2025"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "終天教団",
+    "name_cn": "终天教团",
+    "date": "2025-09-05",
+    "cover": "https://lain.bgm.tv/pic/cover/l/55/96/558742_5dz75.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2025-10-03T13:45:28+08:00",
+    "tags": [
+      "小高和刚",
+      "中泽工",
+      "悬疑",
+      "AVG",
+      "ADV"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "スーパーダンガンロンパ２×２",
+    "name_cn": "超级枪弹辩驳２×２",
+    "date": null,
+    "cover": "https://lain.bgm.tv/pic/cover/l/1c/ee/584744_7dOa7.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2025-09-13T07:17:59+08:00",
+    "tags": [
+      "AVG",
+      "推理",
+      "悬疑",
+      "PC",
+      "ADV"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Depth Loop",
+    "name_cn": "Depth Loop",
+    "date": null,
+    "cover": "https://lain.bgm.tv/pic/cover/l/54/0e/515268_TRTKP.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2025-09-09T17:41:26+08:00",
+    "tags": [
+      "悬疑",
+      "Galgame",
+      "ADV",
+      "PC",
+      "AVG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "开元遗事",
+    "name_cn": "开元遗事",
+    "date": "2019-06-17",
+    "cover": "https://lain.bgm.tv/pic/cover/l/5e/1d/451056_6SLs6.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2025-06-16T19:50:07+08:00",
+    "tags": [
+      "橙光",
+      "AVG",
+      "国产",
+      "PC",
+      "ADV"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "伊達鍵は眠らない - From AI：ソムニウムファイル",
+    "name_cn": "无法成眠的伊达键 - From AI：梦境档案",
+    "date": "2025-07-25",
+    "cover": "https://lain.bgm.tv/pic/cover/l/36/8e/548132_JEkbb.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2025-06-16T18:08:56+08:00",
+    "tags": [
+      "SpikeChunsoft",
+      "ADV",
+      "悬疑",
+      "PC",
+      "打越钢太郎"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "再见断刀",
+    "name_cn": "再见断刀",
+    "date": "2025-02-25",
+    "cover": "https://lain.bgm.tv/pic/cover/l/9a/25/539816_5P985.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2025-06-15T12:21:26+08:00",
+    "tags": [
+      "国产",
+      "AVG",
+      "推理",
+      "武侠",
+      "悬疑"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "无罪之庭",
+    "name_cn": "无罪之庭",
+    "date": "2025-03-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/03/e7/509158_Tt0Zu.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2025-06-04T20:09:03+08:00",
+    "tags": [
+      "推理",
+      "国产",
+      "AVG",
+      "悬疑",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Inverted Angel",
+    "name_cn": "Inverted Angel",
+    "date": "2024-07-05",
+    "cover": "https://lain.bgm.tv/pic/cover/l/65/3f/501790_TBtKT.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2025-05-31T22:00:48+08:00",
+    "tags": [
+      "AVG",
+      "推理",
+      "游戏",
+      "PC",
+      "STEAM"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "山岸姫瑠ミニシナリオ",
+    "name_cn": "山岸姫瑠ミニシナリオ",
+    "date": "2022-04-28",
+    "cover": "https://lain.bgm.tv/pic/cover/l/a8/f6/481219_0qdY0.jpg",
+    "rate": 0,
+    "type": 2,
+    "updated_at": "2025-05-31T18:41:28+08:00",
+    "tags": [
+      "Galgame",
+      "Qruppo",
+      "FD",
+      "倉骨治人",
+      "扩展包"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ヘンタイ・プリズン",
+    "name_cn": "变态监狱",
+    "date": "2022-01-28",
+    "cover": "https://lain.bgm.tv/pic/cover/l/c2/4d/347780_70gvI.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2025-05-31T14:54:59+08:00",
+    "tags": [
+      "Galgame",
+      "Qruppo",
+      "监狱",
+      "搞笑",
+      "倉骨治人"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "HUNDRED LINE -最終防衛学園-",
+    "name_cn": "百日战纪 -最终防卫学园-",
+    "date": "2025-04-24",
+    "cover": "https://lain.bgm.tv/pic/cover/l/f0/b1/499874_V0cL0.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2025-05-10T23:42:00+08:00",
+    "tags": [
+      "小高和刚",
+      "打越钢太郎",
+      "PC",
+      "悬疑",
+      "AVG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "슈퍼 단간론파 어나더 2 ~ 희망의 달과 절망의 태양 ~",
+    "name_cn": "超级弹丸论破Another2 ~希望之月与绝望之日~",
+    "date": "2020-01-16",
+    "cover": "https://lain.bgm.tv/pic/cover/l/12/33/300077_d3278.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2025-04-03T23:44:34+08:00",
+    "tags": [
+      "弹丸论破",
+      "同人游戏",
+      "推理",
+      "悬疑",
+      "AVG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "단간론파 어나더 ~ 또하나의 절망학원 ~",
+    "name_cn": "弹丸论破ANOTHER~另一个绝望学院~",
+    "date": "2015-06-11",
+    "cover": "https://lain.bgm.tv/pic/cover/l/dc/62/404449_4MTVm.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2025-03-22T18:08:24+08:00",
+    "tags": [
+      "弹丸论破",
+      "悬疑",
+      "推理",
+      "AVG",
+      "同人游戏"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "近畿霊務局",
+    "name_cn": "近畿灵务局",
+    "date": "2024-10-04",
+    "cover": "https://lain.bgm.tv/pic/cover/l/5f/60/512764_E33Nc.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2024-11-23T21:46:19+08:00",
+    "tags": [
+      "独立游戏",
+      "射击",
+      "PC",
+      "剧情",
+      "TPS"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "祀月夭花～四月八日～",
+    "name_cn": "祀月夭花～四月八日～",
+    "date": null,
+    "cover": "https://lain.bgm.tv/pic/cover/l/2c/d2/489496_VD3d6.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2024-11-16T22:23:32+08:00",
+    "tags": [
+      "Galgame",
+      "同人",
+      "AVG",
+      "悬疑",
+      "百合"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "纸嫁衣7卿不负",
+    "name_cn": "纸嫁衣7卿不负",
+    "date": "2024-08-09",
+    "cover": "https://lain.bgm.tv/pic/cover/l/59/3d/495130_0Gvlo.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2024-09-23T22:04:51+08:00",
+    "tags": [
+      "解谜",
+      "Android",
+      "纸嫁衣",
+      "中式",
+      "恐怖"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "罗刹之宴",
+    "name_cn": "罗刹之宴",
+    "date": "2019-11-11",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ba/5d/495030_1w314.jpg",
+    "rate": 0,
+    "type": 3,
+    "updated_at": "2024-09-22T21:11:35+08:00",
+    "tags": [
+      "AVG",
+      "悬疑",
+      "易次元",
+      "古风",
+      "游戏"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Tiny Bunny",
+    "name_cn": "小兔子",
+    "date": "2021-04-16",
+    "cover": "https://lain.bgm.tv/pic/cover/l/44/f9/323590_W01vU.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2024-09-21T15:47:40+08:00",
+    "tags": [
+      "视觉小说",
+      "ADV",
+      "STEAM",
+      "独立游戏",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "吃香",
+    "name_cn": "吃香",
+    "date": "2023-11-17",
+    "cover": "https://lain.bgm.tv/pic/cover/l/0b/8e/401789_QoqPy.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2024-09-21T15:44:02+08:00",
+    "tags": [
+      "悬疑",
+      "PC",
+      "中国",
+      "AVG",
+      "致郁"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "かまいたちの夜2 監獄島のわらべ唄",
+    "name_cn": "恐怖惊魂夜2",
+    "date": "2002-07-18",
+    "cover": "https://lain.bgm.tv/pic/cover/l/5c/6b/103302_ZLpi8.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2024-09-20T00:17:58+08:00",
+    "tags": [
+      "推理",
+      "我孫子武丸",
+      "chunsoft",
+      "悬疑",
+      "恐怖"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "MISSING PARTS the TANTEI STORIES",
+    "name_cn": "侦探故事 消失的证据",
+    "date": "2002-01-17",
+    "cover": "https://lain.bgm.tv/pic/cover/l/20/41/219518_JyQEz.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2024-06-16T22:41:20+08:00",
+    "tags": [
+      "PSP",
+      "推理",
+      "AVG",
+      "悬疑",
+      "Galgame"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "鸣潮",
+    "name_cn": "鸣潮",
+    "date": "2024-05-23",
+    "cover": "https://lain.bgm.tv/pic/cover/l/2e/ef/385208_shW2q.jpg",
+    "rate": 0,
+    "type": 2,
+    "updated_at": "2024-05-26T08:03:47+08:00",
+    "tags": [
+      "库洛游戏",
+      "开放世界",
+      "手游",
+      "国产",
+      "ARPG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "交界线",
+    "name_cn": "交界线",
+    "date": "2023-07-20",
+    "cover": "https://lain.bgm.tv/pic/cover/l/74/c0/407013_TMcJZ.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2023-10-22T20:25:40+08:00",
+    "tags": [
+      "RPG",
+      "悬疑",
+      "国产",
+      "推理",
+      "STEAM"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "アルトデウス: ビヨンドクロノス",
+    "name_cn": "阿尔特斯：超越時空",
+    "date": "2020-12-04",
+    "cover": "https://lain.bgm.tv/pic/cover/l/6a/25/321358_0SkAW.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2023-10-04T18:05:28+08:00",
+    "tags": [
+      "VR",
+      "百合",
+      "ADV",
+      "Galgame",
+      "MyDearest"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "パラノマサイト FILE23 本所七不思議",
+    "name_cn": "灵视异闻 FILE23 本所七大不可思议",
+    "date": "2023-03-09",
+    "cover": "https://lain.bgm.tv/pic/cover/l/f8/15/419558_3Bqxm.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2023-09-29T20:50:15+08:00",
+    "tags": [
+      "悬疑",
+      "AVG",
+      "恐怖",
+      "SquareEnix",
+      "灵异"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "The Cat Lady",
+    "name_cn": "猫夫人",
+    "date": "2012-12-01",
+    "cover": "https://lain.bgm.tv/pic/cover/l/d5/75/238351_UpnZm.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2023-09-23T22:18:53+08:00",
+    "tags": [
+      "PC",
+      "AVG",
+      "解谜",
+      "STEAM",
+      "恐怖"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "三伏",
+    "name_cn": "三伏",
+    "date": "2023-07-28",
+    "cover": "https://lain.bgm.tv/pic/cover/l/29/02/333749_ox3iD.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2023-09-23T21:54:19+08:00",
+    "tags": [
+      "国产",
+      "悬疑",
+      "AVG",
+      "PC",
+      "解谜"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Pentiment",
+    "name_cn": "隐迹渐现",
+    "date": "2022-11-15",
+    "cover": "https://lain.bgm.tv/pic/cover/l/e3/ea/387212_lsZWZ.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2023-07-18T15:35:12+08:00",
+    "tags": [
+      "PC",
+      "黑曜石",
+      "AVG",
+      "历史",
+      "CRPG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "NOeSIS Ⅱ-人间无常",
+    "name_cn": "NOeSIS Ⅱ-人间无常",
+    "date": "2023-02-27",
+    "cover": "https://lain.bgm.tv/pic/cover/l/25/28/338475_vVw5P.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2023-07-15T07:40:57+08:00",
+    "tags": [
+      "Galgame",
+      "悬疑",
+      "同人",
+      "国产",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "超探偵事件簿 レインコード",
+    "name_cn": "超侦探事件簿 雾雨谜宫",
+    "date": "2023-06-30",
+    "cover": "https://lain.bgm.tv/pic/cover/l/58/ab/360295_I7YYs.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2023-07-14T20:59:43+08:00",
+    "tags": [
+      "小高和刚",
+      "推理",
+      "NS",
+      "ADV",
+      "悬疑"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "意识流 / Stream of Consciousness",
+    "name_cn": "意识流",
+    "date": "2008-04-21",
+    "cover": "https://lain.bgm.tv/pic/cover/l/d4/f5/105700_2o74X.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2023-05-23T22:44:33+08:00",
+    "tags": [
+      "国产",
+      "同人",
+      "AVG",
+      "哲学",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "战双帕弥什",
+    "name_cn": "战双帕弥什",
+    "date": "2019-12-05",
+    "cover": "https://lain.bgm.tv/pic/cover/l/e7/9a/293554_te9E2.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2023-04-30T14:57:40+08:00",
+    "tags": [
+      "手游",
+      "国产",
+      "ACT",
+      "库洛游戏",
+      "科幻"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "太閤立志伝V",
+    "name_cn": "太阁立志传5",
+    "date": "2004-03-12",
+    "cover": "https://lain.bgm.tv/pic/cover/l/d2/cd/3354_fAEWK.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2023-03-11T09:14:51+08:00",
+    "tags": [
+      "SLG",
+      "KOEI",
+      "战国",
+      "PC",
+      "光荣"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "BLACK SHEEP TOWN",
+    "name_cn": "黑羊镇",
+    "date": "2022-09-16",
+    "cover": "https://lain.bgm.tv/pic/cover/l/45/33/212376_A4HAq.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2023-03-10T13:10:55+08:00",
+    "tags": [
+      "瀬戸口廉也",
+      "Galgame",
+      "群像",
+      "全年龄",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "我有一座冒险屋",
+    "name_cn": "我有一座冒险屋",
+    "date": "2022-03-12",
+    "cover": "https://lain.bgm.tv/pic/cover/l/80/57/374100_S12PM.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2023-03-01T14:44:21+08:00",
+    "tags": [
+      "中国",
+      "AVG",
+      "Obs",
+      "游戏",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ペルソナ5 ザ・ロイヤル",
+    "name_cn": "女神异闻录5 皇家版",
+    "date": "2019-10-31",
+    "cover": "https://lain.bgm.tv/pic/cover/l/51/0b/278949_lEEu5.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2023-01-07T22:53:16+08:00",
+    "tags": [
+      "JRPG",
+      "ATLUS",
+      "女神异闻录",
+      "RPG",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "serial experiments lain",
+    "name_cn": "玲音",
+    "date": "1998-11-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ee/45/145972_733AL.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2022-10-22T22:19:57+08:00",
+    "tags": [
+      "PS",
+      "小中千昭",
+      "lain",
+      "电波",
+      "意识流"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "街 ~運命の交差点~",
+    "name_cn": "街 ~命运的交叉点~",
+    "date": "1998-01-22",
+    "cover": "https://lain.bgm.tv/pic/cover/l/2b/a5/957_j0TZ3.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2022-10-19T15:18:05+08:00",
+    "tags": [
+      "AVG",
+      "PSP",
+      "chunsoft",
+      "街",
+      "PS"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "连海CASINO",
+    "name_cn": "连海CASINO",
+    "date": "2022-09-30",
+    "cover": "https://lain.bgm.tv/pic/cover/l/95/1f/402276_2U08Y.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2022-10-11T22:49:00+08:00",
+    "tags": [
+      "AVG",
+      "PC",
+      "STEAM",
+      "中国",
+      "游戏"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "キミガシネ —多数決デスゲーム—",
+    "name_cn": "你去死吧 －多数决死亡游戏－",
+    "date": "2017-08-28",
+    "cover": "https://lain.bgm.tv/pic/cover/l/20/56/224621_EsV97.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2022-08-07T22:57:20+08:00",
+    "tags": [
+      "悬疑",
+      "推理",
+      "AVG",
+      "RPG",
+      "死亡游戏"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Sanitarium",
+    "name_cn": "疯人院",
+    "date": "1998-04-30",
+    "cover": "https://lain.bgm.tv/pic/cover/l/f3/d9/2214_G7O7V.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2022-08-07T22:56:08+08:00",
+    "tags": [
+      "AVG",
+      "PC",
+      "1998",
+      "疯人院",
+      "ADV"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Kentucky Route Zero",
+    "name_cn": "肯塔基零号国道",
+    "date": "2013-02-22",
+    "cover": "https://lain.bgm.tv/pic/cover/l/59/a7/198547_Aa06k.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2022-08-07T22:55:49+08:00",
+    "tags": [
+      "AVG",
+      "独立游戏",
+      "PC",
+      "2013",
+      "meta"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Slay the Spire",
+    "name_cn": "杀戮尖塔",
+    "date": "2019-01-23",
+    "cover": "https://lain.bgm.tv/pic/cover/l/17/0e/234026_7jj38.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2022-08-07T22:19:09+08:00",
+    "tags": [
+      "Roguelike",
+      "卡牌",
+      "独立游戏",
+      "PC",
+      "STEAM"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "彼岸花の咲く夜に 第一夜",
+    "name_cn": "彼岸花盛开之夜 第一夜",
+    "date": "2011-08-13",
+    "cover": "https://lain.bgm.tv/pic/cover/l/90/87/22051_Q18Pm.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2022-08-05T16:11:34+08:00",
+    "tags": [
+      "龙骑士07",
+      "Galgame",
+      "竜騎士07",
+      "AVG",
+      "校园欺凌"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Hades",
+    "name_cn": "哈迪斯",
+    "date": "2020-09-17",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ce/46/268588_3zChk.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2022-08-01T16:54:39+08:00",
+    "tags": [
+      "Roguelike",
+      "独立游戏",
+      "PC",
+      "ACT",
+      "STEAM"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "グリザイア：ファントムトリガー 第8巻",
+    "name_cn": "灰色幻影扳机 第8卷",
+    "date": "2022-02-25",
+    "cover": "https://lain.bgm.tv/pic/cover/l/bc/38/360350_Hq5ee.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2022-07-19T16:46:11+08:00",
+    "tags": [
+      "FrontWing",
+      "Galgame",
+      "全年龄",
+      "灰色系列",
+      "桐谷华"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Hello Charlotte EP1: Junk Food, Gods and Teddy Bears",
+    "name_cn": "你好夏洛特 EP1: 垃圾食品、神与泰迪熊",
+    "date": "2015-06-17",
+    "cover": "https://lain.bgm.tv/pic/cover/l/54/8e/218768_DxHv1.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2022-07-16T22:01:18+08:00",
+    "tags": [
+      "RPGMaker",
+      "RPG",
+      "独立游戏",
+      "etherane",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "奸臣洗冤录",
+    "name_cn": "奸臣洗冤录",
+    "date": "2019-05-31",
+    "cover": "https://lain.bgm.tv/pic/cover/l/d6/c4/289442_E4drf.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2022-07-15T22:42:25+08:00",
+    "tags": [
+      "AVG",
+      "橙光",
+      "PC",
+      "国产",
+      "视觉小说"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "AKIBA'S TRIP",
+    "name_cn": "秋叶原之旅",
+    "date": "2011-05-19",
+    "cover": "https://lain.bgm.tv/pic/cover/l/46/02/18148_Py185.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2022-07-15T22:35:40+08:00",
+    "tags": [
+      "PSP",
+      "ACT",
+      "扒衣服大作战",
+      "Akiba‘Strip",
+      "扒衣原之旅"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Who's Lila?",
+    "name_cn": "莱拉是谁",
+    "date": "2022-02-24",
+    "cover": "https://lain.bgm.tv/pic/cover/l/7e/c1/370943_mS6Cj.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2022-07-11T00:15:56+08:00",
+    "tags": [
+      "meta",
+      "PC",
+      "AVG",
+      "悬疑",
+      "2022"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ファイアーエムブレム 風花雪月",
+    "name_cn": "火焰之纹章 风花雪月",
+    "date": "2019-07-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/64/24/206733_6QX0O.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2022-07-09T12:23:03+08:00",
+    "tags": [
+      "Switch",
+      "NS",
+      "任天堂",
+      "战棋",
+      "SRPG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "AI: ソムニウムファイル ニルヴァーナイニシアチブ",
+    "name_cn": "AI：梦境档案 涅槃肇始",
+    "date": "2022-06-23",
+    "cover": "https://lain.bgm.tv/pic/cover/l/f7/fa/340438_m58cn.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2022-07-07T23:19:18+08:00",
+    "tags": [
+      "打越钢太郎",
+      "AVG",
+      "推理",
+      "解谜",
+      "悬疑"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "EVE ～new generation X～",
+    "name_cn": "EVE ～new generation X～",
+    "date": "2007-03-23",
+    "cover": "https://lain.bgm.tv/pic/cover/l/4b/98/99098_xUV6h.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2022-07-07T09:04:29+08:00",
+    "tags": [
+      "打越鋼太郎",
+      "Galgame",
+      "PC",
+      "镜像理论",
+      "PS2"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Sid Meier's Civilization VI",
+    "name_cn": "文明6",
+    "date": "2016-10-21",
+    "cover": "https://lain.bgm.tv/pic/cover/l/2f/38/182389_knNHp.jpg",
+    "rate": 0,
+    "type": 4,
+    "updated_at": "2022-06-05T23:15:06+08:00",
+    "tags": [
+      "PC",
+      "SLG",
+      "再来一回合",
+      "STEAM",
+      "策略"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "冤罪執行遊戯ユルキル",
+    "name_cn": "冤罪執行遊戯ユルキル",
+    "date": "2022-05-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/d1/7c/314336_4okfH.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2022-06-05T14:39:59+08:00",
+    "tags": [
+      "ADV",
+      "PS4",
+      "NS",
+      "PC",
+      "AVG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "十三機兵防衛圏",
+    "name_cn": "十三机兵防卫圈",
+    "date": "2019-11-28",
+    "cover": "https://lain.bgm.tv/pic/cover/l/8a/54/146598_m2Dj6.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2022-05-31T20:04:53+08:00",
+    "tags": [
+      "香草社",
+      "PS4",
+      "群像",
+      "AVG",
+      "科幻"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ファイナルファンタジーVII リメイク",
+    "name_cn": "最终幻想7 重制版",
+    "date": "2020-04-10",
+    "cover": "https://lain.bgm.tv/pic/cover/l/6e/32/137458_fwH60.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2022-05-23T18:32:21+08:00",
+    "tags": [
+      "最终幻想",
+      "JRPG",
+      "SquareEnix",
+      "PS4",
+      "RPG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "トリックロジック",
+    "name_cn": "诡计对逻辑",
+    "date": "2010-07-22",
+    "cover": "https://lain.bgm.tv/pic/cover/l/78/bf/20199_v7u0z.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2022-05-20T12:27:02+08:00",
+    "tags": [
+      "PSP",
+      "推理",
+      "AVG",
+      "解谜",
+      "chunsoft"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "OPUS：龍脈常歌",
+    "name_cn": "OPUS：龙脉常歌",
+    "date": "2021-09-01",
+    "cover": "https://lain.bgm.tv/pic/cover/l/76/ac/318704_vVF2D.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2022-05-13T21:47:26+08:00",
+    "tags": [
+      "AVG",
+      "独立游戏",
+      "PC",
+      "科幻",
+      "国产游戏"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ゆめにっき",
+    "name_cn": "梦日记",
+    "date": "2004-06-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ec/dc/3623_R3PKC.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2022-05-05T11:29:57+08:00",
+    "tags": [
+      "精神猎奇",
+      "RPG",
+      "PC",
+      "梦日记",
+      "致郁"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "I/O",
+    "name_cn": "I/O",
+    "date": "2006-01-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/43/ba/1079_8Do9y.jpg",
+    "rate": 10,
+    "type": 2,
+    "updated_at": "2022-04-30T23:04:11+08:00",
+    "tags": [
+      "中泽工",
+      "Galgame",
+      "田中ロミオ",
+      "悬疑",
+      "賽博朋克"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "操",
+    "name_cn": "操",
+    "date": "2011-05-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/73/e4/42098_xZkc8.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2022-04-25T18:40:48+08:00",
+    "tags": [
+      "RPG",
+      "解谜",
+      "恐怖",
+      "PC",
+      "RPGMaker"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "海沙风云",
+    "name_cn": "海沙风云",
+    "date": "2021-08-18",
+    "cover": "https://lain.bgm.tv/pic/cover/l/37/51/295004_C82CM.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2022-04-01T14:59:34+08:00",
+    "tags": [
+      "国产",
+      "AVG",
+      "粤语",
+      "Galgame",
+      "全年龄"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "すべてがFになる ～THE PERFECT INSIDER～",
+    "name_cn": "全部成为F ～THE PERFECT INSIDER～",
+    "date": "2002-03-28",
+    "cover": "https://lain.bgm.tv/pic/cover/l/c9/8b/155696_6V9w5.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2022-03-26T22:40:10+08:00",
+    "tags": [
+      "KID",
+      "推理",
+      "Galgame",
+      "中泽工",
+      "游戏"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "瓦岗山异闻录",
+    "name_cn": "瓦岗山异闻录",
+    "date": "2006-09-27",
+    "cover": "https://lain.bgm.tv/pic/cover/l/3b/33/354302_nbsc8.jpg",
+    "rate": 10,
+    "type": 2,
+    "updated_at": "2022-03-26T20:01:37+08:00",
+    "tags": [
+      "战棋",
+      "国产",
+      "SLG",
+      "神作",
+      "曹操传"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ファイナルファンタジーXIV 暁月のフィナーレ",
+    "name_cn": "最终幻想14 晓月之终途",
+    "date": "2021-12-07",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ec/ea/327490_g6OdW.jpg",
+    "rate": 10,
+    "type": 2,
+    "updated_at": "2022-03-19T22:15:00+08:00",
+    "tags": [
+      "MMORPG",
+      "SquareEnix",
+      "PC",
+      "最終幻想",
+      "最终幻想"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ワールズエンドクラブ",
+    "name_cn": "World's End Club",
+    "date": "2020-09-04",
+    "cover": "https://lain.bgm.tv/pic/cover/l/2a/d2/289587_6CvZ4.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2022-03-13T21:14:29+08:00",
+    "tags": [
+      "打越鋼太郎",
+      "AVG",
+      "小高和刚",
+      "中泽工",
+      "Switch"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "シンフォニック=レイン",
+    "name_cn": "交响乐之雨",
+    "date": "2004-03-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/20/8e/1143_Z54Z6.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2022-03-05T22:00:58+08:00",
+    "tags": [
+      "Galgame",
+      "冈崎律子",
+      "工画堂",
+      "交响乐之雨",
+      "全年龄"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "送電塔のミメイ",
+    "name_cn": "电塔未明",
+    "date": "2007-02-17",
+    "cover": "https://lain.bgm.tv/pic/cover/l/8e/04/19291_e3COC.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2022-03-04T19:32:57+08:00",
+    "tags": [
+      "同人",
+      "Galgame",
+      "里見しば",
+      "和风",
+      "全年龄"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "弹弹堂",
+    "name_cn": "弹弹堂",
+    "date": "2009-04-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/74/b1/279522_bb5II.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2022-02-10T21:31:22+08:00",
+    "tags": [
+      "页游",
+      "童年",
+      "Web",
+      "回合制",
+      "4399"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "グノーシア",
+    "name_cn": "古诺希亚",
+    "date": "2019-06-20",
+    "cover": "https://lain.bgm.tv/pic/cover/l/a8/c9/214581_732qq.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2022-01-28T23:37:32+08:00",
+    "tags": [
+      "AVG",
+      "狼人杀",
+      "推理",
+      "解谜",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Mirror 2: Project X",
+    "name_cn": "Mirror 2: Project X",
+    "date": "2022-01-21",
+    "cover": "https://lain.bgm.tv/pic/cover/l/0d/df/360620_52xim.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2022-01-23T23:21:07+08:00",
+    "tags": [
+      "三消",
+      "PC",
+      "STEAM",
+      "Galgame",
+      "国产"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "デスカムトゥルー",
+    "name_cn": "死亡成真",
+    "date": "2020-06-25",
+    "cover": "https://lain.bgm.tv/pic/cover/l/6b/98/296217_4UNY9.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2022-01-20T21:14:12+08:00",
+    "tags": [
+      "小高和刚",
+      "真人演出",
+      "AVG",
+      "PC",
+      "NS"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "湖心亭奇談集",
+    "name_cn": "湖心亭奇谈集",
+    "date": "2021-12-31",
+    "cover": "https://lain.bgm.tv/pic/cover/l/3e/70/354225_06Dz7.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2022-01-01T01:11:12+08:00",
+    "tags": [
+      "AVG",
+      "ADV",
+      "2021",
+      "游戏",
+      "国产"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Grand Theft Auto V",
+    "name_cn": "侠盗猎车手5",
+    "date": "2013-09-17",
+    "cover": "https://lain.bgm.tv/pic/cover/l/b4/79/56705_eFoam.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2021-10-17T19:53:28+08:00",
+    "tags": [
+      "GTA",
+      "Rockstar",
+      "PC",
+      "沙盒",
+      "开放世界"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "猫游记",
+    "name_cn": "猫游记",
+    "date": null,
+    "cover": "https://lain.bgm.tv/pic/cover/l/e1/2f/258371_wu66b.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2021-09-26T13:12:40+08:00",
+    "tags": [
+      "童年",
+      "猫扑",
+      "RPG",
+      "游戏",
+      "MMORPG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Portal 2",
+    "name_cn": "传送门2",
+    "date": "2011-04-18",
+    "cover": "https://lain.bgm.tv/pic/cover/l/06/b8/15912_KMRYF.jpg",
+    "rate": 0,
+    "type": 4,
+    "updated_at": "2021-09-19T21:46:30+08:00",
+    "tags": [
+      "解谜",
+      "Valve",
+      "PC",
+      "FPS",
+      "第一人称冒险"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "夜、灯す",
+    "name_cn": "夜、灯す",
+    "date": "2020-07-30",
+    "cover": "https://lain.bgm.tv/pic/cover/l/19/53/302873_9zlrG.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2021-08-02T20:11:57+08:00",
+    "tags": [
+      "百合",
+      "Galgame",
+      "PS4",
+      "日本一ソフトウェア",
+      "悬疑"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Portal",
+    "name_cn": "传送门",
+    "date": "2007-10-10",
+    "cover": "https://lain.bgm.tv/pic/cover/l/0f/6b/10038_9F91f.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2021-07-19T21:09:33+08:00",
+    "tags": [
+      "Valve",
+      "解谜",
+      "PC",
+      "FPS",
+      "Portal"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Braid",
+    "name_cn": "时空幻境",
+    "date": "2008-08-06",
+    "cover": "https://lain.bgm.tv/pic/cover/l/24/80/3017_2Nnf0.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2021-07-14T19:10:43+08:00",
+    "tags": [
+      "独立游戏",
+      "PC",
+      "解谜",
+      "Braid",
+      "时空幻境"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "I Have No Mouth, and I Must Scream",
+    "name_cn": "无声狂啸",
+    "date": "1995-10-31",
+    "cover": "https://lain.bgm.tv/pic/cover/l/27/60/17406_cB3z6.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2021-06-17T15:36:18+08:00",
+    "tags": [
+      "AVG",
+      "PC",
+      "1995",
+      "Cyberdreams",
+      "CRPG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Minotaur",
+    "name_cn": "米诺陶",
+    "date": "2019-09-06",
+    "cover": "https://lain.bgm.tv/pic/cover/l/de/6e/236013_Qx84x.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2021-06-16T17:06:51+08:00",
+    "tags": [
+      "AVG",
+      "PC",
+      "游戏"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "スローンとマクヘールの謎の物語",
+    "name_cn": "斯隆与马克贝尔的谜之物语",
+    "date": "2009-05-21",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ab/dc/30413_B2O8s.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2021-06-09T12:22:34+08:00",
+    "tags": [
+      "NDS",
+      "AVG",
+      "海龟汤",
+      "解谜",
+      "Level5"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "アナタヲユルサナイ",
+    "name_cn": "不可饶恕",
+    "date": "2007-11-15",
+    "cover": "https://lain.bgm.tv/pic/cover/l/e7/b2/360_ajp.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2021-06-07T13:26:38+08:00",
+    "tags": [
+      "PSP",
+      "植松伸夫",
+      "AVG",
+      "竖屏",
+      "推理"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "有罪×無罪",
+    "name_cn": "有罪无罪",
+    "date": "2009-05-21",
+    "cover": "https://lain.bgm.tv/pic/cover/l/aa/ad/33358_zYXxM.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2021-06-03T09:07:21+08:00",
+    "tags": [
+      "NDS",
+      "AVG",
+      "推理",
+      "悬疑",
+      "法庭"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Forest",
+    "name_cn": "Forest",
+    "date": "2004-02-13",
+    "cover": "https://lain.bgm.tv/pic/cover/l/49/74/5395_swS3d.jpg",
+    "rate": 0,
+    "type": 4,
+    "updated_at": "2021-05-27T19:33:21+08:00",
+    "tags": [
+      "星空めてお",
+      "Galgame",
+      "Liar-soft",
+      "哲学",
+      "文学"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Forget me not -パレット-",
+    "name_cn": "Forget me not -调色板-",
+    "date": "2001-04-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/f7/25/30386_7g7JG.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2021-04-18T21:38:04+08:00",
+    "tags": [
+      "解谜",
+      "PC",
+      "PS",
+      "AVG",
+      "RPG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "三國志曹操伝",
+    "name_cn": "三国志曹操传",
+    "date": null,
+    "cover": "https://lain.bgm.tv/pic/cover/l/b5/5d/15094_T9gNQ.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2021-04-03T21:44:32+08:00",
+    "tags": [
+      "KOEI",
+      "战棋",
+      "PC",
+      "SLG",
+      "曹操传"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "監禁中 -カンキンチュウ-",
+    "name_cn": "監禁中 -カンキンチュウ-",
+    "date": "2018-05-04",
+    "cover": "https://lain.bgm.tv/pic/cover/l/fe/8f/246833_UddpN.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2021-04-03T11:46:49+08:00",
+    "tags": [
+      "G.Gear.inc",
+      "手游",
+      "悬疑",
+      "Android",
+      "解谜"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "火树银花",
+    "name_cn": "火树银花",
+    "date": "2016-01-30",
+    "cover": "https://lain.bgm.tv/pic/cover/l/bc/ff/177498_MzYQM.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2021-03-17T20:22:38+08:00",
+    "tags": [
+      "国产",
+      "狂气",
+      "Galgame",
+      "AVG",
+      "同人"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "天地刼：神魔至尊傳",
+    "name_cn": "天地劫：神魔至尊传",
+    "date": "1999-09-15",
+    "cover": "https://lain.bgm.tv/pic/cover/l/23/77/6956_eLtM4.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2021-03-10T18:04:33+08:00",
+    "tags": [
+      "汉堂",
+      "天地劫",
+      "国产",
+      "SRPG",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "四ツ目神",
+    "name_cn": "四目神",
+    "date": "2016-08-17",
+    "cover": "https://lain.bgm.tv/pic/cover/l/50/92/199185_s8reH.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2021-03-10T12:49:35+08:00",
+    "tags": [
+      "手游",
+      "SEEC",
+      "解谜",
+      "推理",
+      "2016"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "脱出ゲーム 嘘つきゲーム",
+    "name_cn": "脱出游戏 谎言游戏",
+    "date": "2017-10-30",
+    "cover": "https://lain.bgm.tv/pic/cover/l/3e/a3/228976_17ZLx.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2021-03-04T19:49:37+08:00",
+    "tags": [
+      "解谜",
+      "手游",
+      "StudioWasabi",
+      "Android",
+      "推理"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "狼ゲーム",
+    "name_cn": "恶狼游戏",
+    "date": "2018-03-10",
+    "cover": "https://lain.bgm.tv/pic/cover/l/b9/cd/237433_vkMLv.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2021-03-04T19:49:06+08:00",
+    "tags": [
+      "手游",
+      "解谜",
+      "AVG",
+      "StudioWasabi",
+      "推理"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "小林正雪2 抉择之惑",
+    "name_cn": "小林正雪2 抉择之惑",
+    "date": "2016-11-23",
+    "cover": "https://lain.bgm.tv/pic/cover/l/9e/5e/199441_QCWTf.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2021-02-28T19:45:23+08:00",
+    "tags": [
+      "手游",
+      "2016",
+      "中国",
+      "推理"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "端木斐 VS 小林正雪",
+    "name_cn": "端木斐 VS 小林正雪",
+    "date": null,
+    "cover": "https://lain.bgm.tv/pic/cover/l/fe/66/266652_u67JU.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2021-02-28T19:44:53+08:00",
+    "tags": [
+      "PC",
+      "中国",
+      "iOS",
+      "游戏",
+      "国产"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "小林正雪 復仇之密室",
+    "name_cn": "小林正雪 复仇之密室",
+    "date": "2015-11-24",
+    "cover": "https://lain.bgm.tv/pic/cover/l/05/33/199442_5Tt54.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2021-02-28T19:44:32+08:00",
+    "tags": [
+      "解谜",
+      "推理",
+      "PC",
+      "STEAM",
+      "AVG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "烟火",
+    "name_cn": "烟火",
+    "date": "2021-02-04",
+    "cover": "https://lain.bgm.tv/pic/cover/l/68/b8/306743_tKtK0.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2021-02-28T19:24:14+08:00",
+    "tags": [
+      "国产",
+      "解谜",
+      "悬疑",
+      "PC",
+      "恐怖"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Tomb Raider",
+    "name_cn": "古墓丽影",
+    "date": "2013-03-05",
+    "cover": "https://lain.bgm.tv/pic/cover/l/2e/51/54744_iz9cG.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2021-02-25T20:35:28+08:00",
+    "tags": [
+      "古墓丽影",
+      "ACT",
+      "PC",
+      "SquareEnix",
+      "劳拉"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "迷雾之夏-The Vigilant Villa",
+    "name_cn": "迷雾之夏",
+    "date": "2020-07-17",
+    "cover": "https://lain.bgm.tv/pic/cover/l/04/ec/314081_Mt6T3.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2021-02-17T22:40:50+08:00",
+    "tags": [
+      "AVG",
+      "国产",
+      "PC",
+      "悬疑",
+      "STEAM"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "距离男主自杀还剩七天",
+    "name_cn": "距离男主自杀还剩七天",
+    "date": "2021-02-12",
+    "cover": "https://lain.bgm.tv/pic/cover/l/e8/d7/328036_nqZeg.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2021-02-17T01:04:05+08:00",
+    "tags": [
+      "国产",
+      "AVG",
+      "悬疑",
+      "Galgame",
+      "致意"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "仙劍奇俠傳",
+    "name_cn": "仙剑奇侠传",
+    "date": "1995-07-07",
+    "cover": "https://lain.bgm.tv/pic/cover/l/d6/45/40_rQawC.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2021-02-15T21:14:00+08:00",
+    "tags": [
+      "仙剑奇侠传",
+      "RPG",
+      "国产",
+      "大宇",
+      "Dos时期的神作"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Katana ZERO",
+    "name_cn": "武士 零",
+    "date": "2019-04-18",
+    "cover": "https://lain.bgm.tv/pic/cover/l/b1/80/280816_z8D7C.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2021-02-05T23:02:02+08:00",
+    "tags": [
+      "ACT",
+      "独立游戏",
+      "像素",
+      "横版",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Banter Schooldays!!三〇一室无一人",
+    "name_cn": "三〇一室无一人",
+    "date": "2019-11-22",
+    "cover": "https://lain.bgm.tv/pic/cover/l/70/a4/296656_RxBDM.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2021-01-31T19:02:30+08:00",
+    "tags": [
+      "国产",
+      "全年龄",
+      "推理",
+      "Galgame",
+      "国产Galgame"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "代码破译者",
+    "name_cn": "代码破译者",
+    "date": "2019-03-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/a4/35/303163_Nv9tb.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2021-01-31T19:01:56+08:00",
+    "tags": [
+      "STEAM",
+      "推理",
+      "游戏",
+      "悬疑",
+      "SLG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Confess My Love",
+    "name_cn": "告白日",
+    "date": "2015-11-11",
+    "cover": "https://lain.bgm.tv/pic/cover/l/65/d3/218826_rI8ar.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2021-01-31T19:01:16+08:00",
+    "tags": [
+      "国产",
+      "PC",
+      "STEAM",
+      "同人",
+      "RPG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "遠隔捜査 －真実への23日間－",
+    "name_cn": "远隔搜查：找出真相的23天",
+    "date": "2009-02-05",
+    "cover": "https://lain.bgm.tv/pic/cover/l/06/fb/7671_6D1An.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2020-11-21T17:23:58+08:00",
+    "tags": [
+      "PSP",
+      "推理",
+      "AVG",
+      "浪川大輔",
+      "游戏"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ファタモルガーナの館 -Another Episodes-",
+    "name_cn": "海市蜃楼之馆 -A Requiem for Innocence-",
+    "date": "2015-08-31",
+    "cover": "https://lain.bgm.tv/pic/cover/l/8c/ce/144881_gFAFI.jpg",
+    "rate": 10,
+    "type": 2,
+    "updated_at": "2020-11-18T23:45:38+08:00",
+    "tags": [
+      "Galgame",
+      "Novectacle",
+      "同人",
+      "必玩续作",
+      "全年龄"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "节奏大师",
+    "name_cn": "节奏大师",
+    "date": "2012-05-25",
+    "cover": "https://lain.bgm.tv/pic/cover/l/22/07/95525_8KOWf.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-11-07T16:31:36+08:00",
+    "tags": [
+      "手游",
+      "音游",
+      "腾讯",
+      "iOS",
+      "MUG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "QQ堂",
+    "name_cn": "QQ堂",
+    "date": "2004-12-29",
+    "cover": "https://lain.bgm.tv/pic/cover/l/e0/06/176854_6rWi3.jpg",
+    "rate": 5,
+    "type": 2,
+    "updated_at": "2020-11-07T16:31:30+08:00",
+    "tags": [
+      "PC",
+      "网游",
+      "童年",
+      "腾讯",
+      "2004"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "QQ宠物",
+    "name_cn": "QQ宠物",
+    "date": "2005-06-06",
+    "cover": "https://lain.bgm.tv/pic/cover/l/6d/99/176855_hNWF2.jpg",
+    "rate": 4,
+    "type": 2,
+    "updated_at": "2020-11-07T16:31:22+08:00",
+    "tags": [
+      "PC",
+      "腾讯",
+      "童年",
+      "网游",
+      "2005"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "QQ飞车",
+    "name_cn": "QQ飞车",
+    "date": "2008-06-20",
+    "cover": "https://lain.bgm.tv/pic/cover/l/c0/49/176853_OJ2gg.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-11-07T16:30:10+08:00",
+    "tags": [
+      "PC",
+      "网游",
+      "腾讯",
+      "童年",
+      "RAC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "QQ三国",
+    "name_cn": "QQ三国",
+    "date": "2007-06-29",
+    "cover": "https://lain.bgm.tv/pic/cover/l/5b/d2/255171_3e1a7.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-11-07T16:29:49+08:00",
+    "tags": [
+      "PC",
+      "网游",
+      "腾讯",
+      "国产",
+      "RPG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "The Room Three",
+    "name_cn": "空房间 3",
+    "date": "2015-11-04",
+    "cover": "https://lain.bgm.tv/pic/cover/l/eb/67/112623_YBASQ.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-10-21T20:50:05+08:00",
+    "tags": [
+      "解谜",
+      "手游",
+      "独立游戏",
+      "iOS",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "谎言之屋",
+    "name_cn": "谎言之屋",
+    "date": "2015-09-13",
+    "cover": "https://lain.bgm.tv/pic/cover/l/4c/4d/225994_r3bFS.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-10-20T11:18:21+08:00",
+    "tags": [
+      "岚少实况",
+      "中国",
+      "视频通关",
+      "RPGMaker",
+      "解迷"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "スーパーマリオブラザーズ",
+    "name_cn": "超级马力欧兄弟",
+    "date": "1985-09-13",
+    "cover": "https://lain.bgm.tv/pic/cover/l/47/fd/2736_9YI9m.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-10-20T00:57:18+08:00",
+    "tags": [
+      "任天堂",
+      "马里奥",
+      "FC",
+      "童年",
+      "红白机"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "アマガミ ちょっとおまけ劇場",
+    "name_cn": "圣诞之吻 ～小小惊喜剧场～",
+    "date": "2012-04-13",
+    "cover": "https://lain.bgm.tv/pic/cover/l/2c/81/48908_uURFR.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-10-20T00:45:19+08:00",
+    "tags": [
+      "Galgame",
+      "圣诞之吻",
+      "FD",
+      "纯爱",
+      "全年龄"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "鸑鷟：摩耶之纱 女警篇",
+    "name_cn": "鸑鷟：摩耶之纱 女警篇",
+    "date": "2012-12-24",
+    "cover": "https://lain.bgm.tv/pic/cover/l/f5/0e/65751_3M33O.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-10-20T00:40:34+08:00",
+    "tags": [
+      "国产",
+      "Galgame",
+      "同人",
+      "鸑鷟",
+      "全年龄"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "鸑鷟：橘子传",
+    "name_cn": "鸑鷟：橘子传",
+    "date": "2010-05-14",
+    "cover": "https://lain.bgm.tv/pic/cover/l/b8/cf/5696_lW5rR.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-10-20T00:38:28+08:00",
+    "tags": [
+      "国产",
+      "Galgame",
+      "鸑鷟",
+      "橘子传",
+      "同人"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "LOVELY×CATION2",
+    "name_cn": "LOVELY×CATION2",
+    "date": "2013-04-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/a0/6d/49252_ECw00.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-10-20T00:34:59+08:00",
+    "tags": [
+      "Galgame",
+      "纯爱",
+      "暁WORKS-響-",
+      "拔作",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "The Room Two",
+    "name_cn": "空房间 2",
+    "date": "2013-12-12",
+    "cover": "https://lain.bgm.tv/pic/cover/l/c6/b4/91615_fH5Hk.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-10-20T00:16:45+08:00",
+    "tags": [
+      "解谜",
+      "iOS",
+      "手游",
+      "密室逃脱",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "The Room",
+    "name_cn": "空房间",
+    "date": "2012-09-19",
+    "cover": "https://lain.bgm.tv/pic/cover/l/bc/43/66442_e2v6K.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-10-19T00:38:59+08:00",
+    "tags": [
+      "解谜",
+      "iOS",
+      "手游",
+      "独立游戏",
+      "密室逃脱"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "WHITE ALBUM2 -closing chapter-",
+    "name_cn": "白色相簿2 终章",
+    "date": "2011-12-22",
+    "cover": "https://lain.bgm.tv/pic/cover/l/90/78/22290_1L2aJ.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-10-16T12:20:45+08:00",
+    "tags": [
+      "丸戸史明",
+      "Galgame",
+      "leaf",
+      "三角恋",
+      "WA2"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Remember11 -the age of infinity-",
+    "name_cn": "Remember11：无限轮回的时光",
+    "date": "2004-03-18",
+    "cover": "https://lain.bgm.tv/pic/cover/l/67/8a/1127_eZ7Te.jpg",
+    "rate": 10,
+    "type": 2,
+    "updated_at": "2020-10-15T03:47:23+08:00",
+    "tags": [
+      "KID",
+      "Galgame",
+      "打越刚太郎",
+      "infinity",
+      "悬疑"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Cuphead",
+    "name_cn": "茶杯头",
+    "date": "2017-09-29",
+    "cover": "https://lain.bgm.tv/pic/cover/l/5d/7b/161711_IFBDf.jpg",
+    "rate": 0,
+    "type": 4,
+    "updated_at": "2020-10-05T22:43:49+08:00",
+    "tags": [
+      "独立游戏",
+      "PC",
+      "ACT",
+      "复古",
+      "横板"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "死月妖花～四月八日～",
+    "name_cn": "死月妖花～四月八日～",
+    "date": "2019-04-02",
+    "cover": "https://lain.bgm.tv/pic/cover/l/67/0d/280440_do0j5.jpg",
+    "rate": 0,
+    "type": 1,
+    "updated_at": "2020-09-10T11:28:58+08:00",
+    "tags": [
+      "悬疑",
+      "同人",
+      "AVG",
+      "推理",
+      "Galgame"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Minesweeper",
+    "name_cn": "扫雷",
+    "date": "1992-03-18",
+    "cover": "https://lain.bgm.tv/pic/cover/l/b5/5e/942_8g393.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-09-07T22:55:52+08:00",
+    "tags": [
+      "扫雷",
+      "小游戏",
+      "PC",
+      "Windows",
+      "浪费人参"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "軒轅劍外傳 蒼之濤",
+    "name_cn": "轩辕剑外传—苍之涛",
+    "date": "2004-02-06",
+    "cover": "https://lain.bgm.tv/pic/cover/l/b4/32/1915_L4DhL.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-09-07T21:29:52+08:00",
+    "tags": [
+      "轩辕剑",
+      "RPG",
+      "大宇",
+      "苍之涛",
+      "国产"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "グリザイア：ファントムトリガー 第7巻",
+    "name_cn": "灰色幻影扳机 第7卷",
+    "date": "2020-07-22",
+    "cover": "https://lain.bgm.tv/pic/cover/l/d9/bd/302452_v16Hh.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-08-31T01:13:25+08:00",
+    "tags": [
+      "FrontWing",
+      "Galgame",
+      "灰色系列",
+      "全年龄",
+      "桐谷华"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "軒轅劍參 雲和山的彼端",
+    "name_cn": "轩辕剑3 云和山的彼端",
+    "date": "1999-12-04",
+    "cover": "https://lain.bgm.tv/pic/cover/l/9d/26/1654_3TV6i.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-08-21T22:55:42+08:00",
+    "tags": [
+      "轩辕剑",
+      "RPG",
+      "云和山的彼端",
+      "国产",
+      "DOMO"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "軒轅劒外傳：漢之雲",
+    "name_cn": "轩辕剑外传：汉之云",
+    "date": "2009-01-10",
+    "cover": "https://lain.bgm.tv/pic/cover/l/04/df/1911_Njg4d.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-08-20T12:36:50+08:00",
+    "tags": [
+      "RPG",
+      "轩辕剑",
+      "国产",
+      "大宇",
+      "DOMO"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ナンパッション",
+    "name_cn": "搭讪Show",
+    "date": "2018-08-12",
+    "cover": "https://lain.bgm.tv/pic/cover/l/e3/93/257280_nKQmi.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-08-14T10:16:58+08:00",
+    "tags": [
+      "手游",
+      "G.Gear.inc",
+      "解谜",
+      "搞笑",
+      "G.Gear"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "フラれ回避",
+    "name_cn": "失恋回避",
+    "date": "2017-05-30",
+    "cover": "https://lain.bgm.tv/pic/cover/l/bf/cc/216215_3ns7I.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-08-13T22:43:35+08:00",
+    "tags": [
+      "手游",
+      "G.Gear.inc",
+      "修罗场",
+      "Android",
+      "ADV"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "僕の彼女は浮気なんかしない",
+    "name_cn": "我的女朋友不可能会花心",
+    "date": "2015-12-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/7f/48/194380_N79LN.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-08-12T22:38:48+08:00",
+    "tags": [
+      "手游",
+      "G.Gear.inc",
+      "AVG",
+      "悬疑",
+      "修罗场"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "元カノ(仮)と今カノと僕",
+    "name_cn": "前女友（假定）和现女友和我",
+    "date": "2015-08-15",
+    "cover": "https://lain.bgm.tv/pic/cover/l/4e/86/170240_cm7p9.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-08-12T11:08:23+08:00",
+    "tags": [
+      "手游",
+      "AVG",
+      "G.Gear.inc",
+      "解谜",
+      "修罗场"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "元カノは友達だから問題ない",
+    "name_cn": "前女友是朋友所以没问题",
+    "date": "2016-09-23",
+    "cover": "https://lain.bgm.tv/pic/cover/l/3f/23/198875_n584Z.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-08-10T14:05:55+08:00",
+    "tags": [
+      "手游",
+      "G.Gear.inc",
+      "AVG",
+      "悬疑",
+      "Android"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "PRICE",
+    "name_cn": "PRICE",
+    "date": "2014-02-03",
+    "cover": "https://lain.bgm.tv/pic/cover/l/26/c1/95899_oxcUU.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-08-08T22:27:59+08:00",
+    "tags": [
+      "AVG",
+      "国产",
+      "PC",
+      "解谜",
+      "STEAM"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "CHAOS;CHILD",
+    "name_cn": "混沌子",
+    "date": "2014-12-18",
+    "cover": "https://lain.bgm.tv/pic/cover/l/67/94/88765_QF7GZ.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-07-28T19:17:40+08:00",
+    "tags": [
+      "5pb.",
+      "科学妄想ADV",
+      "Galgame",
+      "志倉千代丸",
+      "悬疑"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ZERO ESCAPE 刻のジレンマ",
+    "name_cn": "极限脱出 零时困境",
+    "date": "2016-06-30",
+    "cover": "https://lain.bgm.tv/pic/cover/l/80/de/139233_S9k0C.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-07-06T01:33:17+08:00",
+    "tags": [
+      "打越鋼太郎",
+      "极限脱出",
+      "AVG",
+      "悬疑",
+      "3DS"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ひぐらしのなく頃に解",
+    "name_cn": "寒蝉鸣泣之时解",
+    "date": "2006-08-13",
+    "cover": "https://lain.bgm.tv/pic/cover/l/8e/90/80705_OWk9k.jpg",
+    "rate": 10,
+    "type": 2,
+    "updated_at": "2020-06-28T12:31:02+08:00",
+    "tags": [
+      "竜騎士07",
+      "Galgame",
+      "寒蝉鸣泣之时",
+      "同人",
+      "友情"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ひぐらしのなく頃に",
+    "name_cn": "寒蝉鸣泣之时",
+    "date": "2004-08-15",
+    "cover": "https://lain.bgm.tv/pic/cover/l/58/ef/17035_n33xd.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-06-19T13:13:36+08:00",
+    "tags": [
+      "Galgame",
+      "龙骑士07",
+      "寒蝉鸣泣之时",
+      "悬疑",
+      "竜騎士07"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "のじゃロリのヤンデレ黙示録",
+    "name_cn": "古风萝莉之病娇默示录",
+    "date": "2016-02-22",
+    "cover": "https://lain.bgm.tv/pic/cover/l/99/9d/220999_6oNn3.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-06-04T01:41:51+08:00",
+    "tags": [
+      "病娇",
+      "同人",
+      "Galgame",
+      "血腥",
+      "超短警告"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "デンシャ",
+    "name_cn": "电车",
+    "date": "2013-05-24",
+    "cover": "https://lain.bgm.tv/pic/cover/l/2d/22/81286_1ZW3B.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-06-03T08:06:57+08:00",
+    "tags": [
+      "RPGMaker",
+      "PC",
+      "小麦畑",
+      "RPG",
+      "独立游戏"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ペルソナ4 ザ・ゴールデン",
+    "name_cn": "女神异闻录4 黄金版",
+    "date": "2012-06-14",
+    "cover": "https://lain.bgm.tv/pic/cover/l/19/21/22660_4bb11.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-23T11:49:23+08:00",
+    "tags": [
+      "女神异闻录",
+      "ATLUS",
+      "RPG",
+      "PSV",
+      "JRPG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Helltaker",
+    "name_cn": "地狱把妹王",
+    "date": "2020-05-11",
+    "cover": "https://lain.bgm.tv/pic/cover/l/1f/17/306689_PKk1O.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-23T01:57:49+08:00",
+    "tags": [
+      "PC",
+      "独立游戏",
+      "解谜",
+      "推箱子",
+      "STEAM"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "極限脱出ADV 善人シボウデス",
+    "name_cn": "极限脱出ADV 善人死亡",
+    "date": "2012-02-16",
+    "cover": "https://lain.bgm.tv/pic/cover/l/d2/12/23491_hJP1H.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-22T12:08:14+08:00",
+    "tags": [
+      "打越钢太郎",
+      "极限脱出",
+      "AVG",
+      "3DS",
+      "悬疑"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "メモリーズオフ -Innocent Fille-",
+    "name_cn": "告别回忆 -无垢少女-",
+    "date": "2018-03-29",
+    "cover": "https://lain.bgm.tv/pic/cover/l/7f/26/226660_8GA89.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-18T13:20:02+08:00",
+    "tags": [
+      "Galgame",
+      "秋之回忆",
+      "5pb.",
+      "Memories-off",
+      "GAL"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "黑森町绮谭",
+    "name_cn": "黑森町绮谭",
+    "date": "2019-09-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/9d/83/286348_8JjvI.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T10:28:01+08:00",
+    "tags": [
+      "国产",
+      "RPG",
+      "解谜",
+      "PC",
+      "STEAM"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "風色幻想XX 交錯的軌跡",
+    "name_cn": "风色幻想XX ～交错的轨迹～",
+    "date": "2008-06-24",
+    "cover": "https://lain.bgm.tv/pic/cover/l/f0/ad/818_wC6TG.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T10:27:21+08:00",
+    "tags": [
+      "风色幻想",
+      "SRPG",
+      "PC",
+      "伊莎贝拉",
+      "弘煜科技"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "采配のゆくえ",
+    "name_cn": "令旗所向",
+    "date": "2008-10-23",
+    "cover": "https://lain.bgm.tv/pic/cover/l/38/02/22329_Mn20A.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T10:26:38+08:00",
+    "tags": [
+      "NDS",
+      "AVG",
+      "战国",
+      "KOEI",
+      "推理"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "寻仙",
+    "name_cn": "寻仙",
+    "date": "2008-10-27",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ba/79/227962_KP95S.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-15T10:26:17+08:00",
+    "tags": [
+      "PC",
+      "网游",
+      "童年",
+      "MMORPG",
+      "安卓"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "精忠报国岳飞传",
+    "name_cn": "精忠报国岳飞传",
+    "date": null,
+    "cover": "https://lain.bgm.tv/pic/cover/l/11/13/269351_g73BK.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T10:25:39+08:00",
+    "tags": [
+      "PC",
+      "游戏",
+      "SLG",
+      "同人",
+      "曹操传"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "2048",
+    "name_cn": "2048",
+    "date": "2014-03-09",
+    "cover": "https://lain.bgm.tv/pic/cover/l/e5/70/99998_rZ0Ja.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T10:23:45+08:00",
+    "tags": [
+      "PUZ",
+      "小游戏",
+      "杀时间",
+      "益智",
+      "Web"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "メモリーズオフ ゆびきりの記憶 ふたりの風流庵",
+    "name_cn": "秋之回忆：勾指起誓的记忆  两人的风流庵",
+    "date": "2011-05-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/a0/43/18800_93Ee8.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T10:23:20+08:00",
+    "tags": [
+      "Galgame",
+      "秋之回忆",
+      "5pb",
+      "PSP",
+      "FD"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "鸑鷟：镜花水月",
+    "name_cn": "鸑鷟：镜花水月",
+    "date": "2009-11-01",
+    "cover": "https://lain.bgm.tv/pic/cover/l/2b/e9/3333_3mmE2.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T10:22:44+08:00",
+    "tags": [
+      "国产",
+      "Galgame",
+      "鸑鷟",
+      "同人",
+      "GAL"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Mirror",
+    "name_cn": "Mirror",
+    "date": "2018-04-19",
+    "cover": "https://lain.bgm.tv/pic/cover/l/1a/4c/241094_n3Jwj.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T10:22:39+08:00",
+    "tags": [
+      "PC",
+      "消消乐",
+      "STEAM",
+      "黄油",
+      "R18"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "夜廻",
+    "name_cn": "夜廻",
+    "date": "2015-10-29",
+    "cover": "https://lain.bgm.tv/pic/cover/l/df/6c/138781_BSbtw.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T10:22:05+08:00",
+    "tags": [
+      "日本一",
+      "恐怖",
+      "PSV",
+      "解谜",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "戦場のヴァルキュリア4",
+    "name_cn": "战场女武神4",
+    "date": "2018-03-21",
+    "cover": "https://lain.bgm.tv/pic/cover/l/b2/17/230423_pgiiP.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T10:22:00+08:00",
+    "tags": [
+      "SEGA",
+      "PS4",
+      "SRPG",
+      "战场女武神",
+      "2018"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "グリザイア：ファントムトリガー 第1巻",
+    "name_cn": "灰色幻影扳机 第1卷",
+    "date": "2017-04-28",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ca/f1/196258_U7fUl.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T10:19:39+08:00",
+    "tags": [
+      "FrontWing",
+      "Galgame",
+      "灰色系列",
+      "渡辺明夫",
+      "全年龄"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "奥様は惨殺少女",
+    "name_cn": "太太是惨杀少女",
+    "date": "2007-03-30",
+    "cover": "https://lain.bgm.tv/pic/cover/l/36/1f/83355_7h67p.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T10:18:34+08:00",
+    "tags": [
+      "同人",
+      "Galgame",
+      "病娇",
+      "全年龄",
+      "猎奇"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "アリスの精神裁判",
+    "name_cn": "爱丽丝的精神审判",
+    "date": "2015-10-22",
+    "cover": "https://lain.bgm.tv/pic/cover/l/cd/e9/154952_ccblQ.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T10:17:22+08:00",
+    "tags": [
+      "手游",
+      "推理",
+      "SEEC",
+      "Android",
+      "解谜"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "メモリーズオフ6 ～T-Wave～",
+    "name_cn": "秋之回忆6：三角波动",
+    "date": "2008-08-21",
+    "cover": "https://lain.bgm.tv/pic/cover/l/86/d7/1666_j5EZj.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T10:15:44+08:00",
+    "tags": [
+      "秋之回忆",
+      "Galgame",
+      "5pb",
+      "KID",
+      "学姐"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ザンキゼロ",
+    "name_cn": "残机为零",
+    "date": "2018-07-05",
+    "cover": "https://lain.bgm.tv/pic/cover/l/21/71/214519_aw79Q.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T10:15:23+08:00",
+    "tags": [
+      "SpikeChunsoft",
+      "PS4",
+      "PSV",
+      "DRPG",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "青鬼",
+    "name_cn": "青鬼",
+    "date": "2004-05-10",
+    "cover": "https://lain.bgm.tv/pic/cover/l/02/2e/100465_8VTZ4.jpg",
+    "rate": 4,
+    "type": 2,
+    "updated_at": "2020-05-15T10:15:08+08:00",
+    "tags": [
+      "RPG",
+      "恐怖",
+      "PC",
+      "独立游戏",
+      "AVG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "端木斐异闻录",
+    "name_cn": "端木斐异闻录",
+    "date": "2017-03-10",
+    "cover": "https://lain.bgm.tv/pic/cover/l/23/86/168457_47Jy5.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T10:14:48+08:00",
+    "tags": [
+      "推理",
+      "国产",
+      "STEAM",
+      "AVG",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Memories Off #5 encore",
+    "name_cn": "秋之回忆#5 安可",
+    "date": "2007-07-12",
+    "cover": "https://lain.bgm.tv/pic/cover/l/df/6c/4572_1CVX1.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T10:14:29+08:00",
+    "tags": [
+      "秋之回忆",
+      "KID",
+      "Galgame",
+      "MO",
+      "PSP"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "犯人は僕です。",
+    "name_cn": "犯人就是我。",
+    "date": "2016-08-02",
+    "cover": "https://lain.bgm.tv/pic/cover/l/6b/73/194377_fPFTb.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T10:13:31+08:00",
+    "tags": [
+      "手游",
+      "推理",
+      "G.Gear.inc",
+      "悬疑",
+      "AVG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "DISTRAINT",
+    "name_cn": "扣押",
+    "date": "2015-10-21",
+    "cover": "https://lain.bgm.tv/pic/cover/l/7c/2f/214771_reMb5.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T10:12:42+08:00",
+    "tags": [
+      "PC",
+      "像素",
+      "解谜",
+      "AVG",
+      "独立游戏"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "三国赵云传",
+    "name_cn": "三国赵云传",
+    "date": "2001-12-01",
+    "cover": "https://lain.bgm.tv/pic/cover/l/1f/87/6293_70zKa.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-15T10:12:28+08:00",
+    "tags": [
+      "PC",
+      "ARPG",
+      "国产",
+      "童年",
+      "亢龙无悔"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "战舰少女R",
+    "name_cn": "战舰少女R",
+    "date": "2014-11-10",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ed/95/117903_ky3rD.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T10:11:32+08:00",
+    "tags": [
+      "手游",
+      "国产",
+      "舰娘",
+      "Android",
+      "战舰少女"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "メモリーズオフ6 Next Relation",
+    "name_cn": "秋之回忆6：下一篇章",
+    "date": "2013-06-27",
+    "cover": "https://lain.bgm.tv/pic/cover/l/07/d5/7265_f2J00.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T10:10:39+08:00",
+    "tags": [
+      "秋之回忆",
+      "Galgame",
+      "5pb",
+      "PSP",
+      "MO"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "恋と選挙とチョコレート ポータブル",
+    "name_cn": "恋爱和选举和巧克力 携带版",
+    "date": "2012-09-27",
+    "cover": "https://lain.bgm.tv/pic/cover/l/60/df/49035_esCZ5.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T10:09:47+08:00",
+    "tags": [
+      "Galgame",
+      "PSP",
+      "sprite",
+      "恋爱选举巧克力",
+      "雪碧社"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "人魚沼",
+    "name_cn": "人鱼沼",
+    "date": "2012-06-10",
+    "cover": "https://lain.bgm.tv/pic/cover/l/f1/72/81713_Wd1Ts.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T10:09:25+08:00",
+    "tags": [
+      "RPG",
+      "PC",
+      "解谜",
+      "恐怖",
+      "岚少实况"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "グリザイア：ファントムトリガー 第2巻",
+    "name_cn": "灰色幻影扳机 第2卷",
+    "date": "2017-04-28",
+    "cover": "https://lain.bgm.tv/pic/cover/l/8c/25/214188_3008C.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T10:09:06+08:00",
+    "tags": [
+      "FrontWing",
+      "Galgame",
+      "灰色系列",
+      "グリザイア",
+      "全年龄"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "グリザイア：ファントムトリガー 第5.5巻",
+    "name_cn": "灰色幻影扳机 第5.5卷",
+    "date": "2019-04-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/8a/44/281188_7DbDA.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T10:08:56+08:00",
+    "tags": [
+      "FrontWing",
+      "Galgame",
+      "灰色系列",
+      "全年龄",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "グリザイア：ファントムトリガー 第3巻",
+    "name_cn": "灰色幻影扳机 第3卷",
+    "date": "2017-07-28",
+    "cover": "https://lain.bgm.tv/pic/cover/l/b4/f5/214362_a56AL.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T10:08:51+08:00",
+    "tags": [
+      "FrontWing",
+      "Galgame",
+      "灰色系列",
+      "渡辺明夫",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "恒水中学连环虐杀",
+    "name_cn": "恒水中学连环虐杀",
+    "date": "2015-03-02",
+    "cover": "https://lain.bgm.tv/pic/cover/l/fe/d1/145623_C6LYo.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T10:08:15+08:00",
+    "tags": [
+      "国产",
+      "AVG",
+      "推理",
+      "橙光",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "グリザイア：ファントムトリガー 第4巻",
+    "name_cn": "灰色幻影扳机 第4卷",
+    "date": "2018-01-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/15/3e/230796_rWky8.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T10:07:56+08:00",
+    "tags": [
+      "FrontWing",
+      "Galgame",
+      "全年龄",
+      "灰色系列",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "真・三國無双7 猛将伝",
+    "name_cn": "真・三国无双7 猛将传",
+    "date": "2013-11-28",
+    "cover": "https://lain.bgm.tv/pic/cover/l/28/d6/108811_Vv2V0.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T09:54:57+08:00",
+    "tags": [
+      "ACT",
+      "KOEI",
+      "PC",
+      "割草",
+      "真三国无双"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Plague Inc.",
+    "name_cn": "瘟疫公司",
+    "date": "2012-05-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/cb/a7/69423_K3o5e.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T09:41:45+08:00",
+    "tags": [
+      "SLG",
+      "手游",
+      "策略",
+      "独立游戏",
+      "反人类"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "俺の妹がこんなに可愛いわけがない ポータブル",
+    "name_cn": "我的妹妹哪有这么可爱！ 携带版",
+    "date": "2011-01-27",
+    "cover": "https://lain.bgm.tv/pic/cover/l/48/0e/11222_ZEfjo.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T09:40:15+08:00",
+    "tags": [
+      "PSP",
+      "俺妹",
+      "Galgame",
+      "綾瀬本命",
+      "黑猫线"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "真・三國無双7",
+    "name_cn": "真·三国无双7",
+    "date": "2013-03-31",
+    "cover": "https://lain.bgm.tv/pic/cover/l/06/c9/56713_5nkGI.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T09:39:46+08:00",
+    "tags": [
+      "ACT",
+      "无双",
+      "KOEI",
+      "PS3",
+      "割草"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "逆転裁判5",
+    "name_cn": "逆转裁判5",
+    "date": "2013-07-25",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ba/d1/51602_c2EaP.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T09:39:22+08:00",
+    "tags": [
+      "3DS",
+      "逆转裁判",
+      "Capcom",
+      "AVG",
+      "推理"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "俺の妹がこんなに可愛いわけがない ポータブルが続くわけがない",
+    "name_cn": "我的妹妹哪有这么可爱 携带版不可能出续作",
+    "date": "2012-05-17",
+    "cover": "https://lain.bgm.tv/pic/cover/l/8d/6f/33391_99BYX.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T09:37:51+08:00",
+    "tags": [
+      "PSP",
+      "俺妹",
+      "Galgame",
+      "AVG",
+      "续章"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "暁の護衛",
+    "name_cn": "晓之护卫",
+    "date": "2008-03-27",
+    "cover": "https://lain.bgm.tv/pic/cover/l/e5/93/3906_4KIUc.jpg",
+    "rate": 5,
+    "type": 2,
+    "updated_at": "2020-05-15T09:37:40+08:00",
+    "tags": [
+      "Galgame",
+      "晓之护卫",
+      "衣笠彰梧",
+      "搞笑",
+      "大小姐"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "恋愛0キロメートル",
+    "name_cn": "恋爱0公里",
+    "date": "2011-10-28",
+    "cover": "https://lain.bgm.tv/pic/cover/l/bd/6b/55253_WZz1w.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T09:37:15+08:00",
+    "tags": [
+      "Galgame",
+      "ASaProject",
+      "搞笑",
+      "颜艺",
+      "欢乐"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "大富翁6",
+    "name_cn": "大富翁6",
+    "date": "2002-06-01",
+    "cover": "https://lain.bgm.tv/pic/cover/l/9d/f8/6295_fq040.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T09:35:59+08:00",
+    "tags": [
+      "PC",
+      "大富翁",
+      "童年",
+      "国产",
+      "经典"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "剑侠情缘贰",
+    "name_cn": "剑侠情缘贰",
+    "date": "2000-06-30",
+    "cover": "https://lain.bgm.tv/pic/cover/l/e5/c2/19576_tawvJ.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T09:35:35+08:00",
+    "tags": [
+      "剑侠情缘",
+      "PC",
+      "RPG",
+      "国产",
+      "ARPG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "グリザイア：ファントムトリガー 第5巻",
+    "name_cn": "灰色幻影扳机 第5卷",
+    "date": "2018-07-27",
+    "cover": "https://lain.bgm.tv/pic/cover/l/92/d5/246370_HzJNM.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T09:35:11+08:00",
+    "tags": [
+      "FrontWing",
+      "Galgame",
+      "全年龄",
+      "灰色系列",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "リアル妹がいる大泉くんのばあい",
+    "name_cn": "实妹相伴的大泉君",
+    "date": "2010-05-28",
+    "cover": "https://lain.bgm.tv/pic/cover/l/0c/2a/5949_K0O4S.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T09:35:05+08:00",
+    "tags": [
+      "Galgame",
+      "妹控",
+      "ALcotハニカム",
+      "妹系",
+      "alcot"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "苍蓝眼瞳的人偶",
+    "name_cn": "苍蓝眼瞳的人偶",
+    "date": "2012-12-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/c9/b5/62892_qa77T.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T09:33:13+08:00",
+    "tags": [
+      "Galgame",
+      "国产",
+      "蓝天使制作组",
+      "性转点赞",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Road Rash",
+    "name_cn": "暴力摩托",
+    "date": null,
+    "cover": "https://lain.bgm.tv/pic/cover/l/06/78/10114_9z45h.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T09:30:42+08:00",
+    "tags": [
+      "PC",
+      "童年",
+      "RAC",
+      "EA",
+      "暴力摩托"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "とらドラ・ポータブル!",
+    "name_cn": "龙虎斗：携带版",
+    "date": "2009-04-30",
+    "cover": "https://lain.bgm.tv/pic/cover/l/0c/8c/1503_Bg4xu.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T09:28:01+08:00",
+    "tags": [
+      "PSP",
+      "龙与虎",
+      "Galgame",
+      "龙虎斗",
+      "孕妇结局"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "メモリーズオフ ゆびきりの記憶",
+    "name_cn": "秋之回忆：勾指起誓的记忆",
+    "date": null,
+    "cover": "https://lain.bgm.tv/pic/cover/l/ab/38/10895_ob68K.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T09:27:44+08:00",
+    "tags": [
+      "秋之回忆",
+      "Galgame",
+      "5pb",
+      "GAL",
+      "PSP"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "メモリーズオフ -Innocent Fille- for Dearest",
+    "name_cn": "告别回忆 -无垢少女- 致最爱的你",
+    "date": "2019-03-28",
+    "cover": "https://lain.bgm.tv/pic/cover/l/9f/db/269615_qExMm.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T09:27:39+08:00",
+    "tags": [
+      "Galgame",
+      "秋之回忆",
+      "5pb.",
+      "最終作",
+      "Memories_off"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Memories Off 5 とぎれたフィルム",
+    "name_cn": "秋之回忆5：中断的胶片",
+    "date": "2005-10-27",
+    "cover": "https://lain.bgm.tv/pic/cover/l/c6/0d/1118_dA87v.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T09:27:27+08:00",
+    "tags": [
+      "秋之回忆",
+      "KID",
+      "Galgame",
+      "5pb",
+      "GAL"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "三國群英傳Ⅱ",
+    "name_cn": "三国群英传2",
+    "date": null,
+    "cover": "https://lain.bgm.tv/pic/cover/l/96/9e/9659_6Yr8k.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T09:26:56+08:00",
+    "tags": [
+      "SLG",
+      "PC",
+      "童年",
+      "宇浚奥汀",
+      "三国"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "グリザイア：ファントムトリガー 第6巻",
+    "name_cn": "灰色幻影扳机 第6卷",
+    "date": "2019-04-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/bd/6e/281189_9f96W.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T09:25:40+08:00",
+    "tags": [
+      "FrontWing",
+      "Galgame",
+      "PC",
+      "灰色系列",
+      "渡辺明夫"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "黒先輩と黒屋敷の闇に迷わない",
+    "name_cn": "黑学姐和黑屋子的黑暗不再迷茫",
+    "date": "2014-03-18",
+    "cover": "https://lain.bgm.tv/pic/cover/l/5d/21/119948_zGl2W.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T09:23:21+08:00",
+    "tags": [
+      "RPG",
+      "2014",
+      "饗庭淵",
+      "解密",
+      "同人"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "狼と香辛料 海を渡る風",
+    "name_cn": "狼与香辛料：跨越大海的风",
+    "date": "2009-09-17",
+    "cover": "https://lain.bgm.tv/pic/cover/l/01/97/9975_IlLe2.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T09:22:19+08:00",
+    "tags": [
+      "NDS",
+      "萌狼",
+      "AVG",
+      "小清水亚美",
+      "福山润"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "この素晴らしい世界に祝福を! in the life",
+    "name_cn": "向美好的世界献上祝福！in the life",
+    "date": "2016-03-25",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ff/c4/166873_7TQ8q.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T09:21:42+08:00",
+    "tags": [
+      "PC",
+      "RPG",
+      "神还原",
+      "RPGMaker",
+      "同人"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Memories Off 〜それから again〜",
+    "name_cn": "秋之回忆：从今以后again",
+    "date": "2006-03-23",
+    "cover": "https://lain.bgm.tv/pic/cover/l/3d/77/1336_RxRPo.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T09:21:20+08:00",
+    "tags": [
+      "秋之回忆",
+      "KID",
+      "Galgame",
+      "MO4",
+      "again"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "マッドファーザー",
+    "name_cn": "狂父",
+    "date": "2012-12-10",
+    "cover": "https://lain.bgm.tv/pic/cover/l/fc/0c/58942_E5oCf.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T09:21:12+08:00",
+    "tags": [
+      "恐怖",
+      "解谜",
+      "RPG",
+      "RPGMaker",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "名探偵コナン 蒼き宝石の輪舞曲",
+    "name_cn": "名侦探柯南：苍蓝宝石的轮舞曲",
+    "date": "2011-06-08",
+    "cover": "https://lain.bgm.tv/pic/cover/l/0d/21/20697_lbfT0.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T09:21:01+08:00",
+    "tags": [
+      "NDS",
+      "AVG",
+      "推理",
+      "解谜",
+      "2011"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "絶対絶望少女 ダンガンロンパ AnotherEpisode",
+    "name_cn": "绝对绝望少女 弹丸论破外传",
+    "date": "2014-09-25",
+    "cover": "https://lain.bgm.tv/pic/cover/l/c0/1e/84315_USuuS.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T09:20:27+08:00",
+    "tags": [
+      "弹丸论破",
+      "PSV",
+      "绝对绝望少女",
+      "SpikeChunsoft",
+      "TPS"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Yu-Gi-Oh! Power of Chaos: Joey the Passion",
+    "name_cn": "游戏王之混沌力量：城之内篇",
+    "date": "2004-07-02",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ed/ba/83359_y23y3.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T09:19:41+08:00",
+    "tags": [
+      "游戏王",
+      "PC",
+      "Konami",
+      "城之内",
+      "卡牌"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "レイトン教授VS逆転裁判",
+    "name_cn": "雷顿教授VS逆转裁判",
+    "date": "2012-11-29",
+    "cover": "https://lain.bgm.tv/pic/cover/l/db/26/18438_VqVnD.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T09:18:23+08:00",
+    "tags": [
+      "逆转裁判",
+      "3DS",
+      "雷顿教授",
+      "AVG",
+      "Capcom"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ニュー ダンガンロンパV3 みんなのコロシアイ新学期",
+    "name_cn": "新弹丸论破V3 大家的自相残杀新学期",
+    "date": "2017-01-12",
+    "cover": "https://lain.bgm.tv/pic/cover/l/6b/90/146579_388qk.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-15T09:14:06+08:00",
+    "tags": [
+      "弹丸论破",
+      "推理",
+      "AVG",
+      "小高和剛",
+      "悬疑"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "殺戮の天使",
+    "name_cn": "杀戮天使",
+    "date": "2015-08-14",
+    "cover": "https://lain.bgm.tv/pic/cover/l/af/5c/173704_6jEQj.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T09:13:58+08:00",
+    "tags": [
+      "RPG",
+      "独立游戏",
+      "恐怖解密",
+      "RPGMaker",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "乙女理論とその後の周辺 -Belle Epoque-",
+    "name_cn": "少女理论及其之后的周边 -美好年代篇-",
+    "date": "2016-05-27",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ef/92/143835_kQr5x.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T09:13:52+08:00",
+    "tags": [
+      "Galgame",
+      "Navel",
+      "伪娘",
+      "FD",
+      "妹控"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Drawn: The Painted Tower",
+    "name_cn": "谜画之塔",
+    "date": "2009-12-11",
+    "cover": "https://lain.bgm.tv/pic/cover/l/5c/ba/23297_b5Eul.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-15T09:11:08+08:00",
+    "tags": [
+      "解谜",
+      "PC",
+      "AVG",
+      "独立游戏",
+      "PUZ"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "流言侦探-活着的死者",
+    "name_cn": "流言侦探-活着的死者",
+    "date": "2017-09-01",
+    "cover": "https://lain.bgm.tv/pic/cover/l/e2/6d/224426_d5GGu.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T09:10:53+08:00",
+    "tags": [
+      "手游",
+      "国产",
+      "悬疑",
+      "AVG",
+      "推理"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "三国杀",
+    "name_cn": "三国杀",
+    "date": "2008-01-01",
+    "cover": "https://lain.bgm.tv/pic/cover/l/64/c2/5472_ssm73.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T09:10:44+08:00",
+    "tags": [
+      "桌游",
+      "三国杀",
+      "PC",
+      "国产",
+      "打酱油的"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "大逆転裁判 -成歩堂龍ノ介の冒險-",
+    "name_cn": "大逆转裁判 成步堂龙之介的冒险",
+    "date": "2015-07-09",
+    "cover": "https://lain.bgm.tv/pic/cover/l/26/39/102690_T7fhH.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T09:10:23+08:00",
+    "tags": [
+      "逆转裁判",
+      "巧舟",
+      "3DS",
+      "AVG",
+      "Capcom"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "真・三國無双6 猛将伝",
+    "name_cn": "真・三国无双6 猛将传",
+    "date": "2012-03-09",
+    "cover": "https://lain.bgm.tv/pic/cover/l/01/6d/36420_abkD7.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T09:09:51+08:00",
+    "tags": [
+      "PC",
+      "ACT",
+      "KOEI",
+      "割草",
+      "无双"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "魔塔",
+    "name_cn": "魔塔",
+    "date": null,
+    "cover": "https://lain.bgm.tv/pic/cover/l/98/a9/19878_pgC3g.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T09:08:40+08:00",
+    "tags": [
+      "RPG",
+      "PC",
+      "flash",
+      "童年",
+      "国产"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "犯人は僕です。～露天風呂編～",
+    "name_cn": "犯人就是我。～露天温泉篇～",
+    "date": "2016-11-13",
+    "cover": "https://lain.bgm.tv/pic/cover/l/b4/12/202158_3dit5.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T09:08:23+08:00",
+    "tags": [
+      "手游",
+      "G.Gear.inc",
+      "推理",
+      "悬疑",
+      "AVG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Zuma",
+    "name_cn": "祖玛",
+    "date": "2003-12-12",
+    "cover": "https://lain.bgm.tv/pic/cover/l/1f/df/126727_M9j9j.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T09:07:26+08:00",
+    "tags": [
+      "PC",
+      "popcap",
+      "童年",
+      "PUZ",
+      "小游戏"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Child of Light",
+    "name_cn": "光之子",
+    "date": "2014-04-29",
+    "cover": "https://lain.bgm.tv/pic/cover/l/3d/2e/91434_tR78h.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-15T09:06:06+08:00",
+    "tags": [
+      "RPG",
+      "Ubisoft",
+      "PC",
+      "回合制",
+      "清新"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "返校",
+    "name_cn": "返校",
+    "date": "2017-01-13",
+    "cover": "https://lain.bgm.tv/pic/cover/l/e5/36/183110_QuD1x.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T09:05:36+08:00",
+    "tags": [
+      "解谜",
+      "恐怖",
+      "PC",
+      "STEAM",
+      "国产"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "魔法の塔",
+    "name_cn": "魔塔",
+    "date": "1996-12-23",
+    "cover": "https://lain.bgm.tv/pic/cover/l/39/b1/240407_Mqmhz.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-15T09:03:54+08:00",
+    "tags": [
+      "童年",
+      "PC",
+      "小游戏",
+      "RPG",
+      "魔塔"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ファイナルファンタジーXIV 新生エオルゼア",
+    "name_cn": "最终幻想14 重生之境",
+    "date": "2013-08-27",
+    "cover": "https://lain.bgm.tv/pic/cover/l/9a/b4/82424_nsl2E.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T09:03:25+08:00",
+    "tags": [
+      "MMORPG",
+      "PC",
+      "最终幻想",
+      "SquareEnix",
+      "网游"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ファイナルファンタジーXIV",
+    "name_cn": "最终幻想14",
+    "date": "2010-09-30",
+    "cover": "https://lain.bgm.tv/pic/cover/l/f1/2a/7611_LrnWP.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T09:02:49+08:00",
+    "tags": [
+      "MMORPG",
+      "PC",
+      "最終幻想",
+      "SquareEnix",
+      "网游"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "遊戯王ファイブディーズ Tag Force 5",
+    "name_cn": "游戏王5D's Tag Force 5",
+    "date": "2010-09-16",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ff/2d/9307_FVsmt.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T09:02:12+08:00",
+    "tags": [
+      "游戏王",
+      "PSP",
+      "Konami",
+      "打牌王",
+      "SLG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "逆転裁判6",
+    "name_cn": "逆转裁判6",
+    "date": "2016-06-09",
+    "cover": "https://lain.bgm.tv/pic/cover/l/c2/14/145434_HtbFA.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T09:00:30+08:00",
+    "tags": [
+      "3DS",
+      "逆转裁判",
+      "AVG",
+      "Capcom",
+      "推理"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "剑侠情缘网络版叁",
+    "name_cn": "剑侠情缘网络版叁",
+    "date": "2009-09-21",
+    "cover": "https://lain.bgm.tv/pic/cover/l/d6/05/13440_6y76A.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T08:59:14+08:00",
+    "tags": [
+      "基3",
+      "剑三",
+      "西山居",
+      "MMORPG",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "深夜廻",
+    "name_cn": "深夜迴",
+    "date": "2017-08-24",
+    "cover": "https://lain.bgm.tv/pic/cover/l/1b/43/213903_wWl70.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T08:57:46+08:00",
+    "tags": [
+      "恐怖",
+      "日本一",
+      "PC",
+      "PS4",
+      "PSV"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "三國志IX",
+    "name_cn": "三国志9",
+    "date": "2003-05-14",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ff/cf/63266_ic1Z9.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T08:57:17+08:00",
+    "tags": [
+      "SLG",
+      "KOEI",
+      "三国志",
+      "PC",
+      "光荣"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "戦場のヴァルキュリア2 ガリア王立士官学校",
+    "name_cn": "战场女武神2 加利亚王立士官学校",
+    "date": "2010-01-21",
+    "cover": "https://lain.bgm.tv/pic/cover/l/4f/9c/3987_xqLYm.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T08:54:21+08:00",
+    "tags": [
+      "PSP",
+      "SEGA",
+      "SRPG",
+      "战场女武神2",
+      "战场女武神"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "逆転検事",
+    "name_cn": "逆转检事",
+    "date": "2009-05-28",
+    "cover": "https://lain.bgm.tv/pic/cover/l/dd/cb/3236_CMFtm.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T08:53:19+08:00",
+    "tags": [
+      "NDS",
+      "Capcom",
+      "逆转检事",
+      "AVG",
+      "推理"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "風色幻想6～冒險奏鳴～",
+    "name_cn": "风色幻想6～冒险奏鸣～",
+    "date": "2007-07-12",
+    "cover": "https://lain.bgm.tv/pic/cover/l/fb/3e/5842_9TpCJ.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-15T08:51:27+08:00",
+    "tags": [
+      "风色幻想",
+      "PC",
+      "SRPG",
+      "弘煜科技",
+      "SLG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "AI: ソムニウム ファイル",
+    "name_cn": "AI：梦境档案",
+    "date": "2019-09-19",
+    "cover": "https://lain.bgm.tv/pic/cover/l/78/1f/252657_adMO0.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T08:50:53+08:00",
+    "tags": [
+      "打越鋼太郎",
+      "AVG",
+      "悬疑",
+      "SpikeChunsoft",
+      "解谜"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "アマガミ",
+    "name_cn": "圣诞之吻",
+    "date": "2009-03-19",
+    "cover": "https://lain.bgm.tv/pic/cover/l/18/b0/13210_4FE22.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T08:50:47+08:00",
+    "tags": [
+      "Galgame",
+      "PSP",
+      "圣诞之吻",
+      "恋爱",
+      "绚辻词"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "三國志X",
+    "name_cn": "三国志10",
+    "date": "2005-01-21",
+    "cover": "https://lain.bgm.tv/pic/cover/l/d7/a2/19583_7oU87.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T08:49:27+08:00",
+    "tags": [
+      "SLG",
+      "KOEI",
+      "PC",
+      "三国",
+      "光荣"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ファイナルファンタジーXIV  紅蓮のリベレーター",
+    "name_cn": "最终幻想14 红莲之狂潮",
+    "date": "2017-06-20",
+    "cover": "https://lain.bgm.tv/pic/cover/l/63/a7/195236_szvP6.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T08:48:21+08:00",
+    "tags": [
+      "MMORPG",
+      "SquareEnix",
+      "PC",
+      "最终幻想",
+      "网游"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Memories Off Duet",
+    "name_cn": "秋之回忆 二重奏",
+    "date": "2003-03-27",
+    "cover": "https://lain.bgm.tv/pic/cover/l/44/f5/52492_n9V3R.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-15T08:47:10+08:00",
+    "tags": [
+      "Galgame",
+      "KID",
+      "秋之回忆",
+      "GAL",
+      "打越钢太郎"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "STEINS;GATE 0",
+    "name_cn": "命运石之门 0",
+    "date": "2015-12-10",
+    "cover": "https://lain.bgm.tv/pic/cover/l/0b/8b/129820_C6k1C.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T08:46:54+08:00",
+    "tags": [
+      "Galgame",
+      "命运石之门",
+      "5pb",
+      "假想科学ADV",
+      "5pb."
+    ],
+    "hidden": false
+  },
+  {
+    "name": "月に寄りそう乙女の作法",
+    "name_cn": "近月少女的礼仪",
+    "date": "2012-10-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/73/87/44123_k8Rmk.jpg",
+    "rate": 5,
+    "type": 2,
+    "updated_at": "2020-05-15T08:45:15+08:00",
+    "tags": [
+      "Galgame",
+      "Navel",
+      "伪娘",
+      "女装",
+      "小仓朝日"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Memories Off 〜それから〜",
+    "name_cn": "秋之回忆：从今以后",
+    "date": "2004-06-24",
+    "cover": "https://lain.bgm.tv/pic/cover/l/c4/49/1735_peMgL.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T08:44:56+08:00",
+    "tags": [
+      "秋之回忆",
+      "KID",
+      "Galgame",
+      "从今以后",
+      "雨何时会停"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "三國志姜維傳",
+    "name_cn": "三国志姜维传",
+    "date": "2012-04-02",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ee/d7/137643_5A22i.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-15T08:44:46+08:00",
+    "tags": [
+      "SLG",
+      "同人",
+      "三国",
+      "战棋",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "蓝宝石般的被害妄想少女",
+    "name_cn": "蓝宝石般的被害妄想少女",
+    "date": "2017-06-08",
+    "cover": "https://lain.bgm.tv/pic/cover/l/01/4c/281438_W2z1w.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-15T08:44:33+08:00",
+    "tags": [
+      "国产",
+      "AVG",
+      "推理",
+      "橙光",
+      "馄饨仙人"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "魔女の家",
+    "name_cn": "魔女之家",
+    "date": "2012-10-03",
+    "cover": "https://lain.bgm.tv/pic/cover/l/33/c3/52337_88TCl.jpg",
+    "rate": 10,
+    "type": 2,
+    "updated_at": "2020-05-15T08:44:21+08:00",
+    "tags": [
+      "RPG",
+      "解谜",
+      "恐怖",
+      "致郁",
+      "PC"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "かまいたちの夜",
+    "name_cn": "恐怖惊魂夜",
+    "date": "1994-11-25",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ad/10/14761_oKoyO.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T08:43:12+08:00",
+    "tags": [
+      "chunsoft",
+      "推理",
+      "AVG",
+      "PS",
+      "恐怖惊魂夜"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "逆転裁判4",
+    "name_cn": "逆转裁判4",
+    "date": "2007-04-12",
+    "cover": "https://lain.bgm.tv/pic/cover/l/d6/ef/1114_PDHO3.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T08:43:07+08:00",
+    "tags": [
+      "逆转裁判",
+      "NDS",
+      "Capcom",
+      "AVG",
+      "推理"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "三國志11",
+    "name_cn": "三国志11",
+    "date": "2006-03-17",
+    "cover": "https://lain.bgm.tv/pic/cover/l/30/1a/834_20huA.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-15T08:41:26+08:00",
+    "tags": [
+      "SLG",
+      "KOEI",
+      "PC",
+      "三国志",
+      "光荣"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Monument Valley",
+    "name_cn": "纪念碑谷",
+    "date": "2014-04-03",
+    "cover": "https://lain.bgm.tv/pic/cover/l/a1/d1/101922_DZJzr.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T08:40:56+08:00",
+    "tags": [
+      "手游",
+      "解谜",
+      "独立游戏",
+      "iOS",
+      "几何"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Plants Vs. Zombies",
+    "name_cn": "植物大战僵尸",
+    "date": "2009-05-05",
+    "cover": "https://lain.bgm.tv/pic/cover/l/53/7d/1859_GM4r4.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T08:40:47+08:00",
+    "tags": [
+      "PC",
+      "塔防",
+      "小游戏",
+      "植物战僵尸",
+      "植物大战僵尸"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Deemo",
+    "name_cn": "古树旋律",
+    "date": "2013-11-13",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ca/f2/88869_Ey2g4.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T08:40:37+08:00",
+    "tags": [
+      "音游",
+      "Rayark",
+      "iOS",
+      "MUG",
+      "音乐"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "風色幻想5～赤月戰爭～",
+    "name_cn": "风色幻想5～赤月战争～",
+    "date": "2006-08-11",
+    "cover": "https://lain.bgm.tv/pic/cover/l/5f/c3/5841_4D8Y0.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-15T08:39:32+08:00",
+    "tags": [
+      "风色幻想",
+      "PC",
+      "風色幻想5",
+      "SLG",
+      "弘煜科技"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "大富翁4",
+    "name_cn": "大富翁4",
+    "date": "1998-10-05",
+    "cover": "https://lain.bgm.tv/pic/cover/l/d8/60/1787_tptv0.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T08:39:20+08:00",
+    "tags": [
+      "大富翁",
+      "PC",
+      "经典",
+      "童年",
+      "国产"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "乙女理論とその周辺 -École de Paris-",
+    "name_cn": "少女理论及其周边 -巴黎学院篇-",
+    "date": "2013-07-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/17/75/66760_Zz9v3.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T08:39:06+08:00",
+    "tags": [
+      "Galgame",
+      "Navel",
+      "伪娘",
+      "妹控",
+      "女装"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "銃声とダイヤモンド",
+    "name_cn": "枪声与钻石",
+    "date": "2009-06-18",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ce/05/4430_Bf5lo.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T08:38:55+08:00",
+    "tags": [
+      "PSP",
+      "AVG",
+      "推理",
+      "谈判",
+      "SCE"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Ib",
+    "name_cn": "恐怖美术馆",
+    "date": "2012-02-27",
+    "cover": "https://lain.bgm.tv/pic/cover/l/4d/45/39512_VNGkK.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T08:38:38+08:00",
+    "tags": [
+      "恐怖",
+      "解密",
+      "PC",
+      "独立游戏",
+      "RPG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "What Remains of Edith Finch",
+    "name_cn": "艾迪芬奇的记忆",
+    "date": "2017-04-25",
+    "cover": "https://lain.bgm.tv/pic/cover/l/cc/10/211667_ms9s9.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T08:38:21+08:00",
+    "tags": [
+      "独立游戏",
+      "PC",
+      "AVG",
+      "步行模拟",
+      "剧情"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "逆転検事2",
+    "name_cn": "逆转检事2",
+    "date": "2011-02-03",
+    "cover": "https://lain.bgm.tv/pic/cover/l/64/71/11129_9sZuz.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-15T08:38:16+08:00",
+    "tags": [
+      "NDS",
+      "Capcom",
+      "AVG",
+      "逆转检事",
+      "推理"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "仙剑奇侠传四",
+    "name_cn": "仙剑奇侠传四",
+    "date": "2007-08-01",
+    "cover": "https://lain.bgm.tv/pic/cover/l/6c/83/45_Hurm9.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-15T08:38:01+08:00",
+    "tags": [
+      "RPG",
+      "仙剑奇侠传",
+      "仙劍4",
+      "上海软星",
+      "仙剑"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ファイナルファンタジーXIV 蒼天のイシュガルド",
+    "name_cn": "最终幻想14 苍穹之禁城",
+    "date": "2015-06-23",
+    "cover": "https://lain.bgm.tv/pic/cover/l/d7/c8/132727_HTjLO.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T08:37:52+08:00",
+    "tags": [
+      "MMORPG",
+      "最终幻想",
+      "PC",
+      "SquareEnix",
+      "网游"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Ori and the Will of the Wisps",
+    "name_cn": "精灵与萤火意志",
+    "date": "2020-03-11",
+    "cover": "https://lain.bgm.tv/pic/cover/l/01/34/216896_I1nK0.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-15T08:37:45+08:00",
+    "tags": [
+      "横版",
+      "PC",
+      "ACT",
+      "奥日",
+      "类银河战士恶魔城"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "戦場のヴァルキュリア3",
+    "name_cn": "战场女武神3",
+    "date": "2011-01-27",
+    "cover": "https://lain.bgm.tv/pic/cover/l/19/80/9909_e2E55.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-15T08:37:37+08:00",
+    "tags": [
+      "PSP",
+      "SEGA",
+      "戦場のヴァルキュリア3",
+      "SRPG",
+      "戦場のヴァルキュリア"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Gorogoa",
+    "name_cn": "画中世界",
+    "date": "2017-12-15",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ea/60/95353_44M7E.jpg",
+    "rate": 7,
+    "type": 2,
+    "updated_at": "2020-05-15T08:37:33+08:00",
+    "tags": [
+      "解谜",
+      "独立游戏",
+      "PC",
+      "PUZ",
+      "创意"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "G線上の魔王",
+    "name_cn": "G弦上的魔王",
+    "date": "2008-05-29",
+    "cover": "https://lain.bgm.tv/pic/cover/l/86/e8/1385_9G6wp.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-15T08:37:24+08:00",
+    "tags": [
+      "Galgame",
+      "G线上的魔王",
+      "AKABEiSOFT2",
+      "推理",
+      "悬疑"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "極限脱出 9時間9人9の扉",
+    "name_cn": "极限脱出 9小时9人9扇门",
+    "date": "2009-12-10",
+    "cover": "https://lain.bgm.tv/pic/cover/l/c4/d2/3863_5m7N3.jpg",
+    "rate": 10,
+    "type": 2,
+    "updated_at": "2020-05-15T08:36:47+08:00",
+    "tags": [
+      "打越鋼太郎",
+      "AVG",
+      "NDS",
+      "悬疑",
+      "密室逃脱"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Memories Off 2nd",
+    "name_cn": "秋之回忆2",
+    "date": "2001-09-27",
+    "cover": "https://lain.bgm.tv/pic/cover/l/4f/a5/1733_TH86i.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-14T13:30:08+08:00",
+    "tags": [
+      "秋之回忆",
+      "KID",
+      "Galgame",
+      "白河萤",
+      "水树奈奈"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ウィッシュルーム 天使の記憶",
+    "name_cn": "黄昏旅馆：215房间",
+    "date": "2007-01-22",
+    "cover": "https://lain.bgm.tv/pic/cover/l/90/79/936_JJXbD.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-14T13:30:00+08:00",
+    "tags": [
+      "NDS",
+      "AVG",
+      "本格AVG",
+      "黄昏旅馆",
+      "推理"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ダンガンロンパ 希望の学園と絶望の高校生",
+    "name_cn": "弹丸论破 希望的学园和绝望高中生",
+    "date": "2010-11-25",
+    "cover": "https://lain.bgm.tv/pic/cover/l/76/c6/10336_A42Iz.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-14T13:29:44+08:00",
+    "tags": [
+      "推理",
+      "弹丸论破",
+      "AVG",
+      "PSP",
+      "悬疑"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Ori and the Blind Forest",
+    "name_cn": "精灵与森林",
+    "date": "2015-03-11",
+    "cover": "https://lain.bgm.tv/pic/cover/l/a1/25/125937_K1vwh.jpg",
+    "rate": 10,
+    "type": 2,
+    "updated_at": "2020-05-14T13:28:20+08:00",
+    "tags": [
+      "PC",
+      "ACT",
+      "横版",
+      "STEAM",
+      "MoonStudios"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "レイジングループ",
+    "name_cn": "人狼村之谜",
+    "date": "2015-12-03",
+    "cover": "https://lain.bgm.tv/pic/cover/l/49/6c/215470_af6bA.jpg",
+    "rate": 10,
+    "type": 2,
+    "updated_at": "2020-05-14T13:27:00+08:00",
+    "tags": [
+      "悬疑",
+      "狼人杀",
+      "Galgame",
+      "AVG",
+      "轮回"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "VA-11 Hall-A: Cyberpunk Bartender Action",
+    "name_cn": "VA-11 HALL-A：赛博朋克酒保行动",
+    "date": "2016-06-21",
+    "cover": "https://lain.bgm.tv/pic/cover/l/d9/4f/186554_VfFt9.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-14T13:26:50+08:00",
+    "tags": [
+      "赛博朋克",
+      "AVG",
+      "独立游戏",
+      "PC",
+      "STEAM"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "WHITE ALBUM2 -introductory chapter-",
+    "name_cn": "白色相簿2 序章",
+    "date": "2010-03-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/a1/98/4066_AI2T2.jpg",
+    "rate": 6,
+    "type": 2,
+    "updated_at": "2020-05-14T13:26:23+08:00",
+    "tags": [
+      "Galgame",
+      "丸户史明",
+      "leaf",
+      "三角恋",
+      "WA2"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ペルソナ3 ポータブル",
+    "name_cn": "女神异闻录3 携带版",
+    "date": "2009-11-01",
+    "cover": "https://lain.bgm.tv/pic/cover/l/c1/27/3230_qlLZZ.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-14T13:26:07+08:00",
+    "tags": [
+      "PSP",
+      "ATLUS",
+      "女神异闻录",
+      "RPG",
+      "P3P"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "うみねこのなく頃に",
+    "name_cn": "海猫鸣泣之时",
+    "date": "2008-12-29",
+    "cover": "https://lain.bgm.tv/pic/cover/l/65/cc/1020_L3HDr.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-14T13:25:40+08:00",
+    "tags": [
+      "竜騎士07",
+      "海猫",
+      "推理",
+      "龙骑士07",
+      "Galgame"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "FEZ",
+    "name_cn": "菲斯",
+    "date": "2012-04-13",
+    "cover": "https://lain.bgm.tv/pic/cover/l/84/87/57359_C6Ci3.jpg",
+    "rate": 10,
+    "type": 2,
+    "updated_at": "2020-05-14T13:25:19+08:00",
+    "tags": [
+      "独立游戏",
+      "解谜",
+      "PC",
+      "像素风",
+      "PUZ"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "逆転裁判 蘇る逆転",
+    "name_cn": "逆转裁判：复苏的逆转",
+    "date": "2005-09-15",
+    "cover": "https://lain.bgm.tv/pic/cover/l/3d/f1/939_D2Xa7.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-14T13:24:26+08:00",
+    "tags": [
+      "逆转裁判",
+      "Capcom",
+      "AVG",
+      "NDS",
+      "巧舟"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "うみねこのなく頃に散",
+    "name_cn": "海猫鸣泣之时散",
+    "date": "2010-12-31",
+    "cover": "https://lain.bgm.tv/pic/cover/l/7c/b5/109118_RJUKj.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-14T13:24:16+08:00",
+    "tags": [
+      "竜騎士07",
+      "Galgame",
+      "悬疑",
+      "推理",
+      "07th_Expansion"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ファイナルファンタジーXIV 漆黒のヴィランズ",
+    "name_cn": "最终幻想14 暗影之逆焰",
+    "date": "2019-07-02",
+    "cover": "https://lain.bgm.tv/pic/cover/l/11/36/267055_lXJeQ.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-14T13:23:34+08:00",
+    "tags": [
+      "MMORPG",
+      "SquareEnix",
+      "最终幻想",
+      "PC",
+      "FF14"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "逆転裁判2",
+    "name_cn": "逆转裁判2",
+    "date": "2002-10-18",
+    "cover": "https://lain.bgm.tv/pic/cover/l/8d/6d/940_54zp5.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-14T13:23:25+08:00",
+    "tags": [
+      "逆转裁判",
+      "Capcom",
+      "AVG",
+      "GBA",
+      "巧舟"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "リトルバスターズ！エクスタシー",
+    "name_cn": "Little Busters! EX",
+    "date": "2008-07-25",
+    "cover": "https://lain.bgm.tv/pic/cover/l/b8/6e/845_u43XO.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-14T13:23:14+08:00",
+    "tags": [
+      "key",
+      "麻枝准",
+      "Galgame",
+      "友情",
+      "LittleBusters!"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "逆転裁判",
+    "name_cn": "逆转裁判",
+    "date": "2001-10-12",
+    "cover": "https://lain.bgm.tv/pic/cover/l/b5/9c/1111_hSeP8.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-14T13:22:23+08:00",
+    "tags": [
+      "逆转裁判",
+      "Capcom",
+      "AVG",
+      "GBA",
+      "推理"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "YGOPro",
+    "name_cn": "YGOPro",
+    "date": null,
+    "cover": "https://lain.bgm.tv/pic/cover/l/f2/92/162833_6cUYm.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-14T13:22:15+08:00",
+    "tags": [
+      "游戏王",
+      "PC",
+      "卡牌",
+      "桌游",
+      "TCG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ファタモルガーナの館",
+    "name_cn": "海市蜃楼之馆",
+    "date": "2012-12-31",
+    "cover": "https://lain.bgm.tv/pic/cover/l/e3/51/73806_cc482.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-14T13:22:07+08:00",
+    "tags": [
+      "Galgame",
+      "同人",
+      "推理悬疑",
+      "Novectacle",
+      "AVG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "スーパーダンガンロンパ2 さよなら絶望学園",
+    "name_cn": "超级弹丸论破2 再见了绝望学园",
+    "date": "2012-07-26",
+    "cover": "https://lain.bgm.tv/pic/cover/l/4c/5a/42746_2hfkF.jpg",
+    "rate": 10,
+    "type": 2,
+    "updated_at": "2020-05-14T13:22:00+08:00",
+    "tags": [
+      "推理",
+      "弹丸论破",
+      "AVG",
+      "悬疑",
+      "PSP"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "潜伏之赤途",
+    "name_cn": "潜伏之赤途",
+    "date": "2013-08-06",
+    "cover": "https://lain.bgm.tv/pic/cover/l/30/a9/97911_eeKW0.jpg",
+    "rate": 10,
+    "type": 2,
+    "updated_at": "2020-05-14T13:21:17+08:00",
+    "tags": [
+      "国产",
+      "AVG",
+      "橙光",
+      "谍战",
+      "历史"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "428 ～封鎖された渋谷で～",
+    "name_cn": "428 ～被封锁的涩谷～",
+    "date": "2008-12-04",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ef/4e/955_ecY9g.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-14T13:20:49+08:00",
+    "tags": [
+      "AVG",
+      "PSP",
+      "chunsoft",
+      "428",
+      "悬疑"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Ruina 廃都の物語",
+    "name_cn": "Ruina 废都物语",
+    "date": "2008-12-24",
+    "cover": "https://lain.bgm.tv/pic/cover/l/45/81/51361_XmOkO.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-14T13:20:39+08:00",
+    "tags": [
+      "RPG",
+      "独立游戏",
+      "PC",
+      "RPGMaker",
+      "同人"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "STEINS;GATE",
+    "name_cn": "命运石之门",
+    "date": "2009-10-15",
+    "cover": "https://lain.bgm.tv/pic/cover/l/fd/bd/3154_j71Z7.jpg",
+    "rate": 8,
+    "type": 2,
+    "updated_at": "2020-05-14T13:20:02+08:00",
+    "tags": [
+      "命运石之门",
+      "5pb",
+      "Galgame",
+      "Nitro+",
+      "空想科学ADV"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "大逆転裁判2 -成歩堂龍ノ介の覺悟-",
+    "name_cn": "大逆转裁判2 成步堂龙之介的觉悟",
+    "date": "2017-08-03",
+    "cover": "https://lain.bgm.tv/pic/cover/l/99/9c/192977_ZM6UN.jpg",
+    "rate": 10,
+    "type": 2,
+    "updated_at": "2020-05-14T13:19:43+08:00",
+    "tags": [
+      "巧舟",
+      "逆转裁判",
+      "Capcom",
+      "3DS",
+      "AVG"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "ゴースト トリック",
+    "name_cn": "幽灵诡计",
+    "date": "2010-06-19",
+    "cover": "https://lain.bgm.tv/pic/cover/l/53/42/4723_Kggk3.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-14T13:19:28+08:00",
+    "tags": [
+      "巧舟",
+      "AVG",
+      "Capcom",
+      "NDS",
+      "解谜"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "逆転裁判3",
+    "name_cn": "逆转裁判3",
+    "date": "2004-01-23",
+    "cover": "https://lain.bgm.tv/pic/cover/l/2f/88/943_Mz6H3.jpg",
+    "rate": 9,
+    "type": 2,
+    "updated_at": "2020-05-14T13:18:53+08:00",
+    "tags": [
+      "逆转裁判",
+      "Capcom",
+      "AVG",
+      "巧舟",
+      "GBA"
+    ],
+    "hidden": false
+  },
+  {
+    "name": "Ever17 -the out of infinity-",
+    "name_cn": "时空轮回",
+    "date": "2002-08-29",
+    "cover": "https://lain.bgm.tv/pic/cover/l/ff/ee/1126_wtoHO.jpg",
+    "rate": 10,
+    "type": 2,
+    "updated_at": "2020-05-14T13:18:29+08:00",
+    "tags": [
+      "Galgame",
+      "KID",
+      "Ever17",
+      "悬疑",
+      "神作"
+    ],
+    "hidden": false
+  }
+]

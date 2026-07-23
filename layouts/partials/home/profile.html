@@ -59,7 +59,7 @@
     {{ $visible := where $bilibiliData "hidden" "!=" true }}
     {{ if $visible }}
       <div class="card-grid-4">
-        {{ range first 4 $visible }}
+        {{ range first 4 (sort $visible "play" "desc") }}
           <a href="{{ .url }}" target="_blank" rel="noopener" class="video-card">
             <div class="video-thumb">
               <img src="{{ .pic }}@480w_270h_1c.webp" alt="{{ .title }}" loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous">
@@ -146,9 +146,10 @@
   </div>
   <div class="section-content">
     {{ $visible := where $bangumiData "hidden" "!=" true }}
-    {{ if $visible }}
+    {{ $rated := where $visible ".rate" ">" 0 }}
+    {{ if $rated }}
       <div class="card-grid-4">
-        {{ range first 4 $visible }}
+        {{ range first 4 (sort $rated "rate" "desc") }}
           <div class="game-card">
             {{ if .cover }}
               <img src="{{ .cover }}" alt="{{ .name_cn | default .name }}" class="game-cover" loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous">

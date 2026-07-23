@@ -4,7 +4,8 @@
 
 ## 页面结构
 
-- 🎮 **游戏时光** (`/timeline/`) - 从 Bangumi 同步游戏记录和评分
+- 🏠 **首页** - 游戏鉴赏（Top 4 高播放量视频）+ 游戏时光（Top 4 高评分游戏）
+- 🎮 **游戏时光** (`/timeline/`) - 从 Bangumi 同步游戏记录、评分、标签词云、雷达图
 - 🎬 **游戏鉴赏** (`/gaming/`) - 从 Bilibili 同步游戏视频
 - 💻 **Vibe Coding** (`/projects/`) - 展示 GitHub 开源项目
 - 📝 **文章专栏** (`/articles/`) - 公众号文章和知乎回答
@@ -101,11 +102,12 @@ hugo
 ```
 
 页面逻辑：
-- 游戏时光：读取 `/data/bangumi.json`，展示统计卡片 + 游戏卡片（评分/标签/封面）
-- 游戏鉴赏：读取 `/data/bilibili.json`，展示视频卡片网格
+- 游戏时光：读取 `/data/bangumi.json`，首页按评分降序展示 Top 4 游戏；子页展示统计卡片 + 标签词云（wordcloud2.js）+ 雷达图 + 评分分布 + 全部游戏列表
+- 游戏鉴赏：读取 `/data/bilibili.json`，首页按播放量降序展示 Top 4 视频；子页展示视频卡片网格
 - Vibe Coding：读取 `/data/github.json`，展示项目卡片 + README 详情（点击"查看详情"展开）
 
 若尚未抓取数据，页面会提示"暂无记录"，**不会一直卡在加载中**。
+若抓取失败，脚本会**保留历史数据**而非清空，站点仍可正常构建。
 
 ### 7. 添加文章
 
@@ -183,6 +185,7 @@ bash start_admin.sh
 - 修改账号：只改 `scripts/config.ini`（或通过管理面板在线修改），然后重新抓取
 
 > 提示：三个动态页的数据都是**构建时静态生成**的，所以每次数据变化都要"跑脚本 + 重新构建 + 重新部署"三者缺一不可。
+> 脚本抓取失败时会保留历史数据，不会清空已有的 JSON 文件。
 
 ## 技术栈
 
@@ -190,5 +193,5 @@ bash start_admin.sh
 - [Blowfish](https://blowfish.page/) - Hugo 主题 (Tailwind CSS)
 - [Flask](https://flask.palletsprojects.com/) - 管理面板后端
 - Bangumi API - 游戏数据
-- Bilibili API (WBI 签名 + curl_cffi) - 视频数据
+- Bilibili API (WBI 签名 + curl_cffi Session) - 视频数据
 - GitHub API - 开源项目数据 + README

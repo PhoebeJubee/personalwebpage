@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """抓取 B 站 UP 主投稿视频并输出为 static/data/bilibili.json。
 
-WBI 签名 + Cookie 链流程：
-  1. /x/frontend/finger/spi → buvid3
-  2. /x/web-interface/nav → img_key + sub_key
-  3. mixin_key 混淆 + wts → MD5 生成 w_rid
-  4. /x/space/wbi/arc/search 带签名 + 显式 Cookie 请求
+Session + WBI 签名流程：
+  1. 创建 curl_cffi.Session，先访问 bilibili.com 获取初始 Cookie（b_nut）
+  2. /x/frontend/finger/spi → buvid3（追加到 session cookie）
+  3. /x/web-interface/nav → img_key + sub_key → mixin_key
+  4. /x/space/wbi/arc/search 翻页抓取，session 自动维护 Cookie 链
 
 优先使用 curl_cffi 模拟 Chrome TLS 指纹（需 pip install curl_cffi），
 回退到标准 requests。
@@ -19,11 +19,11 @@ import time
 import urllib.parse
 
 try:
-    from curl_cffi import requests as http
-    IMPERSONATE = "chrome120"
+    from curl_cffi import requests as _http_lib
+    HAS_CURL_CFFI = True
 except ImportError:
-    import requests as http
-    IMPERSONATE = None
+    import requests as _http_lib
+    HAS_CURL_CFFI = False
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_DIR = os.path.join(ROOT, "static", "data")
@@ -38,6 +38,11 @@ MIXIN_KEY_ENC_TAB = [
     37, 48, 7, 16, 24, 55, 40, 61, 26, 17, 0, 1, 60, 51, 30, 4,
     22, 25, 54, 21, 56, 59, 6, 63, 57, 62, 11, 36, 20, 34, 44, 52,
 ]
+
+PAGE_SIZE = 30
+PAGE_DELAY = 2.0
+MAX_RETRY = 3
+RETRY_BASE_DELAY = 3
 
 
 def _load_cfg():
@@ -58,33 +63,45 @@ def load_uid():
     return _load_cfg().get("bilibili", "uid", fallback="").strip()
 
 
-def _http_get(url, **kwargs):
+def _create_session():
+    if HAS_CURL_CFFI:
+        s = _http_lib.Session(impersonate="chrome120")
+    else:
+        s = _http_lib.Session()
+        s.headers.update({"User-Agent": UA})
+    return s
+
+
+def _session_get(s, url, **kwargs):
     kwargs.setdefault("timeout", 15)
-    if IMPERSONATE:
-        kwargs.setdefault("impersonate", IMPERSONATE)
     try:
-        return http.get(url, **kwargs)
+        return s.get(url, **kwargs)
     except Exception:
         proxies = _load_proxies()
         if proxies:
             print(f"  [proxy] 直连失败，使用代理重试: {url[:80]}")
-            kwargs["proxies"] = proxies
-            return http.get(url, **kwargs)
+            s.proxies.update(proxies)
+            return s.get(url, **kwargs)
         raise
 
 
-def _get_wbi_keys():
-    spi = _http_get(f"{API_BASE}/x/frontend/finger/spi").json()
-    buvid3 = spi.get("data", {}).get("b_3", "")
+def _init_session(s):
+    _session_get(s, "https://www.bilibili.com")
+    time.sleep(1)
 
-    nav = _http_get(f"{API_BASE}/x/web-interface/nav").json()
+    spi = _session_get(s, f"{API_BASE}/x/frontend/finger/spi").json()
+    buvid3 = spi.get("data", {}).get("b_3", "")
+    s.cookies.set("buvid3", buvid3, domain=".bilibili.com")
+    time.sleep(0.5)
+
+    nav = _session_get(s, f"{API_BASE}/x/web-interface/nav").json()
     wbi_img = nav.get("data", {}).get("wbi_img", {})
     img_key = wbi_img.get("img_url", "").rsplit("/", 1)[-1].split(".")[0]
     sub_key = wbi_img.get("sub_url", "").rsplit("/", 1)[-1].split(".")[0]
 
     raw = img_key + sub_key
     mixin_key = "".join(raw[i] for i in MIXIN_KEY_ENC_TAB)[:32]
-    return buvid3, mixin_key
+    return mixin_key
 
 
 def _sign(params, mixin_key):
@@ -96,24 +113,26 @@ def _sign(params, mixin_key):
     return urllib.parse.urlencode(params_sorted)
 
 
-def fetch_videos(mid, ps=12, max_retry=3):
-    buvid3, mixin_key = _get_wbi_keys()
+def fetch_videos(mid):
+    s = _create_session()
+    mixin_key = _init_session(s)
+    print(f"  Session 初始化完成，开始抓取 mid={mid}")
 
     headers = {
-        "User-Agent": UA,
         "Referer": f"https://space.bilibili.com/{mid}/video",
         "Origin": "https://space.bilibili.com",
         "Accept": "application/json, text/plain, */*",
         "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
-        "Cookie": f"buvid3={buvid3}",
     }
 
     videos = []
     pn = 1
+    count = None
+
     while True:
         params = {
             "mid": mid,
-            "ps": str(ps),
+            "ps": str(PAGE_SIZE),
             "tid": "0",
             "pn": str(pn),
             "order": "pubdate",
@@ -121,34 +140,42 @@ def fetch_videos(mid, ps=12, max_retry=3):
         query = _sign(dict(params), mixin_key)
 
         last_err = None
-        for attempt in range(max_retry):
-            resp = _http_get(
+        data = None
+        for attempt in range(MAX_RETRY):
+            resp = _session_get(
+                s,
                 f"{API_BASE}/x/space/wbi/arc/search?{query}",
                 headers=headers,
             )
             ct = resp.headers.get("content-type", "")
             if "json" not in ct:
                 last_err = f"HTTP {resp.status_code} (非 JSON 响应)"
-                if attempt < max_retry - 1:
-                    time.sleep(2 ** attempt)
+                time.sleep(RETRY_BASE_DELAY * (2 ** attempt))
                 continue
             data = resp.json()
-            if data.get("code") == 0:
+            code = data.get("code")
+            if code == 0:
                 break
-            last_err = f"code={data.get('code')} message={data.get('message')}"
-            if attempt < max_retry - 1:
-                time.sleep(2 ** attempt)
+            last_err = f"code={code} message={data.get('message')}"
+            if code in (-352, -412):
+                time.sleep(RETRY_BASE_DELAY * (2 ** attempt))
+            else:
+                time.sleep(1)
         else:
-            raise RuntimeError(f"Bilibili API 失败 ({last_err})")
+            raise RuntimeError(f"Bilibili API 失败 (第 {pn} 页, {last_err})")
 
         vlist = data.get("data", {}).get("list", {}).get("vlist", [])
+        if count is None:
+            count = data.get("data", {}).get("page", {}).get("count", 0)
         videos.extend(vlist)
-        page = data.get("data", {}).get("page", {})
-        count = page.get("count", 0)
-        if not vlist or len(videos) >= count or len(videos) >= ps:
+        print(f"  第 {pn} 页: 获取 {len(vlist)} 条 (累计 {len(videos)}/{count})")
+
+        if not vlist or len(videos) >= count:
             break
         pn += 1
-    return videos[:ps]
+        time.sleep(PAGE_DELAY)
+
+    return videos
 
 
 def normalize(v):
@@ -174,31 +201,26 @@ def _load_existing_hidden():
         return {}
 
 
+def _write_json(data, path):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+
 def main():
     uid = load_uid()
     if not uid or uid == "YOUR_BILIBILI_UID":
         print("[bilibili] 未配置 uid，写出空数据。请在 scripts/config.ini 填写 [bilibili] uid")
         os.makedirs(OUT_DIR, exist_ok=True)
-        with open(OUT_FILE, "w", encoding="utf-8") as f:
-            json.dump([], f, ensure_ascii=False, indent=2)
-        assets_dir = os.path.join(ROOT, "assets", "data")
-        os.makedirs(assets_dir, exist_ok=True)
-        with open(os.path.join(assets_dir, "bilibili.json"), "w", encoding="utf-8") as f:
-            json.dump([], f, ensure_ascii=False, indent=2)
+        _write_json([], OUT_FILE)
+        _write_json([], os.path.join(ROOT, "assets", "data", "bilibili.json"))
         return
 
     try:
         raw = fetch_videos(uid)
     except Exception as e:
         print(f"[bilibili] 抓取失败: {e}", file=sys.stderr)
-        print("[bilibili] 写出空数据，站点仍可构建")
-        os.makedirs(OUT_DIR, exist_ok=True)
-        with open(OUT_FILE, "w", encoding="utf-8") as f:
-            json.dump([], f, ensure_ascii=False, indent=2)
-        assets_dir = os.path.join(ROOT, "assets", "data")
-        os.makedirs(assets_dir, exist_ok=True)
-        with open(os.path.join(assets_dir, "bilibili.json"), "w", encoding="utf-8") as f:
-            json.dump([], f, ensure_ascii=False, indent=2)
+        print("[bilibili] 保留历史数据，站点仍可构建")
         return
 
     hidden_map = _load_existing_hidden()
@@ -206,13 +228,8 @@ def main():
     for v in videos:
         if v["bvid"] in hidden_map:
             v["hidden"] = hidden_map[v["bvid"]]
-    os.makedirs(OUT_DIR, exist_ok=True)
-    with open(OUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(videos, f, ensure_ascii=False, indent=2)
-    assets_dir = os.path.join(ROOT, "assets", "data")
-    os.makedirs(assets_dir, exist_ok=True)
-    with open(os.path.join(assets_dir, "bilibili.json"), "w", encoding="utf-8") as f:
-        json.dump(videos, f, ensure_ascii=False, indent=2)
+    _write_json(videos, OUT_FILE)
+    _write_json(videos, os.path.join(ROOT, "assets", "data", "bilibili.json"))
     print(f"[bilibili] 已写入 {len(videos)} 条视频 -> {os.path.relpath(OUT_FILE, ROOT)}")
 
 
