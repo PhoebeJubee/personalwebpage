@@ -87,6 +87,35 @@ def normalize(item):
     }
 
 
+COVER_DIR = os.path.join(ROOT, "static", "images", "bangumi")
+
+
+def download_covers(games):
+    os.makedirs(COVER_DIR, exist_ok=True)
+    downloaded = 0
+    skipped = 0
+    for g in games:
+        url = g.get("cover", "")
+        if not url or not url.startswith("http"):
+            continue
+        filename = url.rsplit("/", 1)[-1]
+        local_path = os.path.join(COVER_DIR, filename)
+        if os.path.exists(local_path):
+            skipped += 1
+        else:
+            try:
+                resp = _get_with_fallback(url, timeout=20)
+                resp.raise_for_status()
+                with open(local_path, "wb") as f:
+                    f.write(resp.content)
+                downloaded += 1
+            except Exception as e:
+                print(f"  [cover] 下载失败 {filename}: {e}")
+                continue
+        g["cover"] = f"/images/bangumi/{filename}"
+    print(f"  [cover] 新下载 {downloaded} 张，跳过 {skipped} 张已存在")
+
+
 def _load_existing_hidden():
     if not os.path.exists(OUT_FILE):
         return {}
@@ -123,6 +152,10 @@ def main():
     for g in games:
         if g["name"] in hidden_map:
             g["hidden"] = hidden_map[g["name"]]
+
+    print(f"[bangumi] 下载封面图...")
+    download_covers(games)
+
     os.makedirs(OUT_DIR, exist_ok=True)
     with open(OUT_FILE, "w", encoding="utf-8") as f:
         json.dump(games, f, ensure_ascii=False, indent=2)

@@ -46,7 +46,8 @@
   </div>
 
   <div class="flex gap-1 border-b border-gray-200 mb-6">
-    <button onclick="switchTab('config')" id="tab-config" class="px-4 py-2 text-sm text-gray-600 hover:text-gray-800 transition">配置</button>
+    <button onclick="switchTab('config')" id="tab-config" class="px-4 py-2 text-sm text-gray-600 hover:text-gray-800 transition">账号配置</button>
+    <button onclick="switchTab('params')" id="tab-params" class="px-4 py-2 text-sm text-gray-600 hover:text-gray-800 transition">站点配置</button>
     <button onclick="switchTab('data')" id="tab-data" class="px-4 py-2 text-sm text-gray-600 hover:text-gray-800 transition">数据</button>
     <button onclick="switchTab('preview')" id="tab-preview" class="px-4 py-2 text-sm text-gray-600 hover:text-gray-800 transition">预览</button>
   </div>
@@ -54,10 +55,17 @@
   <!-- Config -->
   <div id="panel-config" class="hidden fade-in">
     <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-      <h2 class="text-lg font-semibold mb-4">config.ini</h2>
+      <h2 class="text-lg font-semibold mb-4">config.ini（账号配置）</h2>
       <div id="config-form"></div>
       <button onclick="saveConfig()" class="mt-4 px-4 py-2 bg-green-500 hover:bg-green-600 text-white text-sm rounded-lg transition">保存配置</button>
     </div>
+  </div>
+
+  <!-- Params (站点配置) -->
+  <div id="panel-params" class="hidden fade-in">
+    <div id="params-form"></div>
+    <button onclick="saveParams()" class="mt-4 px-4 py-2 bg-green-500 hover:bg-green-600 text-white text-sm rounded-lg transition">保存站点配置</button>
+    <p id="params-msg" class="text-sm text-green-600 mt-2 hidden">已保存</p>
   </div>
 
   <!-- Data -->
@@ -159,11 +167,12 @@ async function refreshStatus() {
 }
 
 function switchTab(tab) {
-  ['config', 'data', 'preview'].forEach(t => {
+  ['config', 'params', 'data', 'preview'].forEach(t => {
     document.getElementById(`panel-${t}`).classList.toggle('hidden', t !== tab);
     document.getElementById(`tab-${t}`).classList.toggle('tab-active', t === tab);
   });
   if (tab === 'config') loadConfig();
+  if (tab === 'params') loadParams();
   if (tab === 'data') loadData();
   if (tab === 'preview') loadPreview();
 }
@@ -218,6 +227,158 @@ async function saveConfig() {
   });
   await api('PUT', '/api/config', cfg);
   alert('配置已保存');
+}
+
+// ── Params (站点配置) ───────────────────────────────────────────
+
+const PARAM_SCHEMA = [
+  {
+    title: '作者信息', icon: '👤',
+    fields: [
+      { key: 'author.name', label: '名称', type: 'text' },
+      { key: 'author.headline', label: '副标题', type: 'text' },
+      { key: 'author.bio', label: '简介', type: 'text' },
+    ]
+  },
+  {
+    title: '社交链接', icon: '🔗',
+    fields: [
+      { key: '_links_bilibili', label: 'Bilibili URL', type: 'text', flat: true },
+      { key: '_links_github', label: 'GitHub URL', type: 'text', flat: true },
+      { key: '_links_zhihu', label: '知乎 URL', type: 'text', flat: true },
+      { key: '_links_tiktok', label: '抖音 URL', type: 'text', flat: true },
+    ]
+  },
+  {
+    title: '数据统计', icon: '📊',
+    fields: [
+      { key: 'stats.bilibili.followers', label: 'Bilibili 粉丝数', type: 'number' },
+      { key: 'stats.zhihu.followers', label: '知乎 关注数', type: 'number' },
+      { key: 'stats.douyin.followers', label: '抖音 粉丝数', type: 'number' },
+      { key: 'stats.github.stars', label: 'GitHub Stars', type: 'number' },
+    ]
+  },
+  {
+    title: '页脚设置', icon: '📄',
+    fields: [
+      { key: 'footer.showMenu', label: '显示菜单', type: 'toggle' },
+      { key: 'footer.showCopyright', label: '显示版权', type: 'toggle' },
+      { key: 'footer.showThemeAttribution', label: '显示主题归属', type: 'toggle' },
+      { key: 'footer.showAppearanceSwitcher', label: '显示主题切换', type: 'toggle' },
+      { key: 'footer.showScrollToTop', label: '显示回到顶部', type: 'toggle' },
+    ]
+  },
+  {
+    title: '首页设置', icon: '🏠',
+    fields: [
+      { key: 'homepage.layout', label: '布局', type: 'select', options: ['profile', 'hero', 'card', 'custom'] },
+      { key: 'homepage.showRecent', label: '显示最近文章', type: 'toggle' },
+      { key: 'homepage.showRecentItems', label: '最近文章数量', type: 'number' },
+    ]
+  },
+  {
+    title: '文章设置', icon: '📝',
+    fields: [
+      { key: 'article.showDate', label: '显示日期', type: 'toggle' },
+      { key: 'article.showDateUpdated', label: '显示更新日期', type: 'toggle' },
+      { key: 'article.showAuthor', label: '显示作者', type: 'toggle' },
+      { key: 'article.showBreadcrumbs', label: '显示面包屑', type: 'toggle' },
+      { key: 'article.showReadingTime', label: '显示阅读时间', type: 'toggle' },
+      { key: 'article.showTableOfContents', label: '显示目录', type: 'toggle' },
+      { key: 'article.showPagination', label: '显示分页', type: 'toggle' },
+    ]
+  },
+];
+
+function getByPath(obj, path) {
+  return path.split('.').reduce((o, k) => (o || {})[k], obj);
+}
+
+function setByPath(obj, path, val) {
+  const parts = path.split('.');
+  let o = obj;
+  for (let i = 0; i < parts.length - 1; i++) {
+    if (!o[parts[i]] || typeof o[parts[i]] !== 'object') o[parts[i]] = {};
+    o = o[parts[i]];
+  }
+  o[parts[parts.length - 1]] = val;
+}
+
+let paramsData = {};
+
+async function loadParams() {
+  paramsData = await api('GET', '/api/params');
+  const container = document.getElementById('params-form');
+  container.innerHTML = '';
+
+  for (const group of PARAM_SCHEMA) {
+    const card = document.createElement('div');
+    card.className = 'bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-4';
+    let html = `<h3 class="text-base font-semibold mb-4">${group.icon} ${group.title}</h3>`;
+
+    for (const field of group.fields) {
+      let value;
+      if (field.flat && field.key.startsWith('_links_')) {
+        const platform = field.key.replace('_links_', '');
+        const links = getByPath(paramsData, 'author.links') || [];
+        const found = links.find(l => l[platform]);
+        value = found ? found[platform] : '';
+      } else {
+        value = getByPath(paramsData, field.key);
+      }
+
+      if (field.type === 'toggle') {
+        html += `
+          <div class="flex items-center justify-between py-2 border-b border-gray-50">
+            <label class="text-sm text-gray-600">${field.label}</label>
+            <button type="button" data-field="${field.key}" data-value="${value}"
+              onclick="toggleParam(this)"
+              class="relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${value ? 'bg-green-500' : 'bg-gray-300'}">
+              <span class="inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${value ? 'translate-x-6' : 'translate-x-1'}"></span>
+            </button>
+          </div>`;
+      } else if (field.type === 'select') {
+        const opts = field.options.map(o => `<option value="${o}" ${value === o ? 'selected' : ''}>${o}</option>`).join('');
+        html += `
+          <div class="flex items-center gap-3 mb-3">
+            <label class="text-sm text-gray-600 w-32 shrink-0">${field.label}</label>
+            <select data-field="${field.key}" onchange="setParam(this.dataset.field, this.value)"
+              class="flex-1 px-3 py-1.5 text-sm border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-200">${opts}</select>
+          </div>`;
+      } else {
+        html += `
+          <div class="flex items-center gap-3 mb-3">
+            <label class="text-sm text-gray-600 w-32 shrink-0">${field.label}</label>
+            <input type="${field.type}" value="${escHtml(value || '')}" data-field="${field.key}"
+              oninput="setParam(this.dataset.field, this.value)"
+              class="flex-1 px-3 py-1.5 text-sm border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-200">
+          </div>`;
+      }
+    }
+    card.innerHTML = html;
+    container.appendChild(card);
+  }
+}
+
+function setParam(path, value) {
+  setByPath(paramsData, path, value);
+}
+
+function toggleParam(btn) {
+  const field = btn.dataset.field;
+  const current = btn.dataset.value === 'true';
+  const newVal = !current;
+  btn.dataset.value = newVal;
+  btn.className = `relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${newVal ? 'bg-green-500' : 'bg-gray-300'}`;
+  btn.children[0].className = `inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${newVal ? 'translate-x-6' : 'translate-x-1'}`;
+  setByPath(paramsData, field, newVal);
+}
+
+async function saveParams() {
+  await api('PUT', '/api/params', paramsData);
+  const msg = document.getElementById('params-msg');
+  msg.classList.remove('hidden');
+  setTimeout(() => msg.classList.add('hidden'), 2000);
 }
 
 async function loadData() {

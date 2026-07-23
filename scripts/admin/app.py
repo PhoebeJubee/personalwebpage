@@ -8,18 +8,21 @@ import atexit
 import configparser
 import json
 import os
+import re
 import signal
 import subprocess
 import sys
 import threading
 import time
 
+import tomli
 from flask import Flask, jsonify, render_template, request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SCRIPTS = os.path.join(ROOT, "scripts")
 DATA_DIR = os.path.join(ROOT, "static", "data")
 CONFIG_FILE = os.path.join(SCRIPTS, "config.ini")
+PARAMS_FILE = os.path.join(ROOT, "config", "_default", "params.toml")
 
 HUGO_PORT = 1319
 HUGO_URL = f"http://127.0.0.1:{HUGO_PORT}/personalwebpage"
@@ -138,6 +141,69 @@ def _write_config(data):
         cfg.write(f)
 
 
+# ── params.toml helpers ─────────────────────────────────────────────
+
+def _read_params():
+    if not os.path.exists(PARAMS_FILE):
+        return {}
+    with open(PARAMS_FILE, "rb") as f:
+        return tomli.load(f)
+
+
+def _write_params(data):
+    lines = []
+    _dump_toml(data, lines, root=True)
+    with open(PARAMS_FILE, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+
+def _dump_toml(data, lines, root=True, prefix=""):
+    simple = {}
+    sections = {}
+    for k, v in data.items():
+        if isinstance(v, dict):
+            sections[k] = v
+        else:
+            simple[k] = v
+    for k, v in simple.items():
+        lines.append(f"{k} = {_toml_value(v)}")
+    for k, v in sections.items():
+        heading = f"{prefix}.{k}" if prefix else k
+        if _is_inline_section(v):
+            lines.append(f"\n[{heading}]")
+            for sk, sv in v.items():
+                lines.append(f"{sk} = {_toml_value(sv)}")
+        else:
+            lines.append(f"\n[{heading}]")
+            _dump_toml(v, lines, root=False, prefix=heading)
+
+
+def _is_inline_section(d):
+    return all(not isinstance(v, dict) for v in d.values())
+
+
+def _toml_value(v):
+    if isinstance(v, bool):
+        return "true" if v else "false"
+    if isinstance(v, int):
+        return str(v)
+    if isinstance(v, str):
+        if any(c in v for c in '[]{}#,=\n"\\'):
+            escaped = v.replace("\\", "\\\\").replace('"', '\\"')
+            return f'"{escaped}"'
+        return f'"{v}"'
+    if isinstance(v, list):
+        items = []
+        for item in v:
+            if isinstance(item, dict):
+                inner = ", ".join(f'{ik} = {_toml_value(iv)}' for ik, iv in item.items())
+                items.append(f"{{ {inner} }}")
+            else:
+                items.append(_toml_value(item))
+        return "[" + ", ".join(items) + "]"
+    return f'"{v}"'
+
+
 def _run_fetch(source):
     fetch_status["running"] = True
     fetch_status["log"] = []
@@ -205,6 +271,18 @@ def api_get_config():
 def api_save_config():
     data = request.get_json()
     _write_config(data)
+    return jsonify({"ok": True})
+
+
+@app.route("/api/params", methods=["GET"])
+def api_get_params():
+    return jsonify(_read_params())
+
+
+@app.route("/api/params", methods=["PUT"])
+def api_save_params():
+    data = request.get_json()
+    _write_params(data)
     return jsonify({"ok": True})
 
 
