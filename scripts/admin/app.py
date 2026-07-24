@@ -23,6 +23,7 @@ SCRIPTS = os.path.join(ROOT, "scripts")
 DATA_DIR = os.path.join(ROOT, "static", "data")
 CONFIG_FILE = os.path.join(SCRIPTS, "config.ini")
 PARAMS_FILE = os.path.join(ROOT, "config", "_default", "params.toml")
+WORDCLOUD_CONFIG_FILE = os.path.join(DATA_DIR, "wordcloud-config.json")
 
 HUGO_PORT = 1319
 HUGO_URL = f"http://127.0.0.1:{HUGO_PORT}/personalwebpage"
@@ -283,6 +284,57 @@ def api_get_params():
 def api_save_params():
     data = request.get_json()
     _write_params(data)
+    return jsonify({"ok": True})
+
+
+# ── Wordcloud config ───────────────────────────────────────────────
+
+WORDCLOUD_DEFAULTS = {
+    "minCount": 2,
+    "maxTags": 80,
+    "canvasWidth": 700,
+    "canvasHeight": 500,
+    "fontSizeMin": 12,
+    "fontSizeMax": 54,
+    "rotateRatio": 0.4,
+    "blockedWords": [],
+}
+
+
+def _read_wordcloud_config():
+    if not os.path.exists(WORDCLOUD_CONFIG_FILE):
+        return dict(WORDCLOUD_DEFAULTS)
+    try:
+        with open(WORDCLOUD_CONFIG_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        merged = dict(WORDCLOUD_DEFAULTS)
+        merged.update(data)
+        return merged
+    except Exception:
+        return dict(WORDCLOUD_DEFAULTS)
+
+
+def _write_wordcloud_config(data):
+    merged = dict(WORDCLOUD_DEFAULTS)
+    merged.update(data)
+    os.makedirs(DATA_DIR, exist_ok=True)
+    with open(WORDCLOUD_CONFIG_FILE, "w", encoding="utf-8") as f:
+        json.dump(merged, f, ensure_ascii=False, indent=2)
+    assets_dir = os.path.join(ROOT, "assets", "data")
+    os.makedirs(assets_dir, exist_ok=True)
+    with open(os.path.join(assets_dir, "wordcloud-config.json"), "w", encoding="utf-8") as f:
+        json.dump(merged, f, ensure_ascii=False, indent=2)
+
+
+@app.route("/api/wordcloud-config", methods=["GET"])
+def api_get_wordcloud_config():
+    return jsonify(_read_wordcloud_config())
+
+
+@app.route("/api/wordcloud-config", methods=["PUT"])
+def api_save_wordcloud_config():
+    data = request.get_json()
+    _write_wordcloud_config(data)
     return jsonify({"ok": True})
 
 

@@ -87,41 +87,57 @@ function renderWordCloud() {
   return `
     <div style="background:white;border-radius:12px;padding:24px;box-shadow:0 2px 8px rgba(0,0,0,0.08);margin-bottom:16px;">
       <h3 style="font-size:16px;font-weight:700;margin-bottom:16px;color:#333;">🏷️ 标签词频</h3>
-      <canvas id="wordcloud" width="700" height="380" style="width:100%;max-width:700px;display:block;margin:0 auto;"></canvas>
+      <canvas id="wordcloud" width="700" height="500" style="width:100%;max-width:700px;display:block;margin:0 auto;"></canvas>
     </div>`;
 }
+
+const WC_DEFAULTS = { minCount: 2, maxTags: 80, canvasWidth: 700, canvasHeight: 500, fontSizeMin: 12, fontSizeMax: 54, rotateRatio: 0.4, blockedWords: [] };
 
 function drawWordCloud(games) {
   const canvas = document.getElementById('wordcloud');
   if (!canvas || typeof WordCloud === 'undefined') return;
-  const freq = computeTagFreq(games);
-  if (!freq.length) return;
-  const maxCount = freq[0][1];
-  const isDark = document.documentElement.classList.contains('dark');
 
-  const list = freq.slice(0, 50).map(([tag, count]) => {
-    const ratio = count / maxCount;
-    return [tag, Math.round(12 + ratio * 42)];
-  });
+  fetch('../data/wordcloud-config.json?t=' + Date.now())
+    .then(r => r.ok ? r.json() : WC_DEFAULTS)
+    .catch(() => WC_DEFAULTS)
+    .then(cfg => {
+      const config = Object.assign({}, WC_DEFAULTS, cfg);
+      const blocked = new Set((config.blockedWords || []).map(w => w.toLowerCase()));
+      const freq = computeTagFreq(games).filter(([tag]) => !blocked.has(tag.toLowerCase()));
+      if (!freq.length) return;
+      const maxCount = freq[0][1];
+      const isDark = document.documentElement.classList.contains('dark');
 
-  const palette = isDark
-    ? ['#90caf9','#80cbc4','#a5d6a7','#ffcc80','#ef9a9a','#b39ddb','#80deea','#fff59d','#f48fb1','#81d4fa']
-    : ['#1565c0','#00695c','#2e7d32','#e65100','#c62828','#6a1b9a','#00838f','#f9a825','#ad1457','#1976d2'];
+      canvas.width = config.canvasWidth;
+      canvas.height = config.canvasHeight;
+      canvas.style.width = '100%';
+      canvas.style.maxWidth = config.canvasWidth + 'px';
 
-  WordCloud(canvas, {
-    list: list,
-    gridSize: 6,
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", sans-serif',
-    fontWeight: '700',
-    color: function() { return palette[Math.floor(Math.random() * palette.length)]; },
-    backgroundColor: 'transparent',
-    rotateRatio: 0.4,
-    rotationSteps: 3,
-    shuffle: true,
-    drawOutOfBound: false,
-    shrinkToFit: true,
-    wait: 20,
-  });
+      const list = freq.slice(0, config.maxTags).map(([tag, count]) => {
+        const ratio = count / maxCount;
+        const size = Math.round(config.fontSizeMin + Math.log(1 + ratio * 20) * ((config.fontSizeMax - config.fontSizeMin) / 42 * 12));
+        return [tag, Math.max(config.fontSizeMin, Math.min(config.fontSizeMax, size))];
+      });
+
+      const palette = isDark
+        ? ['#90caf9','#80cbc4','#a5d6a7','#ffcc80','#ef9a9a','#b39ddb','#80deea','#fff59d','#f48fb1','#81d4fa']
+        : ['#1565c0','#00695c','#2e7d32','#e65100','#c62828','#6a1b9a','#00838f','#f9a825','#ad1457','#1976d2'];
+
+      WordCloud(canvas, {
+        list: list,
+        gridSize: 6,
+        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", sans-serif',
+        fontWeight: '700',
+        color: function() { return palette[Math.floor(Math.random() * palette.length)]; },
+        backgroundColor: 'transparent',
+        rotateRatio: config.rotateRatio,
+        rotationSteps: 3,
+        shuffle: true,
+        drawOutOfBound: false,
+        shrinkToFit: true,
+        wait: 20,
+      });
+    });
 }
 
 function renderRadar(games) {

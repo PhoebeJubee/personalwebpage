@@ -1,0 +1,10 @@
+{
+  "minCount": 2,
+  "maxTags": 80,
+  "canvasWidth": 700,
+  "canvasHeight": 500,
+  "fontSizeMin": 12,
+  "fontSizeMax": 54,
+  "rotateRatio": 0.4,
+  "blockedWords": ["galgame"]
+}

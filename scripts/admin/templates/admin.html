@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>个人网站管理面板</title>
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/wordcloud@1.1.0/src/wordcloud2.js"></script>
 <style>
   .tab-active { border-bottom: 2px solid #3b82f6; color: #3b82f6; font-weight: 600; }
   .json-editor { font-family: 'Menlo', 'Monaco', 'Courier New', monospace; font-size: 13px; line-height: 1.5; tab-size: 2; }
@@ -48,6 +49,7 @@
   <div class="flex gap-1 border-b border-gray-200 mb-6">
     <button onclick="switchTab('config')" id="tab-config" class="px-4 py-2 text-sm text-gray-600 hover:text-gray-800 transition">账号配置</button>
     <button onclick="switchTab('params')" id="tab-params" class="px-4 py-2 text-sm text-gray-600 hover:text-gray-800 transition">站点配置</button>
+    <button onclick="switchTab('wordcloud')" id="tab-wordcloud" class="px-4 py-2 text-sm text-gray-600 hover:text-gray-800 transition">词云</button>
     <button onclick="switchTab('data')" id="tab-data" class="px-4 py-2 text-sm text-gray-600 hover:text-gray-800 transition">数据</button>
     <button onclick="switchTab('preview')" id="tab-preview" class="px-4 py-2 text-sm text-gray-600 hover:text-gray-800 transition">预览</button>
   </div>
@@ -66,6 +68,34 @@
     <div id="params-form"></div>
     <button onclick="saveParams()" class="mt-4 px-4 py-2 bg-green-500 hover:bg-green-600 text-white text-sm rounded-lg transition">保存站点配置</button>
     <p id="params-msg" class="text-sm text-green-600 mt-2 hidden">已保存</p>
+  </div>
+
+  <!-- Wordcloud -->
+  <div id="panel-wordcloud" class="hidden fade-in">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <!-- Left: controls -->
+      <div class="lg:col-span-1">
+        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+          <h3 class="text-base font-semibold mb-4">⚙️ 词云配置</h3>
+          <div id="wc-controls"></div>
+          <div class="mt-4 flex gap-2">
+            <button onclick="generateWordcloud()" class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white text-sm rounded-lg transition">生成预览</button>
+            <button onclick="saveWordcloudConfig()" class="px-4 py-2 bg-green-500 hover:bg-green-600 text-white text-sm rounded-lg transition">保存配置</button>
+          </div>
+          <p id="wc-msg" class="text-sm text-green-600 mt-2 hidden">已保存</p>
+        </div>
+      </div>
+      <!-- Right: preview -->
+      <div class="lg:col-span-2">
+        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+          <h3 class="text-base font-semibold mb-4">👁 预览</h3>
+          <div style="background: white; border-radius: 8px; padding: 16px; min-height: 300px;">
+            <canvas id="wc-preview-canvas" style="width: 100%; display: block; margin: 0 auto;"></canvas>
+          </div>
+          <div id="wc-tag-info" class="mt-3 text-xs text-gray-400"></div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Data -->
@@ -167,12 +197,13 @@ async function refreshStatus() {
 }
 
 function switchTab(tab) {
-  ['config', 'params', 'data', 'preview'].forEach(t => {
+  ['config', 'params', 'wordcloud', 'data', 'preview'].forEach(t => {
     document.getElementById(`panel-${t}`).classList.toggle('hidden', t !== tab);
     document.getElementById(`tab-${t}`).classList.toggle('tab-active', t === tab);
   });
   if (tab === 'config') loadConfig();
   if (tab === 'params') loadParams();
+  if (tab === 'wordcloud') loadWordcloudConfig();
   if (tab === 'data') loadData();
   if (tab === 'preview') loadPreview();
 }
@@ -377,6 +408,146 @@ function toggleParam(btn) {
 async function saveParams() {
   await api('PUT', '/api/params', paramsData);
   const msg = document.getElementById('params-msg');
+  msg.classList.remove('hidden');
+  setTimeout(() => msg.classList.add('hidden'), 2000);
+}
+
+// ── Wordcloud ─────────────────────────────────────────────────────
+
+const WC_PLATFORM_TAGS = new Set(['PC','PSP','STEAM','NDS','PS2','PS3','PS4','PSV','iOS','Android','Switch','NS','NS2','Xbox','Web','Mac','Linux','3DS','GBA','Wii','XBLA','网游','手游','网页游戏']);
+
+function wcIsMeaningfulTag(tag) {
+  return !WC_PLATFORM_TAGS.has(tag) && !/^\d{4}$/.test(tag) && tag !== '游戏';
+}
+
+let wcConfig = {};
+
+async function loadWordcloudConfig() {
+  wcConfig = await api('GET', '/api/wordcloud-config');
+  renderWcControls();
+}
+
+function renderWcControls() {
+  const c = document.getElementById('wc-controls');
+  const fields = [
+    { key: 'minCount', label: '最小出现次数', type: 'number', min: 1, max: 20 },
+    { key: 'maxTags', label: '最大标签数', type: 'number', min: 10, max: 200 },
+    { key: 'fontSizeMin', label: '最小字号', type: 'number', min: 8, max: 30 },
+    { key: 'fontSizeMax', label: '最大字号', type: 'number', min: 20, max: 100 },
+    { key: 'canvasWidth', label: '画布宽度', type: 'number', min: 400, max: 1200 },
+    { key: 'canvasHeight', label: '画布高度', type: 'number', min: 200, max: 800 },
+    { key: 'rotateRatio', label: '旋转比例', type: 'slider', min: 0, max: 1, step: 0.1 },
+  ];
+
+  let html = '';
+  for (const f of fields) {
+    const val = wcConfig[f.key] ?? '';
+    if (f.type === 'slider') {
+      html += `
+        <div class="mb-3">
+          <div class="flex items-center justify-between mb-1">
+            <label class="text-sm text-gray-600">${f.label}</label>
+            <span id="wc-val-${f.key}" class="text-sm font-mono text-gray-500">${val}</span>
+          </div>
+          <input type="range" min="${f.min}" max="${f.max}" step="${f.step}" value="${val}"
+            oninput="wcConfig['${f.key}']=parseFloat(this.value); document.getElementById('wc-val-${f.key}').textContent=this.value"
+            class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-500">
+        </div>`;
+    } else {
+      html += `
+        <div class="flex items-center gap-3 mb-3">
+          <label class="text-sm text-gray-600 w-36 shrink-0">${f.label}</label>
+          <input type="${f.type}" min="${f.min || ''}" max="${f.max || ''}" value="${val}"
+            oninput="wcConfig['${f.key}']=parseInt(this.value)||0"
+            class="flex-1 px-3 py-1.5 text-sm border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-200">
+        </div>`;
+    }
+  }
+
+  const blocked = (wcConfig.blockedWords || []).join(', ');
+  html += `
+    <div class="mt-3">
+      <label class="text-sm text-gray-600 mb-1 block">屏蔽词（逗号分隔）</label>
+      <textarea id="wc-blocked-words" rows="3"
+        class="w-full px-3 py-1.5 text-sm border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-200 resize-y"
+        placeholder="例如: galgame, AVG, 某个不想显示的词">${escHtml(blocked)}</textarea>
+    </div>`;
+
+  c.innerHTML = html;
+}
+
+function wcComputeTagFreq(games, config) {
+  const freq = {};
+  const blocked = new Set((config.blockedWords || []).map(w => w.trim().toLowerCase()).filter(Boolean));
+  games.forEach(g => {
+    (g.tags || []).forEach(t => {
+      if (!wcIsMeaningfulTag(t)) return;
+      if (blocked.has(t.toLowerCase())) return;
+      freq[t] = (freq[t] || 0) + 1;
+    });
+  });
+  const minCount = config.minCount || 2;
+  return Object.entries(freq)
+    .filter(([, c]) => c >= minCount)
+    .sort((a, b) => b[1] - a[1]);
+}
+
+async function generateWordcloud() {
+  const canvas = document.getElementById('wc-preview-canvas');
+  if (!canvas || typeof WordCloud === 'undefined') return;
+
+  wcConfig.blockedWords = (document.getElementById('wc-blocked-words').value || '')
+    .split(/[,，\n]/).map(s => s.trim()).filter(Boolean);
+
+  canvas.width = wcConfig.canvasWidth || 700;
+  canvas.height = wcConfig.canvasHeight || 500;
+  canvas.style.width = '100%';
+  canvas.style.maxWidth = (wcConfig.canvasWidth || 700) + 'px';
+
+  const data = await api('GET', '/api/data/bangumi');
+  const games = Array.isArray(data) ? data : [];
+  const rated = games.filter(g => g.rate > 0);
+
+  const freq = wcComputeTagFreq(rated, wcConfig);
+  const maxCount = freq.length ? freq[0][1] : 1;
+  const maxTags = wcConfig.maxTags || 80;
+  const fontMin = wcConfig.fontSizeMin || 12;
+  const fontMax = wcConfig.fontSizeMax || 54;
+
+  const list = freq.slice(0, maxTags).map(([tag, count]) => {
+    const ratio = count / maxCount;
+    const size = Math.round(fontMin + Math.log(1 + ratio * 20) * ((fontMax - fontMin) / 42 * 12));
+    return [tag, Math.max(fontMin, Math.min(fontMax, size))];
+  });
+
+  const palette = ['#1565c0','#00695c','#2e7d32','#e65100','#c62828','#6a1b9a','#00838f','#f9a825','#ad1457','#1976d2'];
+
+  canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
+
+  WordCloud(canvas, {
+    list: list,
+    gridSize: 6,
+    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", sans-serif',
+    fontWeight: '700',
+    color: function() { return palette[Math.floor(Math.random() * palette.length)]; },
+    backgroundColor: 'transparent',
+    rotateRatio: wcConfig.rotateRatio || 0.4,
+    rotationSteps: 3,
+    shuffle: true,
+    drawOutOfBound: false,
+    shrinkToFit: true,
+    wait: 20,
+  });
+
+  document.getElementById('wc-tag-info').textContent =
+    `已显示 ${list.length} / ${freq.length} 个标签（最低出现 ${wcConfig.minCount || 2} 次）`;
+}
+
+async function saveWordcloudConfig() {
+  wcConfig.blockedWords = (document.getElementById('wc-blocked-words').value || '')
+    .split(/[,，\n]/).map(s => s.trim()).filter(Boolean);
+  await api('PUT', '/api/wordcloud-config', wcConfig);
+  const msg = document.getElementById('wc-msg');
   msg.classList.remove('hidden');
   setTimeout(() => msg.classList.add('hidden'), 2000);
 }
