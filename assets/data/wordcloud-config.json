@@ -1,10 +1,15 @@
 {
-  "minCount": 2,
-  "maxTags": 80,
-  "canvasWidth": 700,
-  "canvasHeight": 500,
-  "fontSizeMin": 12,
-  "fontSizeMax": 54,
+  "minCount": 1,
+  "maxTags": 300,
+  "canvasWidth": 1400,
+  "canvasHeight": 1000,
+  "fontSizeMin": 8,
+  "fontSizeMax": 72,
   "rotateRatio": 0.4,
-  "blockedWords": ["galgame"]
+  "blockedWords": [
+    "galgame",
+    "伪娘",
+    "百合",
+    "妹控"
+  ]
 }
