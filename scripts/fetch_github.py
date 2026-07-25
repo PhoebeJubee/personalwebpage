@@ -52,7 +52,6 @@ def _get_with_fallback(url, **kwargs):
         return requests.get(url, **kwargs)
     except requests.ConnectionError:
         if proxies:
-            print(f"  [proxy] 直连失败，使用代理重试: {url[:80]}")
             return requests.get(url, proxies=proxies, **kwargs)
         raise
 

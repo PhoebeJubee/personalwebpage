@@ -44,7 +44,6 @@ def _get_with_fallback(url, **kwargs):
         return requests.get(url, **kwargs)
     except requests.ConnectionError:
         if proxies:
-            print(f"  [proxy] 直连失败，使用代理重试: {url[:80]}")
             return requests.get(url, proxies=proxies, **kwargs)
         raise
 
@@ -92,28 +91,40 @@ COVER_DIR = os.path.join(ROOT, "static", "images", "bangumi")
 
 def download_covers(games):
     os.makedirs(COVER_DIR, exist_ok=True)
+    to_process = []
+    for i, g in enumerate(games):
+        url = g.get("cover", "")
+        if url.startswith("http"):
+            to_process.append((i, g, url))
+        elif url.startswith("/images/") or url.startswith("images/"):
+            to_process.append((i, g, ""))
+    total = len(to_process)
     downloaded = 0
     skipped = 0
-    for g in games:
-        url = g.get("cover", "")
-        if not url or not url.startswith("http"):
-            continue
-        filename = url.rsplit("/", 1)[-1]
-        local_path = os.path.join(COVER_DIR, filename)
-        if os.path.exists(local_path):
-            skipped += 1
+    failed = 0
+    for idx, (i, g, url) in enumerate(to_process):
+        if url:
+            filename = url.rsplit("/", 1)[-1]
         else:
+            old_cover = g.get("cover", "")
+            filename = old_cover.rsplit("/", 1)[-1]
+        local_path = os.path.join(COVER_DIR, filename)
+        pct = f"{idx+1}/{total} ({(idx+1)/total*100:.1f}%)"
+        if url and not os.path.exists(local_path):
             try:
                 resp = _get_with_fallback(url, timeout=20)
                 resp.raise_for_status()
                 with open(local_path, "wb") as f:
                     f.write(resp.content)
                 downloaded += 1
+                print(f"  [cover] {pct} 已下载 {filename}")
             except Exception as e:
-                print(f"  [cover] 下载失败 {filename}: {e}")
-                continue
-        g["cover"] = f"/images/bangumi/{filename}"
-    print(f"  [cover] 新下载 {downloaded} 张，跳过 {skipped} 张已存在")
+                failed += 1
+                print(f"  [cover] {pct} 失败 {filename}: {e}")
+        else:
+            skipped += 1
+        g["cover"] = f"../images/bangumi/{filename}"
+    print(f"  [cover] 完成: 下载 {downloaded}, 跳过 {skipped}, 失败 {failed}")
 
 
 def _load_existing_hidden():

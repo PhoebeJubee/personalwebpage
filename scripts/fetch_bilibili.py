@@ -79,7 +79,6 @@ def _session_get(s, url, **kwargs):
     except Exception:
         proxies = _load_proxies()
         if proxies:
-            print(f"  [proxy] 直连失败，使用代理重试: {url[:80]}")
             s.proxies.update(proxies)
             return s.get(url, **kwargs)
         raise
