@@ -185,6 +185,7 @@ def normalize(v):
         "duration": v.get("duration", 0),
         "play": v.get("play", 0),
         "video_review": v.get("video_review", 0),
+        "created": v.get("created", 0),
         "url": f"https://www.bilibili.com/video/{v.get('bvid', '')}",
     }
 

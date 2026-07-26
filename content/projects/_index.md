@@ -1,6 +1,7 @@
 ---
 title: "Vibe Coding"
 description: "我的 GitHub 开源项目展示"
+weight: 50
 showDate: false
 showReadingTime: false
 ---

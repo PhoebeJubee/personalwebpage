@@ -1,6 +1,7 @@
 ---
 title: "游戏时光"
 description: "从 Bangumi 同步的游戏记录和评分数据"
+weight: 20
 showDate: false
 showReadingTime: false
 ---
@@ -111,7 +112,6 @@ function drawWordCloud(games) {
       canvas.width = config.canvasWidth;
       canvas.height = config.canvasHeight;
       canvas.style.width = '100%';
-      canvas.style.maxWidth = config.canvasWidth + 'px';
 
       const list = freq.slice(0, config.maxTags).map(([tag, count]) => {
         const ratio = count / maxCount;

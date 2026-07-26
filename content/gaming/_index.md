@@ -1,6 +1,7 @@
 ---
 title: "游戏鉴赏"
 description: "从 Bilibili 同步的游戏视频合集"
+weight: 10
 showDate: false
 showReadingTime: false
 ---
@@ -29,15 +30,15 @@ function escapeHtml(s) {
     .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }
 
-// B站默认封面兜底图
 const DEFAULT_COVER = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgwIiBoZWlnaHQ9IjI3MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjBmMGYwIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZpbGw9IiM5OTkiIGZvbnQtc2l6ZT0iMjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj7miZPnnIzlmag8L3RleHQ+PC9zdmc+';
+
+let allVideos = [];
+let currentSort = 'play';
 
 function renderVideoCard(video) {
   const title = (video.title || '').replace(/<[^>]+>/g, '');
-  // 处理封面图片URL，确保使用https
   let cover = video.pic || '';
   if (cover.startsWith('//')) cover = 'https:' + cover;
-  // 移除可能导致问题的webp后缀参数，使用原图更稳定
   cover = cover.replace(/@.*$/, '');
   const duration = formatDuration(video.duration);
   const playCount = formatNumber(video.play);
@@ -81,6 +82,34 @@ function renderVideoCard(video) {
   `;
 }
 
+function renderSortBar() {
+  const bar = document.getElementById('sort-bar');
+  if (!bar) return;
+  bar.innerHTML = `
+    <div style="display: flex; gap: 8px; margin-bottom: 20px;">
+      <button id="sort-play" onclick="sortBy('play')" style="padding: 6px 16px; border-radius: 20px; border: 1px solid #e5e7eb; background: ${currentSort === 'play' ? '#6366f1' : 'white'}; color: ${currentSort === 'play' ? 'white' : '#374151'}; font-size: 13px; font-weight: 500; cursor: pointer; transition: all 0.2s;">按播放量</button>
+      <button id="sort-time" onclick="sortBy('created')" style="padding: 6px 16px; border-radius: 20px; border: 1px solid #e5e7eb; background: ${currentSort === 'created' ? '#6366f1' : 'white'}; color: ${currentSort === 'created' ? 'white' : '#374151'}; font-size: 13px; font-weight: 500; cursor: pointer; transition: all 0.2s;">按更新时间</button>
+    </div>
+  `;
+}
+
+function sortBy(key) {
+  currentSort = key;
+  renderSortBar();
+  renderVideos();
+}
+
+function renderVideos() {
+  const container = document.getElementById('bilibili-videos');
+  if (!allVideos.length) return;
+  const sorted = [...allVideos].sort((a, b) => (b[currentSort] || 0) - (a[currentSort] || 0));
+  container.innerHTML = `
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;">
+      ${sorted.map(renderVideoCard).join('')}
+    </div>
+  `;
+}
+
 async function loadBilibiliVideos() {
   const container = document.getElementById('bilibili-videos');
   try {
@@ -91,16 +120,13 @@ async function loadBilibiliVideos() {
       container.innerHTML = '<p style="color: #666;">暂无视频，请先运行 scripts/fetch_bilibili.py 抓取数据。</p>';
       return;
     }
-    const visible = videos.filter(v => !v.hidden);
-    if (visible.length === 0) {
+    allVideos = videos.filter(v => !v.hidden);
+    if (allVideos.length === 0) {
       container.innerHTML = '<p style="color: #666;">所有视频已隐藏。</p>';
       return;
     }
-    container.innerHTML = `
-      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;">
-        ${visible.map(renderVideoCard).join('')}
-      </div>
-    `;
+    renderSortBar();
+    renderVideos();
   } catch (error) {
     console.error('加载 Bilibili 视频失败:', error);
     container.innerHTML = `
@@ -115,6 +141,7 @@ async function loadBilibiliVideos() {
 document.addEventListener('DOMContentLoaded', loadBilibiliVideos);
 </script>
 
+<div id="sort-bar"></div>
 <div id="bilibili-videos">
   <p style="color: #666;">正在加载视频...</p>
 </div>

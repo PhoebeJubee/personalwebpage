@@ -1,0 +1,142 @@
+{
+  "footer": {
+    "copyright": "Personal Record · Updated 2026.07",
+    "subtitle": "",
+    "title": "",
+    "titleAccent": ""
+  },
+  "hero": {
+    "subtitle": "",
+    "tag": "个人历程记录",
+    "title": "考公考编",
+    "titleAccent": "历程记录"
+  },
+  "service": {
+    "cards": [
+      {
+        "desc": "结合历年进面分数线与个人成绩定位，精准匹配岗位，最大化上岸概率。",
+        "features": [
+          "岗位竞争比分析",
+          "历年进面分数线对比",
+          "个人优势匹配评估",
+          "报考策略一对一制定"
+        ],
+        "num": "01",
+        "title": "选岗报岗服务"
+      },
+      {
+        "desc": "行测各模块专项突破，从资料分析到判断推理，系统化提升笔试成绩。",
+        "features": [
+          "行测模块化训练方案",
+          "资料分析速算技巧",
+          "判断推理逻辑强化",
+          "真题精讲与模考复盘"
+        ],
+        "num": "02",
+        "title": "笔试提升 · 行测备考"
+      }
+    ],
+    "tag": "PROFESSIONAL SERVICES",
+    "targetExams": [
+      "上海市考A类",
+      "江苏省考A类",
+      "国考副省级"
+    ],
+    "title": "专业考公考编辅导服务"
+  },
+  "stats": [],
+  "timeline": [
+    {
+      "cards": [
+        {
+          "detail": " 江苏省考（A类） · 申论 65.5 · 行测 78.1 · 总分 143.6",
+          "highlight": true,
+          "name": "2026 常州市委党校",
+          "status": "pending"
+        },
+        {
+          "detail": " 国考副省级 · 申论 53 · 行测 78.6 · 总分 131.6",
+          "name": "2026 国家统计局上海调查总队",
+          "status": "pass"
+        }
+      ],
+      "count": "2 次考试",
+      "year": "2026"
+    },
+    {
+      "cards": [
+        {
+          "detail": "",
+          "name": "2025 上海知识产权保护中心单招",
+          "status": "pass"
+        },
+        {
+          "detail": "",
+          "name": "2025 上海科技馆单招",
+          "status": "pass"
+        },
+        {
+          "detail": "申论 82 · 行测 116.5 · 总分 198.5",
+          "highlight": true,
+          "name": "2025 浦东卫生发展研究院",
+          "status": "pass"
+        },
+        {
+          "detail": "申论 37 · 行测 79 · 总分 116",
+          "name": "2025 上海行政执法",
+          "status": "pass"
+        },
+        {
+          "detail": "国考副省级 · 申论 61.5 · 行测 67.5 · 总分 129",
+          "name": "2025 上海税务特派办",
+          "status": "pass"
+        },
+        {
+          "detail": "上海市考（A类） · 申论 67 · 行测 74.6 · 总分 141.6",
+          "name": "2025 上海档案馆",
+          "status": "pass"
+        },
+        {
+          "detail": "",
+          "name": "2025 上海先导产业促进中心",
+          "status": "pass"
+        },
+        {
+          "detail": "申论 52 · 行测 76 · 总分 128",
+          "name": "2025 上海执法",
+          "status": "pass"
+        }
+      ],
+      "count": "9 次考试",
+      "year": "2025"
+    },
+    {
+      "cards": [
+        {
+          "detail": "",
+          "name": "2024 上海科学学研究所",
+          "status": "pass"
+        }
+      ],
+      "count": "2 次考试",
+      "year": "2024"
+    },
+    {
+      "cards": [
+        {
+          "detail": "上海市考第二轮（B类） · 申论 59.5 · 行测 68.5 · 总分 128",
+          "highlight": true,
+          "name": "2023 普陀档案馆",
+          "status": "pass"
+        },
+        {
+          "detail": "上海市考（B类） · 申论 59.5 · 行测 68.5 · 总分 128",
+          "name": "2023 虹口民主党派",
+          "status": "pass"
+        }
+      ],
+      "count": "2 次考试",
+      "year": "2023"
+    }
+  ]
+}

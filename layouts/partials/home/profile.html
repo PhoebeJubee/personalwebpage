@@ -45,12 +45,12 @@
   {{ $bangumiData = . | unmarshal }}
 {{ end }}
 
-{{/* ===== 游戏鉴赏 ===== */}}
+{{/* ===== B站视频 ===== */}}
 <section class="home-section fade-section" id="section-gaming">
   <div class="section-header">
     <a href="{{ relURL "gaming/" }}" class="section-title-link">
       <span class="section-icon">🎮</span>
-      <h2 class="text-2xl font-bold">游戏鉴赏</h2>
+      <h2 class="text-2xl font-bold">B站视频</h2>
       <span class="section-arrow">→</span>
     </a>
     <p class="text-neutral-500 dark:text-neutral-400 text-sm">从 Bilibili 同步的游戏视频合集</p>
@@ -91,55 +91,12 @@
   <div class="divider-line"></div>
 </div>
 
-{{/* ===== Vibe Coding ===== */}}
-<section class="home-section fade-section" id="section-projects">
-  <div class="section-header">
-    <a href="{{ relURL "projects/" }}" class="section-title-link">
-      <span class="section-icon">💻</span>
-      <h2 class="text-2xl font-bold">Vibe Coding</h2>
-      <span class="section-arrow">→</span>
-    </a>
-    <p class="text-neutral-500 dark:text-neutral-400 text-sm">我的 GitHub 开源项目展示</p>
-  </div>
-  <div class="section-content">
-    {{ $visible := where $githubData "hidden" "!=" true }}
-    {{ if $visible }}
-      <div class="card-grid-2">
-        {{ range first 4 $visible }}
-          <div class="project-card">
-            <div class="project-name">
-              <a href="{{ .html_url }}" target="_blank" rel="noopener">{{ .name }}</a>
-            </div>
-            <div class="project-desc">{{ .custom_description | default .description | default "暂无描述" }}</div>
-            <div class="project-meta">
-              {{ if .language }}<span class="lang-badge">{{ .language }}</span>{{ end }}
-              <span>⭐ {{ .stargazers_count }}</span>
-            </div>
-          </div>
-        {{ end }}
-      </div>
-      <div class="section-more">
-        <a href="{{ relURL "projects/" }}" class="more-btn">查看更多项目 →</a>
-      </div>
-    {{ else }}
-      <p class="text-neutral-400 text-center py-8">暂无项目数据</p>
-    {{ end }}
-  </div>
-</section>
-
-{{/* ===== 分割线 ===== */}}
-<div class="section-divider fade-section">
-  <div class="divider-line"></div>
-  <div class="divider-dot"></div>
-  <div class="divider-line"></div>
-</div>
-
-{{/* ===== 游戏时光 ===== */}}
+{{/* ===== Bangumi游戏 ===== */}}
 <section class="home-section fade-section" id="section-timeline">
   <div class="section-header">
     <a href="{{ relURL "timeline/" }}" class="section-title-link">
       <span class="section-icon">🏆</span>
-      <h2 class="text-2xl font-bold">游戏时光</h2>
+      <h2 class="text-2xl font-bold">Bangumi游戏</h2>
       <span class="section-arrow">→</span>
     </a>
     <p class="text-neutral-500 dark:text-neutral-400 text-sm">从 Bangumi 同步的游戏记录和评分</p>
@@ -152,11 +109,14 @@
         {{ range first 4 (sort $rated "rate" "desc") }}
           <div class="game-card">
             {{ if .cover }}
-              <img src="{{ .cover }}" alt="{{ .name_cn | default .name }}" class="game-cover" loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous">
+              {{ $coverPath := .cover }}
+              {{ if hasPrefix $coverPath "../" }}
+                {{ $coverPath = strings.TrimPrefix "../" $coverPath }}
+              {{ end }}
+              <img src="{{ relURL $coverPath }}" alt="{{ .name_cn | default .name }}" class="game-cover" loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous">
             {{ end }}
             <div class="game-info">
               <div class="game-title">{{ .name_cn | default .name }}</div>
-              {{ if .date }}<div class="game-date">发售日: {{ .date }}</div>{{ end }}
               {{ if gt .rate 0 }}
                 {{ $color := "bg-neutral-100 text-neutral-600" }}
                 {{ if ge .rate 8 }}{{ $color = "bg-green-100 text-green-700" }}{{ end }}
@@ -166,7 +126,7 @@
               {{ end }}
               {{ if .tags }}
                 <div class="game-tags">
-                  {{ range first 3 .tags }}
+                  {{ range first 2 .tags }}
                     <span class="game-tag">{{ . }}</span>
                   {{ end }}
                 </div>
@@ -181,6 +141,33 @@
     {{ else }}
       <p class="text-neutral-400 text-center py-8">暂无游戏记录</p>
     {{ end }}
+  </div>
+</section>
+
+{{/* ===== 分割线 ===== */}}
+<div class="section-divider fade-section">
+  <div class="divider-line"></div>
+  <div class="divider-dot"></div>
+  <div class="divider-line"></div>
+</div>
+
+{{/* ===== 考公求职 ===== */}}
+<section class="home-section fade-section" id="section-career">
+  <div class="section-header">
+    <a href="{{ relURL "career/" }}" class="section-title-link">
+      <span class="section-icon">🎯</span>
+      <h2 class="text-2xl font-bold">考公求职</h2>
+      <span class="section-arrow">→</span>
+    </a>
+    <p class="text-neutral-500 dark:text-neutral-400 text-sm">职业规划与求职经历</p>
+  </div>
+  <div class="section-content">
+    <div class="career-brief">
+      <p>记录我的考公考编与求职历程，分享经验与心得。</p>
+    </div>
+    <div class="section-more">
+      <a href="{{ relURL "career/" }}" class="more-btn">了解更多 →</a>
+    </div>
   </div>
 </section>
 
@@ -228,23 +215,39 @@
   <div class="divider-line"></div>
 </div>
 
-{{/* ===== 考公求职 ===== */}}
-<section class="home-section fade-section" id="section-career">
+{{/* ===== 开源项目 ===== */}}
+<section class="home-section fade-section" id="section-projects">
   <div class="section-header">
-    <a href="{{ relURL "career/" }}" class="section-title-link">
-      <span class="section-icon">🎯</span>
-      <h2 class="text-2xl font-bold">考公求职</h2>
+    <a href="{{ relURL "projects/" }}" class="section-title-link">
+      <span class="section-icon">💻</span>
+      <h2 class="text-2xl font-bold">开源项目</h2>
       <span class="section-arrow">→</span>
     </a>
-    <p class="text-neutral-500 dark:text-neutral-400 text-sm">职业规划与求职经历</p>
+    <p class="text-neutral-500 dark:text-neutral-400 text-sm">我的 GitHub 开源项目展示</p>
   </div>
   <div class="section-content">
-    <div class="career-brief">
-      <p>记录我的考公考编与求职历程，分享经验与心得。</p>
-    </div>
-    <div class="section-more">
-      <a href="{{ relURL "career/" }}" class="more-btn">了解更多 →</a>
-    </div>
+    {{ $visible := where $githubData "hidden" "!=" true }}
+    {{ if $visible }}
+      <div class="card-grid-2">
+        {{ range first 4 $visible }}
+          <div class="project-card">
+            <div class="project-name">
+              <a href="{{ .html_url }}" target="_blank" rel="noopener">{{ .name }}</a>
+            </div>
+            <div class="project-desc">{{ .custom_description | default .description | default "暂无描述" }}</div>
+            <div class="project-meta">
+              {{ if .language }}<span class="lang-badge">{{ .language }}</span>{{ end }}
+              <span>⭐ {{ .stargazers_count }}</span>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+      <div class="section-more">
+        <a href="{{ relURL "projects/" }}" class="more-btn">查看更多项目 →</a>
+      </div>
+    {{ else }}
+      <p class="text-neutral-400 text-center py-8">暂无项目数据</p>
+    {{ end }}
   </div>
 </section>
 
@@ -295,13 +298,12 @@
   .lang-badge::before { content: ''; width: 10px; height: 10px; border-radius: 50%; background: #3b82f6; display: inline-block; }
 
   /* 游戏卡片 */
-  .game-card { background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden; transition: all 0.3s; }
+  .game-card { display: flex; align-items: center; gap: 12px; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden; padding: 10px; transition: all 0.3s; }
   .dark .game-card { background: #1f2937; }
   .game-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
-  .game-cover { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
-  .game-info { padding: 12px; }
-  .game-title { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
-  .game-date { font-size: 12px; color: #9ca3af; margin-bottom: 4px; }
+  .game-cover { width: 72px; height: 96px; object-fit: cover; border-radius: 8px; flex-shrink: 0; }
+  .game-info { flex: 1; min-width: 0; }
+  .game-title { font-size: 14px; font-weight: 600; margin-bottom: 4px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
   .game-score { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-bottom: 6px; }
   .game-tags { display: flex; flex-wrap: wrap; gap: 4px; }
   .game-tag { font-size: 11px; background: #eff6ff; color: #2563eb; padding: 2px 8px; border-radius: 10px; }

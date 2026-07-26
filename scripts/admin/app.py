@@ -15,7 +15,7 @@ import sys
 import threading
 import time
 
-import tomli
+import tomllib
 from flask import Flask, jsonify, render_template, request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -148,7 +148,7 @@ def _read_params():
     if not os.path.exists(PARAMS_FILE):
         return {}
     with open(PARAMS_FILE, "rb") as f:
-        return tomli.load(f)
+        return tomllib.load(f)
 
 
 def _write_params(data):
@@ -335,6 +335,38 @@ def api_get_wordcloud_config():
 def api_save_wordcloud_config():
     data = request.get_json()
     _write_wordcloud_config(data)
+    return jsonify({"ok": True})
+
+
+CAREER_FILE = os.path.join(DATA_DIR, "career.json")
+
+
+def _read_career():
+    if not os.path.exists(CAREER_FILE):
+        return {}
+    with open(CAREER_FILE, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _write_career(data):
+    os.makedirs(DATA_DIR, exist_ok=True)
+    with open(CAREER_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    assets_dir = os.path.join(ROOT, "assets", "data")
+    os.makedirs(assets_dir, exist_ok=True)
+    with open(os.path.join(assets_dir, "career.json"), "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+
+@app.route("/api/career", methods=["GET"])
+def api_get_career():
+    return jsonify(_read_career())
+
+
+@app.route("/api/career", methods=["PUT"])
+def api_save_career():
+    data = request.get_json()
+    _write_career(data)
     return jsonify({"ok": True})
 
 
