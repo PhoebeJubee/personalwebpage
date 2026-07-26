@@ -1,66 +1,66 @@
+autoSwitchAppearance = true
 colorScheme = "blowfish"
 defaultAppearance = "light"
-autoSwitchAppearance = true
-enableSearch = true
-enableCodeCopy = false
 disableTextInHeader = false
+enableCodeCopy = false
+enableSearch = true
+
+[article]
+showAuthor = true
+showBreadcrumbs = false
+showDate = true
+showDateUpdated = false
+showPagination = true
+showReadingTime = true
+showTableOfContents = false
+
+[author]
+bio = ""
+headline = "游戏解说/智能体开发/公考事考请联系"
+links = [{ bilibili = "https://space.bilibili.com/772186" }, { github = "https://github.com/PhoebeJubee" }, { zhihu = "https://www.zhihu.com/people/YOUR_ZHIHU_ID" }, { tiktok = "https://www.douyin.com/user/YOUR_DOUYIN_ID" }]
+name = "城砖"
+
+[footer]
+showAppearanceSwitcher = true
+showCopyright = true
+showMenu = true
+showScrollToTop = true
+showThemeAttribution = true
 
 [header]
 layout = "fixed-fill"
-
-[footer]
-showMenu = true
-showCopyright = true
-showThemeAttribution = true
-showAppearanceSwitcher = true
-showScrollToTop = true
 
 [homepage]
 layout = "profile"
 showRecent = false
 showRecentItems = 5
 
-[article]
-showDate = true
-showDateUpdated = false
-showAuthor = true
-showBreadcrumbs = false
-showReadingTime = true
-showTableOfContents = false
-showPagination = true
-
-[author]
-name = "PhoebeJubee"
-headline = "自媒体创作者 | 游戏爱好者 | Vibe Coder"
-bio = "这里是我的个人空间"
-links = [{ bilibili = "https://space.bilibili.com/772186" }, { github = "https://github.com/PhoebeJubee" }, { zhihu = "https://www.zhihu.com/people/YOUR_ZHIHU_ID" }, { tiktok = "https://www.douyin.com/user/YOUR_DOUYIN_ID" }]
-
 [stats]
 
 [stats.bilibili]
-name = "Bilibili"
+color = "#00a1d6"
 followers = 0
 icon = "tv"
-color = "#00a1d6"
+name = "Bilibili"
 url = "https://space.bilibili.com/YOUR_BILIBILI_UID"
 
-[stats.zhihu]
-name = "知乎"
-followers = 0
-icon = "zhihu"
-color = "#0066ff"
-url = "https://www.zhihu.com/people/YOUR_ZHIHU_ID"
-
 [stats.douyin]
-name = "抖音"
+color = "#111111"
 followers = 0
 icon = "tiktok"
-color = "#111111"
+name = "抖音"
 url = "https://www.douyin.com/user/YOUR_DOUYIN_ID"
 
 [stats.github]
+color = "#24292e"
+icon = "github"
 name = "GitHub"
 stars = 0
-icon = "github"
-color = "#24292e"
 url = "https://github.com/YOUR_GITHUB_USERNAME"
+
+[stats.zhihu]
+color = "#0066ff"
+followers = 0
+icon = "zhihu"
+name = "知乎"
+url = "https://www.zhihu.com/people/YOUR_ZHIHU_ID"
