@@ -5,7 +5,7 @@ description: "复盘27-29岁在职考公考编的经验教训，涵盖选岗战�
 source: "公众号"
 tags: ["考公", "复盘"]
 externalUrl: "https://mp.weixin.qq.com/s/xq7VuOYr06pvUMCX0l51Aw"
-_build:
+build:
   render: "false"
   list: "local"
 ---

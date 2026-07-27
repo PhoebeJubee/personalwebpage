@@ -1,5 +1,5 @@
 disabled = false
-languageCode = "zh"
-languageName = "中文"
+locale = "zh"
+label = "中文"
 weight = 1
 title = "我的个人空间"
