@@ -115,12 +115,12 @@ function renderInterestRadar() {
   return `
     <div style="background:white;border-radius:12px;padding:24px;box-shadow:0 2px 8px rgba(0,0,0,0.08);margin-bottom:16px;">
       <h3 style="font-size:16px;font-weight:700;margin-bottom:16px;color:#333;">🎮 兴趣雷达</h3>
-      <div style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap;">
-        <div style="flex:1;min-width:300px;">
-          <canvas id="wordcloud" width="700" height="600" style="width:100%;display:block;"></canvas>
+      <div style="display:flex;gap:24px;align-items:center;justify-content:center;flex-wrap:wrap;">
+        <div style="flex:1 1 300px;max-width:700px;min-width:280px;text-align:center;">
+          <canvas id="wordcloud" width="700" height="600" style="width:100%;display:block;margin:0 auto;"></canvas>
         </div>
-        <div style="flex:0 0 360px;max-width:360px;">
-          <canvas id="radarChart"></canvas>
+        <div style="flex:0 1 360px;width:100%;max-width:360px;">
+          <canvas id="radarChart" style="width:100%;"></canvas>
         </div>
       </div>
     </div>`;
