@@ -4,6 +4,7 @@ defaultAppearance = "light"
 disableTextInHeader = false
 enableCodeCopy = false
 enableSearch = true
+_links_zhihu = "https://www.zhihu.com/people/onetable"
 
 [article]
 showAuthor = true
@@ -39,14 +40,14 @@ showRecentItems = 5
 
 [stats.bilibili]
 color = "#00a1d6"
-followers = 0
+followers = "402"
 icon = "tv"
 name = "Bilibili"
 url = "https://space.bilibili.com/YOUR_BILIBILI_UID"
 
 [stats.douyin]
 color = "#111111"
-followers = 0
+followers = "36"
 icon = "tiktok"
 name = "抖音"
 url = "https://www.douyin.com/user/YOUR_DOUYIN_ID"
@@ -60,7 +61,7 @@ url = "https://github.com/YOUR_GITHUB_USERNAME"
 
 [stats.zhihu]
 color = "#0066ff"
-followers = 0
+followers = "90"
 icon = "zhihu"
 name = "知乎"
 url = "https://www.zhihu.com/people/YOUR_ZHIHU_ID"

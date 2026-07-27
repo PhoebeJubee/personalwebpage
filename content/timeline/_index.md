@@ -63,36 +63,7 @@ function computeRadarData(games) {
   return counts;
 }
 
-function renderStats(games) {
-  const rated = games.filter(g => g.rate > 0);
-  const avgScore = rated.length ? rated.reduce((s, g) => s + g.rate, 0) / rated.length : 0;
-  const perfectGames = rated.filter(g => g.rate >= 9).length;
-  const thisYear = rated.filter(g => g.updated_at && new Date(g.updated_at).getFullYear() === new Date().getFullYear()).length;
-
-  const cell = (num, label, color) => `
-    <div style="background: linear-gradient(135deg, ${color[0]} 0%, ${color[1]} 100%); border-radius: 12px; padding: 20px 16px; text-align: center;">
-      <div style="font-size: 36px; font-weight: bold; color: ${color[2]};">${num}</div>
-      <div style="font-size: 13px; color: #666; margin-top: 4px;">${label}</div>
-    </div>`;
-
-  return `
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 14px; margin-bottom: 36px;">
-      ${cell(rated.length, '已玩', ['#e3f2fd','#f3e5f5','#1976d2'])}
-      ${cell(avgScore.toFixed(1), '平均评分', ['#e8f5e9','#f1f8e9','#2e7d32'])}
-      ${cell(perfectGames, '神作 (9+)', ['#fce4ec','#f3e5f5','#c62828'])}
-      ${cell(thisYear, '今年游玩', ['#fff3e0','#fbe9e7','#e65100'])}
-    </div>`;
-}
-
-function renderWordCloud() {
-  return `
-    <div style="background:white;border-radius:12px;padding:24px;box-shadow:0 2px 8px rgba(0,0,0,0.08);margin-bottom:16px;">
-      <h3 style="font-size:16px;font-weight:700;margin-bottom:16px;color:#333;">🏷️ 标签词频</h3>
-      <canvas id="wordcloud" width="700" height="500" style="width:100%;max-width:700px;display:block;margin:0 auto;"></canvas>
-    </div>`;
-}
-
-const WC_DEFAULTS = { minCount: 2, maxTags: 80, canvasWidth: 700, canvasHeight: 500, fontSizeMin: 12, fontSizeMax: 54, rotateRatio: 0.4, blockedWords: [] };
+const WC_DEFAULTS = { minCount: 2, maxTags: 80, canvasWidth: 700, canvasHeight: 600, fontSizeMin: 12, fontSizeMax: 54, rotateRatio: 0.4, blockedWords: [] };
 
 function drawWordCloud(games) {
   const canvas = document.getElementById('wordcloud');
@@ -140,20 +111,25 @@ function drawWordCloud(games) {
     });
 }
 
-function renderRadar(games) {
+function renderInterestRadar() {
   return `
     <div style="background:white;border-radius:12px;padding:24px;box-shadow:0 2px 8px rgba(0,0,0,0.08);margin-bottom:16px;">
       <h3 style="font-size:16px;font-weight:700;margin-bottom:16px;color:#333;">🎮 兴趣雷达</h3>
-      <div style="position:relative;max-width:400px;margin:0 auto;">
-        <canvas id="radarChart"></canvas>
+      <div style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap;">
+        <div style="flex:1;min-width:300px;">
+          <canvas id="wordcloud" width="700" height="600" style="width:100%;display:block;"></canvas>
+        </div>
+        <div style="flex:0 0 360px;max-width:360px;">
+          <canvas id="radarChart"></canvas>
+        </div>
       </div>
     </div>`;
 }
 
-function renderScoreDist() {
+function renderScoreDist(count) {
   return `
     <div style="background:white;border-radius:12px;padding:24px;box-shadow:0 2px 8px rgba(0,0,0,0.08);margin-bottom:16px;">
-      <h3 style="font-size:16px;font-weight:700;margin-bottom:16px;color:#333;">📊 评分分布</h3>
+      <h3 style="font-size:16px;font-weight:700;margin-bottom:16px;color:#333;">📊 评分分布 <span style="font-size:13px;font-weight:400;color:#999;margin-left:8px;">共游玩 ${count} 款游戏</span></h3>
       <div style="position:relative;height:220px;">
         <canvas id="scoreChart"></canvas>
       </div>
@@ -308,10 +284,8 @@ async function loadBangumiData() {
     const radarData = computeRadarData(rated);
 
     let html = '';
-    html += renderStats(visible);
-    html += renderWordCloud();
-    html += renderRadar(rated);
-    html += renderScoreDist();
+    html += renderInterestRadar();
+    html += renderScoreDist(rated.length);
     html += '<div id="game-list">';
     html += renderSortBar('score');
     html += rated.map(renderGameCard).join('');
