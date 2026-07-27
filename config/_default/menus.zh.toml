@@ -16,10 +16,10 @@
   pageRef = "projects"
   weight = 30
 
-[[main]]
-  name = "文章专栏"
-  pageRef = "articles"
-  weight = 40
+# [[main]]
+#   name = "文章专栏"
+#   pageRef = "articles"
+#   weight = 40
 
 [[main]]
   name = "考公求职"

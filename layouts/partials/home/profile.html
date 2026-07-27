@@ -178,7 +178,7 @@
   <div class="divider-line"></div>
 </div>
 
-{{/* ===== 文章专栏 ===== */}}
+{{ if false }}
 <section class="home-section fade-section" id="section-articles">
   <div class="section-header">
     <a href="{{ relURL "articles/" }}" class="section-title-link">
@@ -207,6 +207,7 @@
     {{ end }}
   </div>
 </section>
+{{ end }}
 
 {{/* ===== 分割线 ===== */}}
 <div class="section-divider fade-section">
@@ -253,7 +254,7 @@
 
 {{/* ===== 滚动动画 + 样式 ===== */}}
 <style>
-  .home-section { max-width: 1024px; margin: 0 auto; padding: 32px 0; }
+  .home-section { max-width: 100%; margin: 0 auto; padding: 32px 0; }
   .section-header { margin-bottom: 24px; }
   .section-title-link { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: inherit; transition: opacity 0.2s; }
   .section-title-link:hover { opacity: 0.8; }
@@ -263,7 +264,7 @@
   .section-content { position: relative; }
 
   /* 分割线 */
-  .section-divider { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 20px 0; max-width: 1024px; margin: 0 auto; }
+  .section-divider { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 20px 0; max-width: 100%; margin: 0 auto; }
   .divider-line { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, #d1d5db, transparent); }
   .dark .divider-line { background: linear-gradient(90deg, transparent, #4b5563, transparent); }
   .divider-dot { width: 8px; height: 8px; border-radius: 50%; background: #9ca3af; transition: transform 0.3s; }

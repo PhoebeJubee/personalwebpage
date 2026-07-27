@@ -18,7 +18,7 @@ showTableOfContents = false
 [author]
 bio = ""
 headline = "游戏解说/智能体开发/公考事考请联系"
-links = [{ bilibili = "https://space.bilibili.com/772186" }, { github = "https://github.com/PhoebeJubee" }, { zhihu = "https://www.zhihu.com/people/YOUR_ZHIHU_ID" }, { tiktok = "https://www.douyin.com/user/YOUR_DOUYIN_ID" }]
+links = [{ bilibili = "https://space.bilibili.com/772186" }, { github = "https://github.com/PhoebeJubee" }, { zhihu = "https://www.zhihu.com/people/YOUR_ZHIHU_ID" }, { tiktok = "https://www.douyin.com/user/YOUR_DOUYIN_ID" }, { wechat = "#" }]
 name = "城砖"
 
 [footer]
